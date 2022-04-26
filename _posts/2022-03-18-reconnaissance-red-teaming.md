@@ -112,3 +112,6 @@ The following tools can be used to gather employee names
   <img src="/images/reconnaissance/tampermonkey.png">
 </p>
 
+<p align="center">
+  <img src="/images/reconnaissance/linkedinscrape.png">
+</p>
