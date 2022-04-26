@@ -69,7 +69,17 @@ python3 dehashed.py -o -d domain.com -a API-KEY -u user@domain.com
 
 The following tools and website allows the attacker to gather email addresses
 
+* [Hunter.io](https://hunter.io/) - Hunter is the leading solution to find and verify professional email addresses.
 
+<p align="center">
+  <img src="/images/reconnaissance/hunterio.png">
+</p>
 
+* [EmailHarvester](https://github.com/maldevel/EmailHarvester) - A tool to retrieve Domain email addresses from **Search Engines**.
 
-
+```bash
+python3 EmailHarvester.py -d google.com -e all
+```
+<p align="center">
+  <img src="/images/reconnaissance/emailharvester.png">
+</p>
