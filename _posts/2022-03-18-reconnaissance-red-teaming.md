@@ -99,3 +99,16 @@ python3 infoga.py --domain vmware.com --source all
 <p align="center">
   <img src="/images/reconnaissance/skymen.png">
 </p>
+
+[Employee Names](https://attack.mitre.org/techniques/T1589/003/)
+* Adversaries gather **employee names** that can be used during targeting.
+* Employee names be used to derive email addresses as well as to help guide other reconnaissance efforts and/or **craft more-believable lures**.
+
+The following tools can be used to gather employee names
+
+* [linkedin-employee-scraper](https://github.com/ChrisAD/linkedin-employee-scraper) - Extract all **employees** from **LinkedIn**. Especially useful for companies with thousands of pages and employees. Script is run as a userscript, running in e.g. Chromes **Tampermonkey** or Firefox's **Greasemonkey**.
+
+<p align="center">
+  <img src="/images/reconnaissance/tampermonkey.png">
+</p>
+
