@@ -43,7 +43,7 @@ python3 dehashed.py -o -d domain.com -a API-KEY -u user@domain.com
 ```
 
 <p align="center">
-  <img src="https://github.com/grahamhelton/dehashQuery/blob/d0bc71807d9903c16d3d151a5019bc8f88712292/example.gif">
+  <img src="/images/reconnaissance/dehased.gif">
 </p>
 
 2. [We Leak Info](https://weleakinfo.to/) - Have your passwords been compromised? Find out by searching through over 12 billion records and 10,000 data breaches.
