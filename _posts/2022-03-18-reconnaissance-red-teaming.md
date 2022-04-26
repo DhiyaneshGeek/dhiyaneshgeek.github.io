@@ -83,3 +83,13 @@ python3 EmailHarvester.py -d google.com -e all
 <p align="center">
   <img src="/images/reconnaissance/emailharvester.png">
 </p>
+
+* [Infoga](https://github.com/m4ll0k/infoga) - Infoga is a tool gathering **email accounts** informations (ip,hostname,country,...) from different public source (search **engines, pgp key servers and shodan**).
+
+```bash
+python3 infoga.py --domain vmware.com --source all
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/infoga.png">
+</p>
