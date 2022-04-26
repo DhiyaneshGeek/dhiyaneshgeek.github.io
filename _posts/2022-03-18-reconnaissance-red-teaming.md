@@ -63,3 +63,13 @@ python3 dehashed.py -o -d domain.com -a API-KEY -u user@domain.com
 <p align="center">
   <img src="/images/reconnaissance/haveibeenpwned.png">
 </p>
+
+[Email Addresses](https://attack.mitre.org/techniques/T1589/002/)
+* Adversaries gather **email addresses** that can be used during targeting. Even if internal instances exist, organizations may have **public-facing** email infrastructure and addresses for employees.
+
+The following tools and website allows the attacker to gather email addresses
+
+
+
+
+
