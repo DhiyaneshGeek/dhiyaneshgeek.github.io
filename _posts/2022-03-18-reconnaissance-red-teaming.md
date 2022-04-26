@@ -26,7 +26,7 @@ I'm back with another blog on how Reconnaissance is carried out in a Red Teaming
 
 <p align="center"><strong>Case Study of Reconnaissance</strong></p>
 
-[Gather Victim Identity Information](https://attack.mitre.org/techniques/T1589/)          
+<strong>[Gather Victim Identity Information](https://attack.mitre.org/techniques/T1589/)</strong>          
 * Adversaries gather information about the **victim's identity** that can be used during targeting.
 * Information about identities may include a variety of details, including personal data **(ex: employee names, email addresses, etc.)** as well as sensitive details such as **credentials.**
 
