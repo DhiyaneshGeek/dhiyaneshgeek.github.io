@@ -36,7 +36,7 @@ I'm back with another blog on how Reconnaissance is carried out in a Red Teaming
 
 The following tools and website allows the attacker to gather leaked credentials
 
-* [DeHashed](https://www.dehashed.com/) - DeHashed is described as the largest & fastest data breach search engine, its API Key can be used to integrate with other tools like [dehashQuery](https://github.com/grahamhelton/dehashQuery) to download breach results as shown below.
+* [DeHashed](https://www.dehashed.com/) - DeHashed is described as the largest & fastest **data breach search engine**, its **API Key** can be used to integrate with other tools like [dehashQuery](https://github.com/grahamhelton/dehashQuery) to download breach results as shown below.
 
 ```bash
 python3 dehashed.py -o -d domain.com -a API-KEY -u user@domain.com
@@ -46,13 +46,13 @@ python3 dehashed.py -o -d domain.com -a API-KEY -u user@domain.com
   <img src="/images/reconnaissance/dehased.gif">
 </p>
 
-* [We Leak Info](https://weleakinfo.to/) - Have your passwords been compromised? Find out by searching through over 12 billion records and 10,000 data breaches.
+* [We Leak Info](https://weleakinfo.to/) - Have your passwords been compromised? Find out by searching through over **12 billion records** and **10,000 data breaches.**
 
 <p align="center">
   <img src="/images/reconnaissance/leakinfo.png">
 </p>
 
-* [IntelligenceX](https://intelx.io/) - Intelligence X is a search engine and data archive. Search Tor, I2P, data leaks and the public web by email, domain, IP, CIDR, Bitcoin address and more.
+* [IntelligenceX](https://intelx.io/) - Intelligence X is a search engine and data archive. Search **Tor, I2P, data leaks** and the public web by email, domain, IP, CIDR, Bitcoin address and more.
 
 <p align="center">
   <img src="/images/reconnaissance/intelligencex.png">
