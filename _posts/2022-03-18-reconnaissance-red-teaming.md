@@ -120,5 +120,18 @@ The following tools can be used to gather employee names
 * Adversaries gather information about the **victim's networks** that can be used during targeting.
 * Information about **networks** may include a variety of details, including administrative data **(ex: IP ranges, domain names, etc.)** as well as specifics regarding its topology and operations.
 
+[Domain Properties](https://attack.mitre.org/techniques/T1590/001/)
+* Information about domains and their properties may include a variety of details, including what domain(s) the victim owns as well as administrative data **(ex: name, registrar, etc.)** and more directly actionable information such as contacts **(email addresses and phone numbers), business addresses, and name servers**.
 
+The following tool can be used to enumerate domain properties
 
+* [AADInternals](https://github.com/Gerenios/AADInternals) - AADInternals can gather information about a tenant’s domains using public Microsoft APIs.
+
+```bash
+# Get login information for a domain
+Get-AADIntLoginInformation -Domain company.com
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/aadinternals.png">
+</p>
