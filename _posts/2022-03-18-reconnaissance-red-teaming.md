@@ -152,7 +152,7 @@ dig google.com
 </p>
 
 ```bash
-dig google.com -t mx +short #grab mail serber information
+dig google.com -t mx +short #grab mail server information
 ```
 
 <p align="center">
