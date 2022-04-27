@@ -115,3 +115,10 @@ The following tools can be used to gather employee names
 <p align="center">
   <img src="/images/reconnaissance/linkedinscrape.png">
 </p>
+
+<strong>[Gather Victim Network Information](https://attack.mitre.org/techniques/T1590/)</strong>
+* Adversaries gather information about the **victim's networks** that can be used during targeting.
+* Information about **networks** may include a variety of details, including administrative data **(ex: IP ranges, domain names, etc.)** as well as specifics regarding its topology and operations.
+
+
+
