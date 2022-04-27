@@ -247,4 +247,8 @@ python3 NetblockTool.py -v Google
 * Information about network security appliances may include a variety of details, such as the existence and specifics of deployed **firewalls, content filters, and proxies/bastion hosts**.
 * Adversaries may also target information about victim network-based intrusion detection systems **(NIDS)** or other appliances related to **defensive cybersecurity operations**.
 
+<strong>[Gather Victim Org Information](https://attack.mitre.org/techniques/T1591/)</strong>
+* Adversaries gather information about the **victim's organization** that can be used during targeting. 
+* Information about an organization may include a variety of details, including the names of **divisions/departments, specifics of business operations, as well as the roles and responsibilities of key employees**.
+
 
