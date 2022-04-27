@@ -209,4 +209,13 @@ dnsrecon -d google.com
 * Information about **assigned IP addresses** may include a variety of details, such as which IP addresses are in use. 
 * IP addresses may also enable an adversary to derive other details about a victim, such as **organizational size, physical location(s), Internet service provider**, and or where/how their **publicly-facing** infrastructure is hosted.
 
+The following tools and website allows the attacker to gather IP Addresses.
 
+* [NetblockTool](https://github.com/NetSPI/NetblockTool) - Find netblocks owned by a company
+
+```bash
+python3 NetblockTool.py -v Google
+```
+<p align="center">
+  <img src="/images/reconnaissance/netblock.png">
+</p>
