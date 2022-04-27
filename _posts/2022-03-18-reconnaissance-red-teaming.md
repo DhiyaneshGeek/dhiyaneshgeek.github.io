@@ -202,3 +202,11 @@ dnsrecon -d google.com
 <p align="center">
   <img src="/images/reconnaissance/dnsx.png">
 </p>
+
+[IP Addresses](https://attack.mitre.org/techniques/T1590/005/)
+* Adversaries gather the **victim's IP** addresses that can be used during targeting.
+* **Public IP addresses** may be allocated to organizations by block, or a range of **sequential addresses**.
+* Information about **assigned IP addresses** may include a variety of details, such as which IP addresses are in use. 
+* IP addresses may also enable an adversary to derive other details about a victim, such as **organizational size, physical location(s), Internet service provider**, and or where/how their **publicly-facing** infrastructure is hosted.
+
+
