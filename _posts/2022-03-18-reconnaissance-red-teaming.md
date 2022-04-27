@@ -159,6 +159,13 @@ dig google.com -t mx +short #grab mail server information
   <img src="/images/reconnaissance/dig2.png">
 </p>
 
+* [host](https://linux.die.net/man/1/host) - the host command is a **DNS lookup utility**, finding the **IP address** of a domain name.
 
+```bash
+host google.com
+```
 
+<p align="center">
+  <img src="/images/reconnaissance/host.png">
+</p>
 
