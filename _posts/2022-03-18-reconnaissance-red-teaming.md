@@ -251,4 +251,18 @@ python3 NetblockTool.py -v Google
 * Adversaries gather information about the **victim's organization** that can be used during targeting. 
 * Information about an organization may include a variety of details, including the names of **divisions/departments, specifics of business operations, as well as the roles and responsibilities of key employees**.
 
+[Determine Physical Locations](https://attack.mitre.org/techniques/T1591/001/)
+* Information about physical locations of a target organization may include a variety of details, including where **key resources and infrastructure** are housed.
+* **Physical locations** may also indicate what legal jurisdiction and/or authorities the victim operates within.
+
+[Business Relationships](https://attack.mitre.org/techniques/T1591/002/)
+* Information about an organization’s business relationships may include a variety of details, including **second** or **third-party** organizations/domains **(ex: managed service providers, contractors, etc.)** that have connected (and potentially elevated) network access.
+* This information may also reveal **supply chains** and **shipment paths** for the victim’s hardware and software resources.
+
+[Identify Business Tempo](https://attack.mitre.org/techniques/T1591/003/)
+* Information about an organization’s business tempo may include a variety of details, including **operational hours/days of the week**.
+* This information may also reveal **times/dates of purchases and shipments** of the victim’s hardware and software resources.
+
+[Identify Roles](https://attack.mitre.org/techniques/T1591/004/)
+* Information about business roles may reveal a variety of targetable details, including i**dentifiable information** for key personnel as well as what data/resources they have access to.
 
