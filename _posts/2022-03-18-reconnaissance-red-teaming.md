@@ -169,3 +169,12 @@ host google.com
   <img src="/images/reconnaissance/host.png">
 </p>
 
+* [dnsenum](https://github.com/fwaeytens/dnsenum) - dnsenum is a perl script that **enumerates DNS information**.
+
+```bash
+dnsenum --no-reverse google.com
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/dnsenum.png">
+</p>
