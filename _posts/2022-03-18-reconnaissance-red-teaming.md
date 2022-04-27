@@ -264,5 +264,5 @@ python3 NetblockTool.py -v Google
 * This information may also reveal **times/dates of purchases and shipments** of the victim’s hardware and software resources.
 
 [Identify Roles](https://attack.mitre.org/techniques/T1591/004/)
-* Information about business roles may reveal a variety of targetable details, including i**dentifiable information** for key personnel as well as what data/resources they have access to.
+* Information about business roles may reveal a variety of targetable details, including **identifiable information** for key personnel as well as what data/resources they have access to.
 
