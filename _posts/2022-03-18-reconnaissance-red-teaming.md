@@ -189,7 +189,16 @@ nmap -T4 -p 53 --script dns-brute google.com
 
 * [dnsrecon](https://github.com/darkoperator/dnsrecon) - Check all NS Records for **Zone Transfers**. Enumerate General DNS Records for a given Domain (MX, SOA, NS, A, AAAA, SPF and TXT). Perform common **SRV Record Enumeration**. Top Level Domain **(TLD)** Expansion.
 
+```bash
+dnsrecon -d google.com
+```
 
 <p align="center">
   <img src="/images/reconnaissance/dnsrecon.png">
+</p>
+
+* [dnsx](https://github.com/projectdiscovery/dnsx) - dnsx is a fast and **multi-purpose DNS toolkit allow to run multiple DNS queries** of your choice with a list of user-supplied resolvers.
+
+<p align="center">
+  <img src="/images/reconnaissance/dnsx.png">
 </p>
