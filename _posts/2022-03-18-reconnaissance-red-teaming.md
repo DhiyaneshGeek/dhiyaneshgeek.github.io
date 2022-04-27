@@ -135,3 +135,30 @@ Get-AADIntLoginInformation -Domain company.com
 <p align="center">
   <img src="/images/reconnaissance/aadinternals.png">
 </p>
+
+[DNS](https://attack.mitre.org/techniques/T1590/002/)
+* Adversaries gather information about the **victim's DNS** that can be used during targeting.
+* DNS information may include a variety of details, including **registered name servers** as well as records that outline addressing for a target’s **subdomains, mail servers, and other hosts**.
+
+The following tools and website allows the attacker to gather DNS information.
+
+* [dig](https://toolbox.googleapps.com/apps/dig/) - dig is a network administration command-line tool for **querying** the Domain Name System.
+
+```bash
+dig google.com
+```
+<p align="center">
+  <img src="/images/reconnaissance/dig1.png">
+</p>
+
+```bash
+dig google.com -t mx +short #grab mail serber information
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/dig2.png">
+</p>
+
+
+
+
