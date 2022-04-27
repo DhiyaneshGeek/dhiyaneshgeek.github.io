@@ -178,3 +178,11 @@ dnsenum --no-reverse google.com
 <p align="center">
   <img src="/images/reconnaissance/dnsenum.png">
 </p>
+
+* [dns-brute-script](https://nmap.org/nsedoc/scripts/dns-brute.html) - Nmap will attempt to enumerate DNS hostnames by **brute forcing** popular subdomain names.
+```bash
+nmap -T4 -p 53 --script dns-brute google.com
+```
+<p align="center">
+  <img src="/images/reconnaissance/nmap.png">
+</p>
