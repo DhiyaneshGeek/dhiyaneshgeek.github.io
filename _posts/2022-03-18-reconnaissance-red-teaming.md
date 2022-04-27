@@ -203,6 +203,16 @@ dnsrecon -d google.com
   <img src="/images/reconnaissance/dnsx.png">
 </p>
 
+[Network Trust Dependencies](https://attack.mitre.org/techniques/T1590/003/)
+* Adversaries gather information about the victim's network **trust dependencies** that can be used during targeting.
+* Information about network trusts may include a variety of details, including second or third-party organizations/domains 
+**(ex: managed service providers, contractors, etc.)** that have connected (and potentially elevated) network access.
+
+[Network Topology](https://attack.mitre.org/techniques/T1590/004/)
+* Adversaries gather information about the victim's **network topology** that can be used during targeting.
+* Information about network topologies may include a variety of details, including the **physical and/or logical arrangement** of both external-facing and internal network environments. 
+* This information may also include specifics regarding network devices **(gateways, routers, etc.)** and other infrastructure.
+
 [IP Addresses](https://attack.mitre.org/techniques/T1590/005/)
 * Adversaries gather the **victim's IP** addresses that can be used during targeting.
 * **Public IP addresses** may be allocated to organizations by block, or a range of **sequential addresses**.
@@ -231,3 +241,10 @@ python3 NetblockTool.py -v Google
 <p align="center">
   <img src="/images/reconnaissance/surface.png">
 </p>
+
+[Network Security Appliances](https://attack.mitre.org/techniques/T1590/006/)
+* Adversaries gather information about the victim's **network security appliances** that can be used during targeting.
+* Information about network security appliances may include a variety of details, such as the existence and specifics of deployed **firewalls, content filters, and proxies/bastion hosts**.
+* Adversaries may also target information about victim network-based intrusion detection systems **(NIDS)** or other appliances related to **defensive cybersecurity operations**.
+
+
