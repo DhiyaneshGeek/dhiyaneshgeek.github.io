@@ -309,5 +309,12 @@ subfinder -d google.com -all -v
   <img src="/images/reconnaissance/subfinder.png">
 </p>
 
+* [assetfinder](https://github.com/tomnomnom/assetfinder) - Find **domains** and **subdomains** related to a given domain.
 
+```bash
+assetfinder --subs-only google.com
+```
 
+<p align="center">
+  <img src="/images/reconnaissance/assetfinder.png">
+</p>
