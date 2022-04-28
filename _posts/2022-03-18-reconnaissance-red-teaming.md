@@ -16,7 +16,7 @@ I'm back with another blog on how Reconnaissance is carried out in a Red Teaming
 </p>
 
 **What is Reconnaissance ?**      
-* Reconnaissance consists of techniques that involve **adversaries actively** **or passively** gathering information that can be used to support targeting. Such information include details of the **victim organization, infrastructure, or staff/personnel.**
+* The reconnaissance consists of techniques that involve gathering information related to the target actively as well as passively. The gathered information may include details of the **victim organisation, infrastructure or staff/personnel**.
 
 <p align="center"><strong>ATT&CK Matrix for Enterprise</strong></p>
 
