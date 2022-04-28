@@ -254,3 +254,9 @@ The following tools and website allows the attacker to gather whois information.
 <p align="center">
   <img src="/images/reconnaissance/whois.png">
 </p>
+
+* [ICANN Lookup](https://lookup.icann.org/en/lookup) - The ICANN registration data lookup tool gives you the ability.
+
+<p align="center">
+  <img src="/images/reconnaissance/icann.png">
+</p>
