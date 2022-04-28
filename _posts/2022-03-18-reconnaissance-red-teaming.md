@@ -405,3 +405,13 @@ python3 googlecertfarm.py -d google.com
 <p align="center">
   <img src="/images/reconnaissance/googlecertfarm.png">
 </p>
+
+<strong>[Active Scanning](https://attack.mitre.org/techniques/T1595/)</strong>
+* Adversaries execute **active reconnaissance** scans to gather information that can be used during targeting.
+* Active scans are those where the adversary probes **victim infrastructure via network traffic**, as opposed to other forms of reconnaissance that do not involve direct interaction.
+
+[Scanning IP Blocks](https://attack.mitre.org/techniques/T1595/001/)
+* Adversaries scan **victim IP blocks** to gather information that can be used during targeting.
+* **Public IP addresses** may be allocated to organizations by block, or a range of **sequential addresses**.
+
+
