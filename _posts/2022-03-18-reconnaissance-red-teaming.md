@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reconnaissance
-date: 2022-03-26
+date: 2022-04-28
 summary: Red Teamer Perspective
 categories: Red Teaming
 tags: [Bugs, Write-Ups, Red Teaming]
