@@ -240,10 +240,10 @@ python3 NetblockTool.py -v Google
 
 <strong>[Search Open Technical Databases](https://attack.mitre.org/techniques/T1596/)</strong>
 * Adversaries search freely available **technical databases** for information about victims that can be used during targeting
-* Information about victims may be available in **online databases** and **repositories**, such as registrations of domains/certificates as well as public collections of network data/artifacts gathered from traffic and/or scans.
+* Information about victims available in **online databases** and **repositories**, such as registrations of domains/certificates as well as public collections of network data/artifacts gathered from traffic and/or scans.
 
 [WHOIS](https://attack.mitre.org/techniques/T1596/002/)
-* Adversaries may search public **WHOIS data** for information about victims that can be used during targeting
+* Adversaries search public **WHOIS data** for information about victims that can be used during targeting
 * WHOIS data is stored by **regional Internet registries (RIR)** responsible for allocating and assigning Internet resources such as domain names
 Anyone can query WHOIS servers for information about a **registered domain**, such as assigned **IP blocks, contact information, and DNS nameservers**.
 
@@ -293,3 +293,21 @@ findcdn list asu.edu -t 7 --double
 <p align="center">
   <img src="/images/reconnaissance/findcdn.gif">
 </p>
+
+<strong>[Search Open Websites/Domains](https://attack.mitre.org/techniques/T1593/)</strong>
+* Adversaries search **freely available websites and/or domains** for information about victims that can be used during targeting.
+* Information about victims available in various **online sites**, such as social media, new sites, or those hosting information about business operations such as hiring or requested/rewarded contracts.
+
+The following tools and website allows the attacker to gather subdomain information.
+
+* [subfinder](https://github.com/projectdiscovery/subfinder) - Subfinder is a subdomain discovery tool that discovers **valid subdomains** for websites.
+
+```
+subfinder -d google.com -all -v
+```
+<p align="center">
+  <img src="/images/reconnaissance/subfinder.png">
+</p>
+
+
+
