@@ -287,8 +287,7 @@ The following tools allows the attacker to gather CDN information.
 
 * [findcdn](https://github.com/cisagov/findcdn) - findCDN is a tool created to help accurately identify **what CDN a domain is using**.
 
-```
-bash
+```bash
 findcdn list asu.edu -t 7 --double
 ```
 <p align="center">
