@@ -318,3 +318,15 @@ assetfinder --subs-only google.com
 <p align="center">
   <img src="/images/reconnaissance/assetfinder.png">
 </p>
+
+* [knockknock](https://github.com/harleo/knockknock) - A simple **reverse whois lookup tool** which returns a list of domains owned by people or companies.
+
+<p align="center">
+  <img src="/images/reconnaissance/knockknock.png">
+</p>
+
+* [findomain](https://github.com/Findomain/Findomain) - The complete solution for domain recognition. Supports screenshoting, port scan, HTTP check, data import from other tools, **subdomain monitoring**, alerts via Discord, Slack and Telegram, multiple API Keys for sources and much more.
+
+<p align="center">
+  <img src="/images/reconnaissance/findomain.png">
+</p>
