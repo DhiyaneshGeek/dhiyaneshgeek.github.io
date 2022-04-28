@@ -266,7 +266,7 @@ The following tools and website allows the attacker to gather whois information.
 * Digital certificates are issued by a **certificate authority (CA)** in order to cryptographically verify the origin of signed content.
 * These certificates, such as those used for encrypted web traffic **(HTTPS SSL/TLS communications)**, contain information about the **registered organization** such as name and location.
 
-The following tools and website allows the attacker to gather digital certificate information.
+The following website allows the attacker to gather digital certificate information.
 
 * [crt.sh](https://crt.sh/) - crt.sh is a web interface to a distributed database called the **certificate transparency logs**.
 
@@ -278,3 +278,19 @@ The following tools and website allows the attacker to gather digital certificat
   <img src="/images/reconnaissance/crt.png">
 </p>
 
+[CDN](https://attack.mitre.org/techniques/T1596/004/)
+* Adversaries search **content delivery network (CDN)** data about victims that can be used during targeting.
+* CDNs allow an organization to host content from a distributed, **load balanced array of servers**.
+* CDNs also allow organizations to customize content delivery based on the requestor’s **geographical region**.
+
+The following tools allows the attacker to gather CDN information.
+
+* [findcdn](https://github.com/cisagov/findcdn) - findCDN is a tool created to help accurately identify **what CDN a domain is using**.
+
+```
+bash
+findcdn list asu.edu -t 7 --double
+```
+<p align="center">
+  <img src="/images/reconnaissance/findcdn.gif">
+</p>
