@@ -84,7 +84,7 @@ python3 EmailHarvester.py -d google.com -e all
   <img src="/images/reconnaissance/emailharvester.png">
 </p>
 
-* [Infoga](https://github.com/m4ll0k/infoga) - Infoga is a tool gathering **email accounts** informations (ip,hostname,country,...) from different public source (search **engines, pgp key servers and shodan**).
+* [Infoga](https://github.com/m4ll0k/infoga) - Infoga is a tool that gathering **email accounts** informations (ip,hostname,country,...) from different public source (search **engines, pgp key servers and shodan**).
 
 ```bash
 python3 infoga.py --domain vmware.com --source all
@@ -102,7 +102,7 @@ python3 infoga.py --domain vmware.com --source all
 
 [Employee Names](https://attack.mitre.org/techniques/T1589/003/)
 * Adversaries gather **employee names** that can be used during targeting.
-* Employee names be used to derive email addresses as well as to help guide other reconnaissance efforts and/or **craft more-believable lures**.
+* Employee names be used to determine email addresses as well as to help guide other reconnaissance efforts and/or **craft more-believable lures**.
 
 The following tools can be used to gather employee names
 
