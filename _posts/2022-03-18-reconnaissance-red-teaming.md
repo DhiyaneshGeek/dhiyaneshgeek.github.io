@@ -346,3 +346,29 @@ prips 173.0.84.0/24 | hakrevdns -d
 <p align="center">
   <img src="/images/reconnaissance/hakrevdns.png">
 </p>
+
+* [Amass](https://github.com/OWASP/Amass) - In-depth **Attack Surface Mapping** and Asset Discovery.
+
+```bash
+amass intel -org 'Sony Corporation of America'  #fetch ASN & CIDR IP Range of a Company
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/asn.png">
+</p>
+
+```bash
+amass intel -active -asn 3725 -ip #enumerate subdomains & IP Address from ASN
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/subip.png">
+</p>
+
+```bash
+amass intel -active -asn 3725 #enumerate subdomains only from ASN
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/subonly.png">
+</p>
