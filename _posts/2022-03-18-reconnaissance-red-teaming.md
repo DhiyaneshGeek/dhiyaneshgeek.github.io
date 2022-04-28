@@ -260,3 +260,21 @@ The following tools and website allows the attacker to gather whois information.
 <p align="center">
   <img src="/images/reconnaissance/icann.png">
 </p>
+
+[Digital Certificates](https://attack.mitre.org/techniques/T1596/003/)
+* Adversaries search **public digital certificate** data for information about victims that can be used during targeting.
+* Digital certificates are issued by a **certificate authority (CA)** in order to cryptographically verify the origin of signed content.
+* These certificates, such as those used for encrypted web traffic **(HTTPS SSL/TLS communications)**, contain information about the **registered organization** such as name and location.
+
+The following tools and website allows the attacker to gather digital certificate information.
+
+* [crt.sh](https://crt.sh/) - crt.sh is a web interface to a distributed database called the **certificate transparency logs**.
+
+<p align="center">
+  <img src="/images/reconnaissance/crtsh.png">
+</p>
+
+<p align="center">
+  <img src="/images/reconnaissance/crt.png">
+</p>
+
