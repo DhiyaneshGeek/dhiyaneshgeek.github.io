@@ -24,7 +24,7 @@ I'm back with another blog on how Reconnaissance is carried out in a Red Teaming
   <img src="/images/reconnaissance/techniques.png">
 </p>
 
-<p align="center"><strong>Case Study of Reconnaissance</strong></p>
+<p align="center"><strong>Reconnaissance Tactics</strong></p>
 
 <strong>[Gather Victim Identity Information](https://attack.mitre.org/techniques/T1589/)</strong>          
 * Adversaries gather information about the **victim's identity** that can be used during targeting.
