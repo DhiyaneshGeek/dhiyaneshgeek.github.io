@@ -232,3 +232,20 @@ python3 NetblockTool.py -v Google
   <img src="/images/reconnaissance/surface.png">
 </p>
 
+<strong>[Search Open Technical Databases](https://attack.mitre.org/techniques/T1596/)</strong>
+* Adversaries search freely available **technical databases** for information about victims that can be used during targeting
+* Information about victims may be available in **online databases** and **repositories**, such as registrations of domains/certificates as well as public collections of network data/artifacts gathered from traffic and/or scans.
+
+[WHOIS](https://attack.mitre.org/techniques/T1596/002/)
+* Adversaries may search public **WHOIS data** for information about victims that can be used during targeting
+* WHOIS data is stored by **regional Internet registries (RIR)** responsible for allocating and assigning Internet resources such as domain names
+Anyone can query WHOIS servers for information about a **registered domain**, such as assigned **IP blocks, contact information, and DNS nameservers**.
+
+The following tools and website allows the attacker to gather whois information.
+
+* [whois] - Whois is a widely used **Internet record listing** that contains the details of who owns a **domain name** and how to get in touch with them.
+
+<p align="center">
+  <img src="/images/reconnaissance/whois.png">
+</p>
+
