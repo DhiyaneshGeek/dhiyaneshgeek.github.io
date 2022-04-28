@@ -370,5 +370,5 @@ amass intel -active -asn 3725 #enumerate subdomains only from ASN
 ```
 
 <p align="center">
-  <img src="/images/reconnaissance/subonly.png">
+  <img src="/images/reconnaissance/subsonly.png">
 </p>
