@@ -482,3 +482,15 @@ The following tools allows the attacker to perform vulnerability scanning.
 <p align="center">
   <img src="/images/reconnaissance/sniperpro.png">
 </p>
+
+**Reference:**                
+[Reconnaissance, Tactic TA0043 - Enterprise | MITRE ATT&CK](https://attack.mitre.org/tactics/TA0043/)                
+[Red Team Reconnaissance Techniques](https://www.linode.com/docs/guides/red-team-reconnaissance-techniques/)                  
+[Red Team Assessment Phases: Reconnaissance](https://resources.infosecinstitute.com/topic/red-team-assessment-phases-reconnaissance/)        
+[Red Teaming Toolkit Reconnaissance](https://github.com/infosecn1nja/Red-Teaming-Toolkit#Reconnaissance)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif">
+</p>
+
+Thanks a lot for reading !!!.
