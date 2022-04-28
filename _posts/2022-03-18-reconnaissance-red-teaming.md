@@ -416,6 +416,15 @@ python3 googlecertfarm.py -d google.com
 
 The following tools allows the attacker to scan IP Blocks information.
 
+* [mapcidr](https://github.com/projectdiscovery/mapcidr) - A utility program to perform multiple operations for a given subnet/cidr ranges.
+
+```bash
+mapcidr -cidr 173.0.84.0/24
+```
+<p align="center">
+  <img src="/images/reconnaissance/mapcidr.png">
+</p>
+
 * [nmap](https://github.com/nmap/nmap) - Nmap is used to **discover hosts** and services on a computer network by sending packets and analyzing the responses.
 
 ```bash
