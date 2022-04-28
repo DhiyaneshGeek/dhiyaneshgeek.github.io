@@ -358,7 +358,7 @@ amass intel -org 'Sony Corporation of America'  #fetch ASN & CIDR IP Range of a 
 </p>
 
 ```bash
-amass intel -active -asn 3725 -ip #enumerate subdomains & IP Address from ASN
+amass intel -active -asn 3725 -ip   #enumerate subdomains & IP Address from ASN
 ```
 
 <p align="center">
@@ -366,9 +366,33 @@ amass intel -active -asn 3725 -ip #enumerate subdomains & IP Address from ASN
 </p>
 
 ```bash
-amass intel -active -asn 3725 #enumerate subdomains only from ASN
+amass intel -active -asn 3725    #enumerate subdomains only from ASN
 ```
 
 <p align="center">
   <img src="/images/reconnaissance/subsonly.png">
+</p>
+
+```bash
+amass intel -active -cidr 160.33.96.0/23   #enumerate subdomains from cidr range
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/cidr.png">
+</p>
+
+```bash
+amass intel -asn 3725 -whois -d sony.com   #enumerate subdomains using asn & whois
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/asnwhois.png">
+</p>
+
+```bash
+amass enum -d sony.com -active -cidr 160.33.99.0/24,160.33.96.0/23 -asn 3725   #enumerate subdomains using cidr & asn
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/cidrasn.png">
 </p>
