@@ -203,16 +203,6 @@ dnsrecon -d google.com
   <img src="/images/reconnaissance/dnsx.png">
 </p>
 
-[Network Trust Dependencies](https://attack.mitre.org/techniques/T1590/003/)
-* Adversaries gather information about the victim's network **trust dependencies** that can be used during targeting.
-* Information about network trusts include a variety of details, including second or third-party organizations/domains 
-**(ex: managed service providers, contractors, etc.)** that have connected (and potentially elevated) network access.
-
-[Network Topology](https://attack.mitre.org/techniques/T1590/004/)
-* Adversaries gather information about the victim's **network topology** that can be used during targeting.
-* Information about network topologies include a variety of details, including the **physical and/or logical arrangement** of both external-facing and internal network environments. 
-* This information also include specifics regarding network devices **(gateways, routers, etc.)** and other infrastructure.
-
 [IP Addresses](https://attack.mitre.org/techniques/T1590/005/)
 * Adversaries gather the **victim's IP** addresses that can be used during targeting.
 * **Public IP addresses** to be allocated to organizations by block, or a range of **sequential addresses**.
@@ -241,28 +231,4 @@ python3 NetblockTool.py -v Google
 <p align="center">
   <img src="/images/reconnaissance/surface.png">
 </p>
-
-[Network Security Appliances](https://attack.mitre.org/techniques/T1590/006/)
-* Adversaries gather information about the victim's **network security appliances** that can be used during targeting.
-* Information about network security appliances include a variety of details, such as the existence and specifics of deployed **firewalls, content filters, and proxies/bastion hosts**.
-* Adversaries also target information about victim network-based intrusion detection systems **(NIDS)** or other appliances related to **defensive cybersecurity operations**.
-
-<strong>[Gather Victim Org Information](https://attack.mitre.org/techniques/T1591/)</strong>
-* Adversaries gather information about the **victim's organization** that can be used during targeting. 
-* Information about an organization include a variety of details, including the names of **divisions/departments, specifics of business operations, as well as the roles and responsibilities of key employees**.
-
-[Determine Physical Locations](https://attack.mitre.org/techniques/T1591/001/)
-* Information about physical locations of a target organization include a variety of details, including where **key resources and infrastructure** are housed.
-* **Physical locations** also indicate what legal jurisdiction and/or authorities the victim operates within.
-
-[Business Relationships](https://attack.mitre.org/techniques/T1591/002/)
-* Information about an organization’s business relationships include a variety of details, including **second** or **third-party** organizations/domains **(ex: managed service providers, contractors, etc.)** that have connected (and potentially elevated) network access.
-* This information also reveal **supply chains** and **shipment paths** for the victim’s hardware and software resources.
-
-[Identify Business Tempo](https://attack.mitre.org/techniques/T1591/003/)
-* Information about an organization’s business tempo include a variety of details, including **operational hours/days of the week**.
-* This information also reveal **times/dates of purchases and shipments** of the victim’s hardware and software resources.
-
-[Identify Roles](https://attack.mitre.org/techniques/T1591/004/)
-* Information about business roles reveal a variety of targetable details, including **identifiable information** for key personnel as well as what data/resources they have access to.
 
