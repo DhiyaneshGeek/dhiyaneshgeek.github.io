@@ -424,3 +424,12 @@ nmap -v -A scanme.nmap.org  #basic scan for detection
 <p align="center">
   <img src="/images/reconnaissance/nmap.png">
 </p>
+
+* [naabu](https://github.com/projectdiscovery/naabu) - A fast port scanner written in go with a focus on **reliability** and **simplicity**.
+
+```bash
+naabu -host 104.16.99.52
+```
+<p align="center">
+  <img src="/images/reconnaissance/naabu.png">
+</p>
