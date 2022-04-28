@@ -414,4 +414,13 @@ python3 googlecertfarm.py -d google.com
 * Adversaries scan **victim IP blocks** to gather information that can be used during targeting.
 * **Public IP addresses** may be allocated to organizations by block, or a range of **sequential addresses**.
 
+The following tools allows the attacker to scan IP Blocks information.
 
+* [nmap](https://github.com/nmap/nmap) - Nmap is used to **discover hosts** and services on a computer network by sending packets and analyzing the responses.
+
+```bash
+nmap -v -A scanme.nmap.org  #basic scan for detection
+```
+<p align="center">
+  <img src="/images/reconnaissance/nmap.png">
+</p>
