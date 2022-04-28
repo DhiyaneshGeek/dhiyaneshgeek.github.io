@@ -237,7 +237,7 @@ python3 NetblockTool.py -v Google
 <p align="center">
   <img src="/images/reconnaissance/ipinfo.png">
 </p>
-
+ 
 <strong>[Search Open Technical Databases](https://attack.mitre.org/techniques/T1596/)</strong>
 * Adversaries search freely available **technical databases** for information about victims that can be used during targeting
 * Information about victims available in **online databases** and **repositories**, such as registrations of domains/certificates as well as public collections of network data/artifacts gathered from traffic and/or scans.
@@ -451,6 +451,15 @@ masscan 104.16.100.52 -p0-65535
 
 <p align="center">
   <img src="/images/reconnaissance/massscan.png">
+</p>
+
+* [Smap](https://github.com/s0md3v/Smap) - a drop-in replacement for **Nmap powered by shodan.io**.
+
+```bash
+smap -sV ipaddress
+```
+<p align="center">
+  <img src="/images/reconnaissance/smap-demo.png">
 </p>
 
 [Vulnerability Scanning](https://attack.mitre.org/techniques/T1595/002/)
