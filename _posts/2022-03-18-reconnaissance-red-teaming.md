@@ -452,3 +452,22 @@ masscan 104.16.100.52 -p0-65535
 <p align="center">
   <img src="/images/reconnaissance/massscan.png">
 </p>
+
+[Vulnerability Scanning](https://attack.mitre.org/techniques/T1595/002/)
+* Adversaries **scan victims for vulnerabilities** that can be used during targeting
+* Vulnerability scans typically check if the configuration of a target host/application **(ex: software and version)** potentially aligns with the target of a **specific exploit** the adversary may seek to use.
+
+The following tools allows the attacker to perform vulnerability scanning.
+
+* [nuclei](https://github.com/projectdiscovery/nuclei) - Fast and customizable vulnerability scanner based on simple YAML based DSL.
+
+<p align="center">
+  <img src="/images/reconnaissance/nuclei.gif">
+</p>
+
+* [reNgine](https://github.com/yogeshojha/rengine) - reNgine is a web application reconnaissance suite with focus on highly configurable streamlined recon process via Engines, recon data correlation, continuous monitoring, recon data backed by database and simple yet intuitive User Interface.
+
+<p align="center">
+  <img src="/images/reconnaissance/rengine.gif">
+</p>
+
