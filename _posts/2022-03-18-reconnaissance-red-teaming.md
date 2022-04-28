@@ -431,5 +431,15 @@ nmap -v -A scanme.nmap.org  #basic scan for detection
 naabu -host 104.16.99.52
 ```
 <p align="center">
-  <img src="/images/reconnaissance/naabu.png">
+  <img src="/images/reconnaissance/naabu-run.png">
+</p>
+
+* [massscan](https://github.com/robertdavidgraham/masscan) - TCP port scanner, spews **SYN packets asynchronously**, scanning entire Internet in under 5 minutes.
+
+```bash
+masscan 104.16.100.52 -p0-65535
+```
+
+<p align="center">
+  <img src="/images/reconnaissance/massscan.png">
 </p>
