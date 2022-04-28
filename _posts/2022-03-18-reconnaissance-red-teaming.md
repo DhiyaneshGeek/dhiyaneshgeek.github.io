@@ -399,6 +399,9 @@ amass enum -d sony.com -active -cidr 160.33.99.0/24,160.33.96.0/23 -asn 3725   #
 
 * [Google Certificate transparency](https://github.com/rook1337/googlecertfarm) - this tools allows the user to gather **domains & subdomains from SSL Certificate**.
 
+```bash
+python3 googlecertfarm.py -d google.com
+```
 <p align="center">
   <img src="/images/reconnaissance/googlecertfarm.png">
 </p>
