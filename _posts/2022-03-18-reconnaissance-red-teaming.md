@@ -471,3 +471,14 @@ The following tools allows the attacker to perform vulnerability scanning.
   <img src="/images/reconnaissance/rengine.gif">
 </p>
 
+* [Osmedeus](https://github.com/j3ssie/osmedeus) - A Workflow Engine for **Offensive Security**.
+
+<p align="center">
+  <img src="/images/reconnaissance/osmedeus.png">
+</p>
+
+* [Sn1per Professional](https://github.com/1N3/Sn1per) - Discover the attack surface and prioritize risks with our **continuous** Attack Surface Management (ASM) platform.
+
+<p align="center">
+  <img src="/images/reconnaissance/sniperpro.png">
+</p>
