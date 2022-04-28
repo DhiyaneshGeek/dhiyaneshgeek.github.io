@@ -321,12 +321,28 @@ assetfinder --subs-only google.com
 
 * [knockknock](https://github.com/harleo/knockknock) - A simple **reverse whois lookup tool** which returns a list of domains owned by people or companies.
 
+```bash
+knockknock -n google.com -p
+```
+
 <p align="center">
   <img src="/images/reconnaissance/knockknock.png">
 </p>
 
 * [findomain](https://github.com/Findomain/Findomain) - The complete solution for domain recognition. Supports screenshoting, port scan, HTTP check, data import from other tools, **subdomain monitoring**, alerts via Discord, Slack and Telegram, multiple API Keys for sources and much more.
 
+```bash
+findomain -t google.com
+```
 <p align="center">
   <img src="/images/reconnaissance/findomain.png">
+</p>
+
+* [hakrevdns](https://github.com/hakluke/hakrevdns) - Small, fast tool for performing **reverse DNS lookups en masse**.
+
+```bash
+prips 173.0.84.0/24 | hakrevdns -d
+```
+<p align="center">
+  <img src="/images/reconnaissance/hakrevdns.png">
 </p>
