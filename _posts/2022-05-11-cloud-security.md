@@ -9,9 +9,10 @@ tags: [AWS, Write-Ups, Cloud Security]
 
 Hi Everyone
 
-I'm back with another blog on Deep Dive into AWS Cloud Security.
+I'm back with another blog on Deep Dive into AWS Cloud Security from scratch.
 
 
 <p align="center">
   <img src="/images/cloud/aws-logo.png">
 </p>
+
