@@ -17,7 +17,7 @@ I'm back with another blog on Deep Dive into AWS Cloud Security from scratch.
 </p>
 
 **What is Cloud Security ?**          
-Cloud security is a set of policies, strategies, controls, procedures, and practices designed to **safeguard** the data, resources, and applications hosted on the **cloud**.
+* Cloud security is a set of policies, strategies, controls, procedures, and practices designed to **safeguard** the data, resources, and applications hosted on the **cloud**.
 
 **Why to Learn Cloud Security ?**
 * Cloud security is critical since most **organizations** are already using cloud computing in one form or another. 
