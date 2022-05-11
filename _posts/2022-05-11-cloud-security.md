@@ -28,6 +28,8 @@ I'm back with another blog on Deep Dive into AWS Cloud Security from scratch.
   <img src="/images/cloud/cloud-provider.png">
 </p>
 
+From the above statistics, it shows **Amazon AWS** dominates the cloud industry, so i decided to start with _AWS Cloud Security_, but :(
 
-
-
+<p align="center">
+  <img src="https://media.giphy.com/media/8VIRj0jsCPIIBpKSDK/giphy.gif">
+</p>
