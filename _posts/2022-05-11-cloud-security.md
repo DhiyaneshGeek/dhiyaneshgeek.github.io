@@ -128,3 +128,13 @@ aws iam get-user --profile cloudgoat
 <p align="center">
   <img src="/images/cloud/get-user.png">
 </p>
+
+**Installing CloudGoat**
+
+To install CloudGoat, make sure your **system meets** the **requirements** above.
+
+```bash
+git clone https://github.com/RhinoSecurityLabs/cloudgoat.git
+cd cloudgoat
+pip3 install -r ./requirements.txt
+```
