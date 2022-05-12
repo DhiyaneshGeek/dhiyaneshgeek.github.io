@@ -47,3 +47,22 @@ So i started to look where i can **create and deploy** a **vulnerable** cloud en
 <p align="center">
   <img src="https://rhinosecuritylabs.com/wp-content/uploads/2018/07/cloudgoat-e1533043938802-1140x400.jpg" width=350/>
 </p>
+
+**Set-Up Requirements**
+1. Linux or Mac OS
+2. [Terraform](https://www.terraform.io/downloads)
+```bash
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install terraform
+```
+3. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+```bash
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+4. [jq](https://stedolan.github.io/jq/)
+```bash
+apt install jq
+```
