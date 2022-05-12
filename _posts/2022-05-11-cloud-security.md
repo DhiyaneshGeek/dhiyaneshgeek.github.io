@@ -90,3 +90,9 @@ apt install jq
 <p align="center">
   <img src="/images/cloud/permission.png">
 </p>
+
+* Give any tag name as shown below.
+
+<p align="center">
+  <img src="/images/cloud/tag.png">
+</p>
