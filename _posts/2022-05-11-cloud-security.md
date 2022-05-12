@@ -138,3 +138,17 @@ git clone https://github.com/RhinoSecurityLabs/cloudgoat.git
 cd cloudgoat
 pip3 install -r ./requirements.txt
 ```
+
+**Configuring CloudGoat**
+
+* Configure cloudgoat with the AWS profile, use the following command.
+
+```bash
+./cloudgoat.py config profile
+```
+
+* Whitelist the IP-Address automatically.
+
+```bash
+./cloudgoat.py config whitelist --auto
+```
