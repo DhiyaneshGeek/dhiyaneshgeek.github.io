@@ -102,3 +102,7 @@ apt install jq
 <p align="center">
   <img src="/images/cloud/review.png">
 </p>
+
+<p align="center">
+  <img src="/images/cloud/download.png">
+</p>
