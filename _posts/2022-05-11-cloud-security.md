@@ -73,7 +73,7 @@ apt install jq
 **Creating an AWS Administrator Account**
 * [Sign Up](https://portal.aws.amazon.com/billing/signup#/start/email) for an Amazon AWS Account.
 * After login, search for Identity & Access Management (IAM).
-* Choose Users -> Add users
+* Choose Users ---> Add users
 
 <p align="center">
   <img src="/images/cloud/user.png">
@@ -83,4 +83,10 @@ apt install jq
 
 <p align="center">
   <img src="/images/cloud/nameusers.png">
+</p>
+
+* Choose **Attach existing policies directly** ---> **AdministratorAccess**.
+
+<p align="center">
+  <img src="/images/cloud/permission.png">
 </p>
