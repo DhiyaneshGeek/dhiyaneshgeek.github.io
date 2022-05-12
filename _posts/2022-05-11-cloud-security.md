@@ -33,3 +33,9 @@ From the above statistics, it shows **Amazon AWS** dominates the cloud industry,
 <p align="center">
   <img src="https://media.giphy.com/media/8VIRj0jsCPIIBpKSDK/giphy.gif">
 </p>
+
+So i started to look where i can **create and deploy** a **vulnerable** cloud enviroment for learning,i end up by finding [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat).
+
+<p align="center">
+  <img src="/images/cloud/vulnerable-labs.png">
+</p>
