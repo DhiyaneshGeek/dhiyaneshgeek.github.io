@@ -96,3 +96,9 @@ apt install jq
 <p align="center">
   <img src="/images/cloud/tag.png">
 </p>
+
+* **Review** all the setting once and click on **Create User**.
+
+<p align="center">
+  <img src="/images/cloud/review.png">
+</p>
