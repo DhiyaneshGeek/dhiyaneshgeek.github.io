@@ -106,3 +106,21 @@ apt install jq
 <p align="center">
   <img src="/images/cloud/download.png">
 </p>
+
+**Configuring AWS Profile**
+
+* After creating the AWS Administrator Account use the following command to configure the AWS profile.
+
+```bash
+aws configure --profile cloudgoat #give any profile name
+```
+
+<p align="center">
+  <img src="/images/cloud/awsprofile.png">
+</p>
+
+* Check if the user is configured with the AWS access key and Secret Key to the corresponding profile.
+
+```bash
+aws iam get-user --profile cloudgoat
+```
