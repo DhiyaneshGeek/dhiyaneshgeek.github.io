@@ -39,3 +39,11 @@ So i started to look where i can **create and deploy** a **vulnerable** cloud en
 <p align="center">
   <img src="/images/cloud/vulnerable-labs.png">
 </p>
+
+<p align="center"><strong>CloudGoat(☁️🐐)</strong></p>      
+
+CloudGoat is Rhino Security Labs _"Vulnerable by Design"_ AWS deployment tool.
+
+<p align="center">
+  <img src="https://rhinosecuritylabs.com/wp-content/uploads/2018/07/cloudgoat-e1533043938802-1140x400.jpg" width=350/>
+</p>
