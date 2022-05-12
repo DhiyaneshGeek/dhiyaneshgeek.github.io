@@ -124,3 +124,7 @@ aws configure --profile cloudgoat #give any profile name
 ```bash
 aws iam get-user --profile cloudgoat
 ```
+
+<p align="center">
+  <img src="/images/cloud/get-user.png">
+</p>
