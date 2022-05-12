@@ -74,6 +74,13 @@ apt install jq
 * [Sign Up](https://portal.aws.amazon.com/billing/signup#/start/email) for an Amazon AWS Account.
 * After login, search for Identity & Access Management (IAM).
 * Choose Users -> Add users
+
 <p align="center">
   <img src="/images/cloud/user.png">
+</p>
+
+* Set **username** and choose AWS Credentials Type as **Programmatic Access**.
+
+<p align="center">
+  <img src="/images/cloud/nameusers.png">
 </p>
