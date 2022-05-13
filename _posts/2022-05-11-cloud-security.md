@@ -242,3 +242,13 @@ vi .aws/credentials
 <p align="center">
   <img src="/images/cloud/session_token.png">
 </p>
+
+* List lambdas to **identify** the target (vulnerable) lambda.
+```bash
+# This command will show you all lambda functions. The function belonging to cloudgoat (the name should start with "cg-")
+# can apply a predefined set of aws managed policies to users (in reality it can only modify the bilbo user).
+aws --profile assumed_role --region us-east-1 lambda list-functions
+```
+<p align="center">
+  <img src="/images/cloud/vullam3.png">
+</p>
