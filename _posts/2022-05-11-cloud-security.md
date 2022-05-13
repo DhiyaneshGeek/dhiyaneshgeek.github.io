@@ -317,7 +317,7 @@ Starting with a highly-limited IAM user, the attacker is able to review previous
 **Exploitation Route**
 
 <p align="center">
-  <img src="images/cloud/iam_priv_esc.png">
+  <img src="/images/cloud/iam_priv.png">
 </p>
 
 **Walkthrough - IAM User "Raynor"**
