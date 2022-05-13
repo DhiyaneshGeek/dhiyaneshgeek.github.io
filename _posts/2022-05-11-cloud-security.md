@@ -293,3 +293,31 @@ aws --profile bilbo --region us-east-1 secretsmanager get-secret-value --secret-
   <img src="/images/cloud/vullam7.png">
 </p>
 
+**Scenario: IAM Privesc by Rollback**
+
+**Command:** `./cloudgoat.py create iam_privesc_by_rollback`
+
+**Scenario Resources**
+
+* 1 IAM User
+  * 5 policy versions
+
+**Scenario Start**
+
+IAM User "Raynor"
+
+**Scenario Goal**
+
+Acquire full admin privileges.
+
+**Summary**
+
+Starting with a highly-limited IAM user, the attacker is able to review previous IAM policy versions and restore one which allows full admin privileges, resulting in a privilege escalation exploit.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="images/cloud/iam_priv_esc.png">
+</p>
+
+**Walkthrough - IAM User "Raynor"**
