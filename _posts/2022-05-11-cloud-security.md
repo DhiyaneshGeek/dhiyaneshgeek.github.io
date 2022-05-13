@@ -152,3 +152,64 @@ pip3 install -r ./requirements.txt
 ```bash
 ./cloudgoat.py config whitelist --auto
 ```
+
+<p align="center"><strong>Let's get started</strong></p>
+
+**Scenario: Vulnerable Lambda**
+
+**Command:** `./cloudgoat.py create vulnerable_lambda`
+
+**Scenario Resources**
+
+1 IAM User  
+1 IAM Role  
+1 Lambda   
+1 Secret 
+
+**Scenario Start**
+
+IAM User 'bilbo' 
+
+<p align="center">
+  <img src="/images/cloud/start_vl.png">
+</p>
+
+**Scenario Goal**
+
+Find the scenario's secret. (cg-secret-XXXXXX-XXXXXX)
+
+**Summary**
+
+In this scenario, you start as the 'bilbo' user. You will assume a role with more privelages, discover a lambda function that applies policies to users, and exploit a vulnerability in the function to escalate the privelages of the bilbo user in order to search for secrets.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/vulnerable_lambda.png">
+</p>
+
+**Walkthrough - IAM User "bilbo"**
+
+* Configure the AWS Profile for bilbo using the following command
+
+```bash
+aws configure --profile bilbo
+```
+
+<p align="center">
+  <img src="/images/cloud/bilbo_aws_configure.png">
+</p>
+
+* Get permissions for the 'bilbo' user.
+
+```bash
+#This command will give you the ARN & full name of you user.
+aws --profile bilbo --region us-east-1 sts get-caller-identity
+#This command will list the policies attached to your user.
+aws --profile bilbo --region us-east-1 iam list-user-policies --user-name [your_user_name]
+#This command will list all of your permissions.
+aws --profile bilbo --region us-east-1 iam get-user-policy --user-name [your_user_name] --policy-name [your_policy_name]
+```
+<p align="center">
+  <img src="/images/cloud/vullam1.png">
+</p>
