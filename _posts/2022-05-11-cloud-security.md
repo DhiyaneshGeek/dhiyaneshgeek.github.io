@@ -306,6 +306,10 @@ aws --profile bilbo --region us-east-1 secretsmanager get-secret-value --secret-
 
 IAM User "Raynor"
 
+<p align="center">
+  <img src="/images/cloud/aws_iam_profile.png">
+</p>
+
 **Scenario Goal**
 
 Acquire full admin privileges.
@@ -322,6 +326,14 @@ Starting with a highly-limited IAM user, the attacker is able to review previous
 
 **Walkthrough - IAM User "Raynor"**
 
+* Configure the AWS Profile for raynor using the following command
+
+```bash
+aws configure --profile raynor
+```
+
 <p align="center">
-  <img src="/images/cloud/aws_iam_profile.png">
+  <img src="/images/cloud/raynor_aws_configure.png">
 </p>
+
+
