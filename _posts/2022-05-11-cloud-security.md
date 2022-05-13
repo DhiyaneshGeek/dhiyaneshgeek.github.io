@@ -275,3 +275,20 @@ cat out.txt
 <p align="center">
   <img src="/images/cloud/vullam5.png">
 </p>
+
+* Now that Bilbo is an admin, use credentials for that user to list secrets from secretsmanager.
+```bash
+#This command will list all the secrets in secretsmanager
+aws --profile bilbo --region us-east-1 secretsmanager list-secrets
+```
+<p align="center">
+  <img src="/images/cloud/vullam6.png">
+</p>
+```bash
+#This command will get the value for a specific secret
+aws --profile bilbo --region us-east-1 secretsmanager get-secret-value --secret-id [ARN_OF_TARGET_SECRET]
+```
+<p align="center">
+  <img src="/images/cloud/vullam7.png">
+</p>
+```
