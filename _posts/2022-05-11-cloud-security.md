@@ -284,6 +284,7 @@ aws --profile bilbo --region us-east-1 secretsmanager list-secrets
 <p align="center">
   <img src="/images/cloud/vullam6.png">
 </p>
+
 ```bash
 #This command will get the value for a specific secret
 aws --profile bilbo --region us-east-1 secretsmanager get-secret-value --secret-id [ARN_OF_TARGET_SECRET]
@@ -291,4 +292,4 @@ aws --profile bilbo --region us-east-1 secretsmanager get-secret-value --secret-
 <p align="center">
   <img src="/images/cloud/vullam7.png">
 </p>
-```
+
