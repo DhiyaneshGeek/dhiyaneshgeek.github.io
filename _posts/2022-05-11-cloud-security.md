@@ -264,3 +264,9 @@ aws --profile assumed_role --region us-east-1 lambda get-function --function-nam
 <p align="center">
   <img src="/images/cloud/vullam4.png">
 </p>
+
+* Invoke the role applier lambda function, passing the name of the bilbo user and the **injection** payload.
+
+<p align="center">
+  <img src="/images/cloud/vullam5.png">
+</p>
