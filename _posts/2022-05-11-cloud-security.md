@@ -227,3 +227,18 @@ aws --profile bilbo --region us-east-1 sts assume-role --role-arn [cg-lambda-inv
 <p align="center">
   <img src="/images/cloud/vullam2.png">
 </p>
+
+* Configure the newly AWS profile using the generated AWS Credentials.
+
+<p align="center">
+  <img src="/images/cloud/assumed_role.png">
+</p>
+
+* Manually add the **SessionToken**.
+
+```bash
+vi .aws/credentials
+```
+<p align="center">
+  <img src="/images/cloud/session_token.png">
+</p>
