@@ -252,3 +252,15 @@ aws --profile assumed_role --region us-east-1 lambda list-functions
 <p align="center">
   <img src="/images/cloud/vullam3.png">
 </p>
+
+* Look at the lambda source code. You should see the database structure in a comment, as well as the code that is handling input parameters. It's vulnerable to an injection, and we'll see what an exploit looks like in the next step.
+
+```bash
+#This command will return a bunch of information about the lambda that can apply policies to bilbo.
+#part of this information is a link to a url that will download the deployment package, which
+#contains the source code for the function. Read over that source code to discover a vulnerability. 
+aws --profile assumed_role --region us-east-1 lambda get-function --function-name [policy_applier_lambda_name]
+```
+<p align="center">
+  <img src="/images/cloud/vullam4.png">
+</p>
