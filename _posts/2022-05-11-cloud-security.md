@@ -322,3 +322,6 @@ Starting with a highly-limited IAM user, the attacker is able to review previous
 
 **Walkthrough - IAM User "Raynor"**
 
+<p align="center">
+  <img src="/images/cloud/aws_iam_profile.png">
+</p>
