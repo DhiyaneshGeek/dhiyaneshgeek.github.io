@@ -357,6 +357,10 @@ aws iam list-attached-user-policies --user-name [username] --profile raynor
 
 * View the Current Policy version.
 
+```bash
+aws iam get-policy --policy-arn <generatedARN>/cg-raynor-policy --profile raynor
+```
+
 <p align="center">
   <img src="/images/cloud/current_policy.png">
 </p>
@@ -434,4 +438,14 @@ aws iam set-default-policy-version --policy-arn <generatedARN>/cg-raynor-policy 
 
 <p align="center">
   <img src="/images/cloud/after_making_changes.png">
+</p>
+
+* Confirm the **Administrative** Privilege by creating a **S3 Bucket**.
+
+```bash
+aws s3api create-bucket --bucket [bucket-name] --region us-east-1 --profile raynor
+```
+
+<p align="center">
+  <img src="/images/cloud/.png">
 </p>
