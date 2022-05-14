@@ -420,5 +420,5 @@ aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --prof
   <img src="/images/cloud/v5policy.png">
 </p>
 
-**Note:** This allows the only the following actions: “s3:ListBucket”, “s3:GetObject” and “s3:ListAllMyBuckets”.
+**Note:** This allows only the following actions: “s3:ListBucket”, “s3:GetObject” and “s3:ListAllMyBuckets”.
 
