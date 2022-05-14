@@ -422,3 +422,12 @@ aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --prof
 
 **Note:** This allows only the following actions: “s3:ListBucket”, “s3:GetObject” and “s3:ListAllMyBuckets”.
 
+* Change the Policy Version from **v1 ---> v2** , because v2 has administrative privilege.
+
+```bash
+aws iam set-default-policy-version --policy-arn <generatedARN>/cg-raynor-policy --version-id <versionID> --profile raynor
+```
+
+<p align="center">
+  <img src="/images/cloud/before_making_changes.png">
+</p>
