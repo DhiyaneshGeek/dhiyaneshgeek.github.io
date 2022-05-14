@@ -336,4 +336,12 @@ aws configure --profile raynor
   <img src="/images/cloud/raynor_aws_configure.png">
 </p>
 
+* Get the username of the current AWS profile.
 
+```bash
+aws iam get-user --profile raynor
+```
+
+<p align="center">
+  <img src="/images/cloud/username_raynor.png">
+</p>
