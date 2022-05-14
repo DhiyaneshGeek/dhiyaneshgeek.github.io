@@ -382,5 +382,34 @@ aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --prof
 
 **Note:** An attacker with the **iam:SetDefaultPolicyVersion** permission may be able to **escalate privileges through existing policy versions** not currently in use. If a policy that they have access to has versions that are not the default, they would be able to **change the default version to any other existing version.**
 
+<p align="center">
+  <strong>Version 2</strong>
+</p>
+
+<p align="center">
+  <img src="/images/cloud/v2policy.png">
+</p>
+
+**Note:** The above shown policy allows all actions to all resources. This basically grants the **user administrative access** to the AWS account.
+
+<p align="center">
+  <strong>Version 3</strong>
+</p>
+
+<p align="center">
+  <img src="/images/cloud/v3policy.png">
+</p>
+
+**Note:** From the above image it can be observed that policy whitelists those two (2) IP subnets.
+
+<p align="center">
+  <strong>Version 4</strong>
+</p>
+
+<p align="center">
+  <img src="/images/cloud/v4policy.png">
+</p>
+
+This policy allows this action “iam:Get*” to all AWS resources but only allows for a specified time period which has expired.
 
 
