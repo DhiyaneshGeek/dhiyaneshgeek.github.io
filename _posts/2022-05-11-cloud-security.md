@@ -355,6 +355,12 @@ aws iam list-attached-user-policies --user-name [username] --profile raynor
   <img src="/images/cloud/userpolicy_raynor.png">
 </p>
 
+* View the Current Policy version.
+
+<p align="center">
+  <img src="/images/cloud/current_policy.png">
+</p>
+
 * Check the **existing** versions of the policy.
 
 ```bash
@@ -364,3 +370,17 @@ aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --prof
 <p align="center">
   <img src="/images/cloud/existing_versions.png">
 </p>
+
+
+<p align="center">
+  <strong>Version 1</strong>
+</p>
+
+<p align="center">
+  <img src="/images/cloud/v1policy.png">
+</p>
+
+**Note:** An attacker with the **iam:SetDefaultPolicyVersion** permission may be able to **escalate privileges through existing policy versions** not currently in use. If a policy that they have access to has versions that are not the default, they would be able to **change the default version to any other existing version.**
+
+
+
