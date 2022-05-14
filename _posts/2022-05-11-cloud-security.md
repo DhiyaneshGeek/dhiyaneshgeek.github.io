@@ -410,6 +410,6 @@ aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --prof
   <img src="/images/cloud/v4policy.png">
 </p>
 
-This policy allows this action “iam:Get*” to all AWS resources but only allows for a specified time period which has expired.
+**Note:** This policy allows this action “iam:Get*” to all AWS resources but only allows for a specified time period which has expired.
 
 
