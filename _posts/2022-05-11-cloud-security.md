@@ -447,5 +447,9 @@ aws s3api create-bucket --bucket [bucket-name] --region us-east-1 --profile rayn
 ```
 
 <p align="center">
-  <img src="/images/cloud/.png">
+  <img src="/images/cloud/s3api_bucket.png">
+</p>
+
+<p align="center">
+  <img src="/images/cloud/created_bucket.png">
 </p>
