@@ -412,4 +412,12 @@ aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --prof
 
 **Note:** This policy allows this action “iam:Get*” to all AWS resources but only allows for a specified time period which has expired.
 
+<p align="center">
+  <strong>Version 5</strong>
+</p>
+
+<p align="center">
+  <img src="/images/cloud/v5policy.png">
+</p>
+**Note:** This allows the only the following actions: “s3:ListBucket”, “s3:GetObject” and “s3:ListAllMyBuckets”.
 
