@@ -349,7 +349,7 @@ aws iam get-user --profile raynor
 * List the policies of the raynor user.
 
 ```bash
-aws iam list-attached-user-policies --user-name raynor --profile raynor
+aws iam list-attached-user-policies --user-name [username] --profile raynor
 ```
 <p align="center">
   <img src="/images/cloud/userpolicy_raynor.png">
