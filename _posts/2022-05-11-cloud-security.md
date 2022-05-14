@@ -431,3 +431,7 @@ aws iam set-default-policy-version --policy-arn <generatedARN>/cg-raynor-policy 
 <p align="center">
   <img src="/images/cloud/before_making_changes.png">
 </p>
+
+<p align="center">
+  <img src="/images/cloud/after_making_changes.png">
+</p>
