@@ -336,7 +336,7 @@ aws configure --profile raynor
   <img src="/images/cloud/raynor_aws_configure.png">
 </p>
 
-* Get the username of the current AWS profile.
+* Get the **username** of the current AWS profile.
 
 ```bash
 aws iam get-user --profile raynor
@@ -346,11 +346,21 @@ aws iam get-user --profile raynor
   <img src="/images/cloud/username_raynor.png">
 </p>
 
-* List the policies of the raynor user.
+* List the **attached** policies of the raynor user.
 
 ```bash
 aws iam list-attached-user-policies --user-name [username] --profile raynor
 ```
 <p align="center">
   <img src="/images/cloud/userpolicy_raynor.png">
+</p>
+
+* Check the **existing** versions of the policy.
+
+```bash
+aws iam list-policy-versions --policy-arn <generatedARN>/cg-raynor-policy --profile raynor
+```
+
+<p align="center">
+  <img src="/images/cloud/existing_versions.png">
 </p>
