@@ -519,3 +519,9 @@ aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile C
 <p align="center">
   <img src="/images/cloud/chris_attached_policy.png">
 </p>
+
+* View the **Current Policy** version.
+
+<p align="center">
+  <img src="/images/cloud/policy_version_chris.png">
+</p>
