@@ -529,3 +529,6 @@ aws iam get-policy --policy-arn [arn-number] --profile chris
 <p align="center">
   <img src="/images/cloud/policy_version_chris.png">
 </p>
+
+* Check the existing versions of the policy.
+
