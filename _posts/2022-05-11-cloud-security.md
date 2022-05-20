@@ -453,3 +453,33 @@ aws s3api create-bucket --bucket [bucket-name] --region us-east-1 --profile rayn
 <p align="center">
   <img src="/images/cloud/created_bucket.png">
 </p>
+
+**Scenario:** Lambda Privesc
+
+**Command:** `./cloudgoat.py create lambda_privesc`
+
+**Scenario Resources**
+
+1 IAM User  
+2 IAM Roles  
+
+**Scenario Start**
+
+1. IAM User Chris  
+
+**Scenario Goal**
+
+Acquire full admin privileges.
+
+**Summary**
+
+Starting as the IAM user Chris, the attacker discovers that they can assume a role that has full Lambda access and pass role permissions.
+The attacker can then perform privilege escalation to obtain full admin access.  
+
+Note: This scenario may require you to create some AWS resources, and because CloudGoat can only manage resources it creates, you should remove them manually before running `./cloudgoat destroy`.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/exploitation_route_lambda.png">
+</p>
