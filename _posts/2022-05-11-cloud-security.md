@@ -537,5 +537,5 @@ aws iam list-policy-versions --policy-arn [arn-number] --profile raynor
 ```
 
 <p align="center">
-  <img src="/images/cloud/existing_policy_version.png">
+  <img src="/images/cloud/existing_policy_chris.png">
 </p>
