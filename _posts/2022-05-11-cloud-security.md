@@ -533,7 +533,7 @@ aws iam get-policy --policy-arn [arn-number] --profile chris
 * Check the existing versions of the policy.
 
 ```bash
-aws iam get-policy-version --policy-arn <cg-chris-policy arn> --version-id v1 --profile Chris
+aws iam list-policy-versions --policy-arn <cg-chris-policy arn> --profile chris
 ```
 
 <p align="center">
