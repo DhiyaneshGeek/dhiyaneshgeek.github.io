@@ -539,3 +539,14 @@ aws iam list-policy-versions --policy-arn <cg-chris-policy arn> --profile chris
 <p align="center">
   <img src="/images/cloud/existing_policy_chris.png">
 </p>
+
+* Details of the v1 version.
+
+```bash
+aws iam get-policy-version --policy-arn <cg-chris-policy arn> --version-id v1 --profile Chris
+```
+
+<p align="center">
+  <img src="/images/cloud/details_v1_chris.png">
+</p>
+
