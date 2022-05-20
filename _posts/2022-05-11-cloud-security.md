@@ -500,3 +500,13 @@ aws configure --profile chris
 <p align="center">
   <img src="/images/cloud/chris-aws-profile.png">
 </p>
+
+* Get the username of the current AWS profile.
+
+```bash
+aws iam get-user --profile chris
+```
+<p align="center">
+  <img src="/images/cloud/chris_username.png">
+</p>
+
