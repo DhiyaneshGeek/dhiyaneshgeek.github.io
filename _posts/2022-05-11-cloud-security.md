@@ -522,6 +522,10 @@ aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile C
 
 * View the **Current Policy** version.
 
+```bash
+aws iam get-policy --policy-arn [arn-number] --profile chris
+```
+
 <p align="center">
   <img src="/images/cloud/policy_version_chris.png">
 </p>
