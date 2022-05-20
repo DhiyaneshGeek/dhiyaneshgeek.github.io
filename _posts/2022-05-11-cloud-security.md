@@ -547,6 +547,21 @@ aws iam get-policy-version --policy-arn <cg-chris-policy arn> --version-id v1 --
 ```
 
 <p align="center">
-  <img src="/images/cloud/details_v1_chris.png">
+  <img src="/images/cloud/detail_v1_chris.png">
 </p>
 
+**Note:** It was observed that **sts:AssumeRole** is **allowed**. So an attacker would be able to change the assume role policy document of any existing role to allow them to assume that role.It will return a set of **temporary security credentials** that you can use to access AWS resources that you may not have access to normally.
+
+* List the roles of chris profile.
+
+```bash
+aws iam list-roles --profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/chris_role_1.png">
+</p>
+
+<p align="center">
+  <img src="/images/cloud/chris_role_2.png">
+</p>
