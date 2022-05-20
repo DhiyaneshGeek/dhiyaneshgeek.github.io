@@ -501,7 +501,7 @@ aws configure --profile chris
   <img src="/images/cloud/chris-aws-profile.png">
 </p>
 
-* Get the username of the current AWS profile.
+* Get the **username** of the current AWS profile.
 
 ```bash
 aws iam get-user --profile chris
@@ -510,3 +510,12 @@ aws iam get-user --profile chris
   <img src="/images/cloud/chris_username.png">
 </p>
 
+* List the attached policies of the **chris** user.
+
+```bash
+aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile Chris
+```
+
+<p align="center">
+  <img src="/images/cloud/chris_attached_policy.png">
+</p>
