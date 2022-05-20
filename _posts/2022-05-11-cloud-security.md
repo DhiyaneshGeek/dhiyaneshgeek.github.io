@@ -513,7 +513,7 @@ aws iam get-user --profile chris
 * List the attached policies of the **chris** user.
 
 ```bash
-aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile Chris
+aws iam list-attached-user-policies --user-name [username] --profile Chris
 ```
 
 <p align="center">
@@ -532,3 +532,10 @@ aws iam get-policy --policy-arn [arn-number] --profile chris
 
 * Check the existing versions of the policy.
 
+```bash
+aws iam list-policy-versions --policy-arn [arn-number] --profile raynor
+```
+
+<p align="center">
+  <img src="/images/cloud/existing_policy_version.png">
+</p>
