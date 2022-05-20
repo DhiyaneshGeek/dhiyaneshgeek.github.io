@@ -489,4 +489,14 @@ The attacker can then perform privilege escalation to obtain full admin access.
   <img src="/images/cloud/exploitation_route_lambda.png">
 </p>
 
+**Walkthrough - IAM User "Chris"**
 
+* Configure the AWS Profile for chris using the following command
+
+```bash
+aws configure --profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/chris-aws-profile.png">
+</p>
