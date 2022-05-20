@@ -481,7 +481,7 @@ Acquire full admin privileges.
 Starting as the IAM user Chris, the attacker discovers that they can assume a role that has full Lambda access and pass role permissions.
 The attacker can then perform privilege escalation to obtain full admin access.  
 
-Note: This scenario may require you to create some AWS resources, and because CloudGoat can only manage resources it creates, you should remove them manually before running `./cloudgoat destroy`.
+**Note:** This scenario may require you to create some AWS resources, and because CloudGoat can only manage resources it creates, you should remove them manually before running `./cloudgoat destroy`.
 
 **Exploitation Route**
 
