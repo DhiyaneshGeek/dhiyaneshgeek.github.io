@@ -467,6 +467,11 @@ aws s3api create-bucket --bucket [bucket-name] --region us-east-1 --profile rayn
 
 1. IAM User Chris  
 
+<p align="center">
+  <img src="/images/cloud/scenario_chris.png">
+</p>
+
+
 **Scenario Goal**
 
 Acquire full admin privileges.
@@ -483,3 +488,5 @@ Note: This scenario may require you to create some AWS resources, and because Cl
 <p align="center">
   <img src="/images/cloud/exploitation_route_lambda.png">
 </p>
+
+
