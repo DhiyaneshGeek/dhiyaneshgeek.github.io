@@ -584,3 +584,20 @@ aws iam list-attached-role-policies --role-name cg-lambdaManager-role-lambda_pri
   <img src="/images/cloud/lambda_manager_roles.png">
 </p>
 
+* List more information about managed policies.
+
+```bash
+aws iam get-policy --policy-arn arn:aws:iam::aws:policy/AdministratorAccess --profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/get_admin_policy.png">
+</p>
+
+```bash
+aws iam get-policy --policy-arn arn:aws:iam::048896635674:policy/cg-lambdaManager-policy-lambda_privesc_cgid2w7yniosir --profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/get_lambda_policy.png">
+</p>
