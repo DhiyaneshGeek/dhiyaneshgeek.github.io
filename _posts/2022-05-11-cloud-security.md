@@ -581,6 +581,6 @@ aws iam list-attached-role-policies --role-name cg-debug-role-lambda_privesc_cgi
 aws iam list-attached-role-policies --role-name cg-lambdaManager-role-lambda_privesc_cgid2w7yniosir --profile chris
 ```
 <p align="center">
-  <img src="/images/cloud/lambda_manager_role.png">
+  <img src="/images/cloud/lambda_manager_roles.png">
 </p>
 
