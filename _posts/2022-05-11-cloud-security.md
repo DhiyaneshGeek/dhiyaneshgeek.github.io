@@ -601,3 +601,13 @@ aws iam get-policy --policy-arn arn:aws:iam::048896635674:policy/cg-lambdaManage
 <p align="center">
   <img src="/images/cloud/get_lambda_policy.png">
 </p>
+
+* View the current policy.
+
+```bash
+aws iam get-policy-version --policy-arn [arn-number] --version-id v1 --profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/v1_lambda_manager.png">
+</p>
