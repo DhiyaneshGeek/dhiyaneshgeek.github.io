@@ -565,3 +565,22 @@ aws iam list-roles --profile chris
 <p align="center">
   <img src="/images/cloud/chris_role_2.png">
 </p>
+
+**Note:** There are two different roles **cg-debug-role-lambda_privesc_cgid2w7yniosir** & **cg-lambdaManager-role-lambda_privesc_cgid2w7yniosir** 
+
+* Get more infomration about the roles.
+
+```bash
+aws iam list-attached-role-policies --role-name cg-debug-role-lambda_privesc_cgid2w7yniosir --profile chris
+```
+<p align="center">
+  <img src="/images/cloud/debugger_role.png">
+</p>
+
+```bash
+aws iam list-attached-role-policies --role-name cg-lambdaManager-role-lambda_privesc_cgid2w7yniosir --profile chris
+```
+<p align="center">
+  <img src="/images/cloud/lambda_manager_role.png">
+</p>
+
