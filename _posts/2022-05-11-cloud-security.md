@@ -701,7 +701,7 @@ aws lambda invoke --function-name admin_function out.txt --profile lambdamanager
 * Confirm the **new role** attached to chris profile, using the following command.
 
 ```bash
-aws iam list-attached-user-policies –-user-name  –profile chris
+aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile chris
 ```
 
 <p align="center">
