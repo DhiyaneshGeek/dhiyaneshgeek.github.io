@@ -640,7 +640,7 @@ aws sts assume-role --role-arn <arn:generated-number> --role-session-name lambda
 1. chris is **not authorized** to assume the **debug role**, which resulted in access denied.       
 2. with the **lambda manager role** chris is **authorized** to provide temporary credentails such as (access key ID, secret key, session token).
 
-* Configure the AWS Profile for Lambda Manager using the following command
+* Configure the AWS Profile for **Lambda Manager** using the following command.
 
 ```bash
 aws configure --profile lambdamanager
@@ -648,4 +648,14 @@ aws configure --profile lambdamanager
 
 <p align="center">
   <img src="/images/cloud/aws_credentials_lambda_manager.png">
+</p>
+
+* Manually add the **SessionToken**.
+
+```bash
+vi .aws/credentials
+```
+
+<p align="center">
+  <img src="/images/cloud/session_token_lambda.png">
 </p>
