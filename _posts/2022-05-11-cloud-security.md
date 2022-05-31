@@ -616,7 +616,7 @@ aws iam get-policy-version --policy-arn [arn-number] --version-id v1 --profile c
 1. From the above image, it can be observed that **iam:PassRole** allowed, so basically. If there is a user with **iam:PassRole**, **lambda:CreateFunction** and **lambda:InvokeFunction** can escalate the permission by executing the existing **IAM Role** to new Lambda function that includes code to import the relevant AWS library to their programming language of choice, then using it perform actions of their choice. 
 2. The code could then be run by invoking the function through the AWS API. This would give a user access to the **privileges associated** with any **Lambda service role** that exists in the account, which could range from **no privilege escalation** to **full administrator** access to the account.
 
-* Checking the permission debug role.
+* Check the permission of Debug role.
 
 ```bash
 aws sts assume-role --role-arn <arn:generated-number> --role-session-name debug_role –profile chris
@@ -624,4 +624,14 @@ aws sts assume-role --role-arn <arn:generated-number> --role-session-name debug_
 
 <p align="center">
   <img src="/images/cloud/access_denied_debug_role.png">
+</p>
+
+* Check the permission of Lambda Manager role.
+
+```bash
+aws sts assume-role --role-arn <arn:generated-number> --role-session-name lambda_role --profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_lambda_manager_role.png">
 </p>
