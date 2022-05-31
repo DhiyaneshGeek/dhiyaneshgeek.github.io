@@ -688,3 +688,8 @@ aws lambda create-function --function-name admin_function --runtime python3.6 --
   <img src="/images/cloud/creating.png">
 </p>
 
+* Invoke the created Lambda Function as shown below.
+
+```bash
+aws lambda invoke --function-name admin_function out.txt --profile lambdamanager
+```
