@@ -680,7 +680,8 @@ zip lambda_function.zip lambda_function.py
 
 * Run the following command to attach the policy.
 
-```aws lambda create-function --function-name admin_function --runtime python3.6 --role <cg-debug-role arn> --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.py.zip --profile lambdamanager
+```bash
+aws lambda create-function --function-name admin_function --runtime python3.6 --role <cg-debug-role arn> --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.py.zip --profile lambdamanager
 ```
 
 <p align="center">
