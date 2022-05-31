@@ -678,7 +678,7 @@ def lambda_handler(event, context):
 zip lambda_function.zip lambda_function.py
 ```
 
-* Run the following command to attach the policy.
+* Run the following command to **attach** the policy.
 
 ```bash
 aws lambda create-function --function-name admin_function --runtime python3.6 --role <cg-debug-role arn> --handler lambda_function.lambda_handler --zip-file fileb://lambda_function.py.zip --profile lambdamanager
@@ -688,8 +688,22 @@ aws lambda create-function --function-name admin_function --runtime python3.6 --
   <img src="/images/cloud/creating.png">
 </p>
 
-* Invoke the created Lambda Function as shown below.
+* Invoke the created **Lambda Function** as shown below.
 
 ```bash
 aws lambda invoke --function-name admin_function out.txt --profile lambdamanager
 ```
+
+<p align="center">
+  <img src="/images/cloud/successful_lambda_manager.png">
+</p>
+
+* Confirm the **new role** attached to chris profile, using the following command.
+
+```bash
+aws iam list-attached-user-policies –-user-name  –profile chris
+```
+
+<p align="center">
+  <img src="/images/cloud/admin_access_chris.png">
+</p>
