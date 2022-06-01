@@ -742,3 +742,14 @@ Starting as an anonymous outsider with no access or privileges, exploit a miscon
 </p>
 
 **Walkthrough - Anonymous Attacker**
+
+* Start with a simple port scan on the given IP address.
+
+```bash
+nmap <ip address>
+```
+
+<p align="center">
+  <img src="/images/cloud/nmap_breach.png">
+</p>
+
