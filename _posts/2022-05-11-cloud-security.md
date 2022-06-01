@@ -753,3 +753,12 @@ nmap <ip address>
   <img src="/images/cloud/nmap_breach.png">
 </p>
 
+* Check the SSH Version using the following command.
+
+```bash
+nc <ip address> 22
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_version.png">
+</p>
