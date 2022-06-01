@@ -810,3 +810,13 @@ curl http://<ec2-ip-address>/latest/meta-data/iam/security-credentials/<ec2-role
 <p align="center">
   <img src="/images/cloud/aws_leaked_credentials.png">
 </p>
+
+* Configure the AWS Profile for anonymous user using the following command.
+
+```bash
+aws configure --profile anonymous
+```
+
+<p align="center">
+  <img src="/images/cloud/anonymous_aws_cli.png">
+</p>
