@@ -707,3 +707,38 @@ aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile c
 <p align="center">
   <img src="/images/cloud/admin_access_chris.png">
 </p>
+
+**Scenario:** Cloud Breach S3
+
+**Command:** `./cloudgoat.py create cloud_breach_s3`
+
+**Scenario Resources**
+
+* 1 VPC with:
+  * EC2 x 1
+  * S3 x 1  
+
+**Scenario Start**
+
+1. The IP Address of an EC2 server that is running a misconfigured reverse proxy
+
+<p align="center">
+  <img src="/images/cloud/">
+</p>
+
+
+**Scenario Goal**
+
+Download the confidential files from the S3 bucket.
+
+**Summary**
+
+Starting as an anonymous outsider with no access or privileges, exploit a misconfigured reverse-proxy server to query the EC2 metadata service and acquire instance profile keys. Then, use those keys to discover, access, and exfiltrate sensitive data from an S3 bucket.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/scenario_cloud_breach">
+</p>
+
+**Walkthrough - Anonymous Attacker**
