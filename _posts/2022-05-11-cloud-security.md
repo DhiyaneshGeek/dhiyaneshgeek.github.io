@@ -820,3 +820,13 @@ aws configure --profile anonymous
 <p align="center">
   <img src="/images/cloud/anonymous_aws_cli.png">
 </p>
+
+* Manually add the **SessionToken**.
+
+```bash
+vi .aws/credentials
+```
+
+<p align="center">
+  <img src="/images/cloud/anonymous_session_token.png">
+</p>
