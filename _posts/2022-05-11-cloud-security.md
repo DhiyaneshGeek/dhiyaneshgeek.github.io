@@ -723,7 +723,7 @@ aws iam list-attached-user-policies --user-name chris-<cloudgoat_id> --profile c
 1. The IP Address of an EC2 server that is running a misconfigured reverse proxy
 
 <p align="center">
-  <img src="/images/cloud/">
+  <img src="/images/cloud/breach_start.png">
 </p>
 
 
