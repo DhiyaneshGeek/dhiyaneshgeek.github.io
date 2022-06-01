@@ -830,3 +830,32 @@ vi .aws/credentials
 <p align="center">
   <img src="/images/cloud/anonymous_session_token.png">
 </p>
+
+* List the **S3 bucket** using the configured anonymous user profile.
+
+```bash
+aws s3 ls --profile anonymous
+```
+
+<p align="center">
+  <img src="/images/cloud/s3_listing.png">
+</p>
+
+* Copy the bucket to the local machine using the **sync** command as shown below.
+
+```bash
+aws s3 sync s3://<bucket-name> . --profile anonymous
+```
+
+<p align="center">
+  <img src="/images/cloud/cardholder.png">
+</p>
+
+* View the card holder data in the file as shown below
+
+```bash
+head cardholder_data_primary.csv # head - to view less content, cat - view entire content of the file
+```
+<p align="center">
+  <img src="/images/cloud/view_data.png">
+</p>
