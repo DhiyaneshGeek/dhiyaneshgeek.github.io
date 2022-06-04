@@ -895,3 +895,16 @@ Note: This scenario may require you to create some AWS resources, and because Cl
 </p>
 
 **Walkthrough - IAM User "Kerrigan"**
+
+* Configure the AWS Profile for **kerrigan** using the following command
+
+```bash
+aws configure --profile kerrigan
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_cli_kerrigan.png">
+</p>
+
+
+
