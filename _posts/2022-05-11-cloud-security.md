@@ -916,3 +916,11 @@ aws iam list-roles --profile kerrigan
   <img src="/images/cloud/two_roles_kerrigan.png">
 </p>
 
+* List instance profiles of kerrigan.
+
+```bash
+aws iam list-instance-profiles --profile kerrigan
+```
+<p align="center">
+  <img src="/images/cloud/list_instance_kerrigan.png">
+</p>
