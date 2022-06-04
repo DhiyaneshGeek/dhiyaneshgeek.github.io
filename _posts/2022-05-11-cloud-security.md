@@ -935,3 +935,40 @@ aws ec2 describe-instances --region us-east-1 --profile kerrigan
   <img src="/images/cloud/target_attachment.png">
 </p>
 
+**Note:** 
+1. To extract the permissions of the identified role, create a new EC2 instance and attach these roles to the new instance created and enumerate the permission.
+2. Following details are required to create a EC2 Instance **Subnet ID, Security Group, AMI Image ID, ARN Number** of the existing existing instance.
+
+* Use the following command to get the details.
+
+```bash
+aws ec2 describe-instances --region us-east-1 --profile kerrigan | grep SubnetId
+aws ec2 describe-instances --region us-east-1 --profile kerrigan | grep GroupId
+aws ec2 describe-instances --region us-east-1 --profile kerrigan | grep ImageId
+aws ec2 describe-instances --region us-east-1 --profile kerrigan | grep GroupName
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_require.png">
+</p>
+
+* We need to create a new **key pair**, since we don't have access to the existing key pairs of the AWS account.
+
+```bash
+aws ec2 create-key-pair --key-name iam_attachment --output text > kerrigan.pem --region us-east-1 --profile kerrigan
+```
+
+<p align="center">
+  <img src="/images/cloud/key_pair.png">
+</p>
+
+* Change the permission of the Key Pair.
+
+```bash
+chmod 600 kerrigan.pem
+```
+
+<p align="center">
+  <img src="/images/cloud/permission_key_pair.png">
+</p>
+
