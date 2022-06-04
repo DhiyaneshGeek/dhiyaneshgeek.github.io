@@ -1003,3 +1003,13 @@ aws iam remove-role-from-instance-profile --instance-profile-name <insert instan
 <p align="center">
   <img src="/images/cloud/add_profile.png">
 </p>
+
+* SSH into the newly created EC2 Instance using the following command.
+
+```bash
+ssh -i <created pem file>.pem ubuntu@<public dns name>
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_into_ubuntu.png">
+</p>
