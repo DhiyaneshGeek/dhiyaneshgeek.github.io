@@ -982,9 +982,24 @@ aws ec2 run-instances –image-id <insert ami id here> –instance-type <insert 
   <img src="/images/cloud/instance_creation_kerrigan.png">
 </p>
 
-* The newly created instance also has **cg-ec2-meek-role-iam_privesc_by_attachment_cgidzjxs2cdln1**, we need to change it to **cg-ec2-mighty-role-iam_privesc_by_attachment_cgidzjxs2cdln1** and then attach the new role to the instance profile.
-
+* The newly created instance also has **meek-role**, we need to change it to **mighty-role** and then attach the new role to the instance profile.
 
 <p align="center">
   <img src="/images/cloud/profile_setting.png">
+</p>
+
+* Remove **meek-role** from the instance profile.
+
+```bash
+aws iam remove-role-from-instance-profile --instance-profile-name <insert instance profile name here> --role-name <insert username here> --profile <insert profile name here>
+```
+
+<p align="center">
+  <img src="/images/cloud/remove_profile.png">
+</p>
+
+* Attach **mighty-role** to the instance profile.
+
+<p align="center">
+  <img src="/images/cloud/add_profile.png">
 </p>
