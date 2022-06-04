@@ -906,5 +906,13 @@ aws configure --profile kerrigan
   <img src="/images/cloud/aws_cli_kerrigan.png">
 </p>
 
+* List the roles of kerrigan profile.
 
+```bash
+aws iam list-roles --profile kerrigan
+```
+
+<p align="center">
+  <img src="/images/cloud/two_roles_kerrigan.png">
+</p>
 
