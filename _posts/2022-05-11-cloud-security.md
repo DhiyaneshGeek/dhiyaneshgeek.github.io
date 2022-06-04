@@ -1023,3 +1023,39 @@ sudo apt update
 <p align="center">
   <img src="/images/cloud/apt_update.png">
 </p>
+
+* Install **aws-cli** on the new EC2 Instance.
+
+<p align="center">
+  <img src="/images/cloud/aws_cli_install.png">
+</p>
+
+* List the attached role policies of **mighty-role**.
+
+```bash
+aws iam list-attached-role-policies --role-name <insert role name>
+```
+
+<p align="center">
+  <img src="/images/cloud/mighty_policy_list.png">
+</p>
+
+* Extract policy details.
+
+```bash
+aws iam get-policy --policy-arn <insert arn number>
+```
+
+<p align="center">
+  <img src="/images/cloud/policy_arn_mighty.png">
+</p>
+
+* View Policy version.
+
+```bash
+aws iam get-policy-version –policy-arn <insert the policy arn here> –version-id <insert version id here>
+```
+
+<p align="center">
+  <img src="/images/cloud/policy_version_mighty.png">
+</p>
