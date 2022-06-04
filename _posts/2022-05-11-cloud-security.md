@@ -972,3 +972,12 @@ chmod 600 kerrigan.pem
   <img src="/images/cloud/permission_key_pair.png">
 </p>
 
+* Create a new instance using the newly created key pair, using the following command as shown below.
+
+```bash
+aws ec2 run-instances –image-id <insert ami id here> –instance-type <insert instance type here> –iam-instance-profile Arn=<insert the arn of the instance profile> –key-name <inset key name here> –subnet-id <insert the subnet id here> –security-group-ids <insert security group id here> –region us-east-1 –profile <insert profile name here>
+```
+
+<p align="center">
+  <img src="/images/cloud/instance_creation_kerrigan.png">
+</p>
