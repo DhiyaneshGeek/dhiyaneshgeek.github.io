@@ -1013,3 +1013,13 @@ ssh -i <created pem file>.pem ubuntu@<public dns name>
 <p align="center">
   <img src="/images/cloud/ssh_into_ubuntu.png">
 </p>
+
+* Update the machine.
+
+```bash
+sudo apt update
+```
+
+<p align="center">
+  <img src="/images/cloud/apt_update.png">
+</p>
