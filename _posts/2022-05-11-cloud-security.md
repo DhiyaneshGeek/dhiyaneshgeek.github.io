@@ -1053,7 +1053,7 @@ aws iam get-policy --policy-arn <insert arn number>
 * View Policy version.
 
 ```bash
-aws iam get-policy-version –policy-arn <insert the policy arn here> –version-id <insert version id here>
+aws iam get-policy-version --policy-arn <insert the policy arn here> --version-id <insert version id here>
 ```
 
 <p align="center">
