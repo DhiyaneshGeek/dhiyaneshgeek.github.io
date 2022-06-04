@@ -859,3 +859,39 @@ head cardholder_data_primary.csv # head - to view less content, cat - view entir
 <p align="center">
   <img src="/images/cloud/view_data.png">
 </p>
+
+**Scenario:** IAM  Privilege Escalation by Attachment
+
+**Command:** `./cloudgoat.py create iam_privesc_by_attachment`
+
+**Scenario Resources**
+
+* 1 VPC with:
+  * EC2 x 1
+* 1 IAM User
+
+**Scenario Start**
+
+1. IAM User "Kerrigan"
+
+<p align="center">
+  <img src="/images/cloud/aws_creds_iam.png">
+</p>
+
+**Scenario Goal**
+
+Delete the EC2 instance "cg-super-critical-security-server."
+
+**Summary**
+
+Starting with a very limited set of permissions, the attacker is able to leverage the instance-profile-attachment permissions to create a new EC2 instance with significantly greater privileges than their own. With access to this new EC2 instance, the attacker gains full administrative powers within the target account and is able to accomplish the scenario's goal - deleting the cg-super-critical-security-server and paving the way for further nefarious actions.
+
+Note: This scenario may require you to create some AWS resources, and because CloudGoat can only manage resources it creates, you should remove them manually before running `./cloudgoat destroy`.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/iam_priv_chart.png">
+</p>
+
+**Walkthrough - IAM User "Kerrigan"**
