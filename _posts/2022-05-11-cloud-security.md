@@ -924,3 +924,14 @@ aws iam list-instance-profiles --profile kerrigan
 <p align="center">
   <img src="/images/cloud/list_instance_kerrigan.png">
 </p>
+
+* Enumerate more information about the running **EC2** Instances.
+
+```bash
+aws ec2 describe-instances --region us-east-1 --profile kerrigan
+```
+
+<p align="center">
+  <img src="/images/cloud/target_attachment.png">
+</p>
+
