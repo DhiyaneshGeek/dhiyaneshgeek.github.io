@@ -1070,4 +1070,33 @@ aws ec2 terminate-instances --instance-ids <insert the EC2 instance id here> --r
   <img src="/images/cloud/shutdown_kerrigan.png">
 </p>
 
+**Scenario:** ec2_ssrf
 
+**Command:** `./cloudgoat.py create ec2_ssrf`
+
+**Scenario Resources**
+
+- 1 VPC with:
+	- EC2 x 1
+- 1 Lambda Function
+- 1 S3 Bucket
+
+**Scenario Start**
+
+1. IAM User "Solus"
+
+**Scenario Goal**
+
+Invoke the "cg-lambda-[ CloudGoat ID ]" Lambda function.
+
+**Summary**
+
+Starting as the IAM user Solus, the attacker discovers they have ReadOnly permissions to a Lambda function, where hardcoded secrets lead them to an EC2 instance running a web application that is vulnerable to server-side request forgery (SSRF). After exploiting the vulnerable app and acquiring keys from the EC2 metadata service, the attacker gains access to a private S3 bucket with a set of keys that allow them to invoke the Lambda function and complete the scenario.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/exploitation_route_ec2ssrf.png">
+</p>
+
+**Route Walkthrough - IAM User "Solus"**
