@@ -1227,3 +1227,9 @@ aws sts get-caller-identity --profile ec2-admin
   <img src="/images/cloud/caller_identify_ec2admin1.png">
 </p>
 
+* List the attached policies of the ec-admin user.
+
+```bash
+aws iam list-attached-user-policies --user-name [username] --profile ec2-admin
+```
+
