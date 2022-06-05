@@ -1104,3 +1104,33 @@ Starting as the IAM user Solus, the attacker discovers they have ReadOnly permis
 </p>
 
 **Route Walkthrough - IAM User "Solus"**
+
+* Configure the AWS Profile for solus using the following command
+
+```bash
+aws configure --profile solus
+```
+
+<p align="center">
+  <img src="/images/cloud/solus_aws_cli.png">
+</p>
+
+* List the Lambda Functions.
+
+```bash
+aws lambda list-functions --profile solus
+```
+
+<p align="center">
+  <img src="/images/cloud/lambda_function_list.png">
+</p>
+
+* Configure the AWS Profile for **cg-lambda**.
+
+```bash
+aws configure --profile cg-lambda
+```
+
+<p align="center">
+  <img src="/images/cloud/cg_lambda_cli.png">
+</p>
