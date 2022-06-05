@@ -1216,3 +1216,14 @@ aws configure --profile ec2-admin
 <p align="center">
   <img src="/images/cloud/ec2_admin.png">
 </p>
+
+* Get the caller-identify of ec2-admin user profile.
+
+```bash
+aws sts get-caller-identity --profile ec2-admin
+```
+
+<p align="center">
+  <img src="/images/cloud/caller_identify_ec2admin1.png">
+</p>
+
