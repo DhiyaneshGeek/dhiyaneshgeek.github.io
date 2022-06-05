@@ -1244,5 +1244,5 @@ cat out.txt
 ```
 
 <p align="center">
-  <img src="/images/cloud/you_win_ec2_.png">
+  <img src="/images/cloud/you_win_ec2_admin.png">
 </p>
