@@ -1086,7 +1086,7 @@ aws ec2 terminate-instances --instance-ids <insert the EC2 instance id here> --r
 1. IAM User "Solus"
 
 <p align="center">
-  <img src="/images/cloud/start_ec2_ssrf.png">
+  <img src="/images/cloud/start_ec2_ssrf1.png">
 </p>
 
 **Scenario Goal**
@@ -1112,7 +1112,7 @@ aws configure --profile solus
 ```
 
 <p align="center">
-  <img src="/images/cloud/solus_aws_cli.png">
+  <img src="/images/cloud/solus_aws_cli1.png">
 </p>
 
 * List the Lambda Functions.
@@ -1122,7 +1122,7 @@ aws lambda list-functions --profile solus
 ```
 
 <p align="center">
-  <img src="/images/cloud/lambda_function_list.png">
+  <img src="/images/cloud/lambda_function_list1.png">
 </p>
 
 * Configure the AWS Profile for **cg-lambda**.
@@ -1132,7 +1132,7 @@ aws configure --profile cg-lambda
 ```
 
 <p align="center">
-  <img src="/images/cloud/cg_lambda_cli.png">
+  <img src="/images/cloud/cg-lambda_cli1.png">
 </p>
 
 * Enumerate more information about the running EC2 Instances.
