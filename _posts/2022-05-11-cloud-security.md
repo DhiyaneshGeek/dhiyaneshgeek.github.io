@@ -1134,3 +1134,10 @@ aws configure --profile cg-lambda
 <p align="center">
   <img src="/images/cloud/cg_lambda_cli.png">
 </p>
+
+* Enumerate more information about the running EC2 Instances.
+
+
+<p align="center">
+  <img src="/images/cloud/public_ip_ec2ssrf.png">
+</p>
