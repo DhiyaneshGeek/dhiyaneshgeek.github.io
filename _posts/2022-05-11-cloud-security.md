@@ -1217,19 +1217,32 @@ aws configure --profile ec2-admin
   <img src="/images/cloud/ec2_admin.png">
 </p>
 
-* Get the caller-identify of ec2-admin user profile.
+* List the Lambda Functions of ec-admin user profile.
 
 ```bash
-aws sts get-caller-identity --profile ec2-admin
+aws lambda list-functions --profile ec2-admin
 ```
 
 <p align="center">
-  <img src="/images/cloud/caller_identify_ec2admin1.png">
+  <img src="/images/cloud/ec2_admin_function.png">
 </p>
 
-* List the attached policies of the ec-admin user.
+* Invoke the Lambda Function as shown below.
 
 ```bash
-aws iam list-attached-user-policies --user-name [username] --profile ec2-admin
+aws lambda invoke --function-name cg-lambda-ec2_ssrf_cgidodvguk2z68 ./out.txt --region us-east-1 --profile ec2-admin
 ```
 
+<p align="center">
+  <img src="/images/cloud/invoke_function_admin.png">
+</p>
+
+* Read the output of the file as shown below.
+
+```bash
+cat out.txt
+```
+
+<p align="center">
+  <img src="/images/cloud/you_win_ec2_.png">
+</p>
