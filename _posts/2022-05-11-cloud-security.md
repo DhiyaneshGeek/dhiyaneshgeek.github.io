@@ -1185,3 +1185,34 @@ aws s3 ls --profile ec2-role
   <img src="/images/cloud/ec2_role_ssrf.png">
 </p>
 
+* List the **S3 bucket** using the configured ec2-role user profile.
+
+<p align="center">
+  <img src="/images/cloud/ec2_bucket_ssrf.png">
+</p>
+
+* Copy the bucket to the local machine using the **sync** command as shown below.
+
+<p align="center">
+  <img src="/images/cloud/admin_ec2.png">
+</p>
+
+* View the _admin-user.txt_ file as shown below.
+
+```bash
+cat admin-user.txt
+```
+
+<p align="center">
+  <img src="/images/cloud/admin_leak_ec2.png">
+</p>
+
+* Configure the admin-user credentials to the AWS profile.
+
+```bash
+aws configure --profile ec2-admin
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_admin.png">
+</p>
