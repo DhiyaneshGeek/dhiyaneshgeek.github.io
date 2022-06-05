@@ -1059,3 +1059,15 @@ aws iam get-policy-version --policy-arn <insert the policy arn here> --version-i
 <p align="center">
   <img src="/images/cloud/policy_version_mighty.png">
 </p>
+
+* Check the new privilege by deleting the EC2 instance **cg-super-critical-security-server**.
+
+```bash
+aws ec2 terminate-instances --instance-ids <insert the EC2 instance id here> --region us-east-1
+```
+
+<p align="center">
+  <img src="/images/cloud/shutdown_kerrigan.png">
+</p>
+
+
