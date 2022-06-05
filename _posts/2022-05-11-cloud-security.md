@@ -1085,6 +1085,10 @@ aws ec2 terminate-instances --instance-ids <insert the EC2 instance id here> --r
 
 1. IAM User "Solus"
 
+<p align="center">
+  <img src="/images/cloud/start_ec2_ssrf.png">
+</p>
+
 **Scenario Goal**
 
 Invoke the "cg-lambda-[ CloudGoat ID ]" Lambda function.
