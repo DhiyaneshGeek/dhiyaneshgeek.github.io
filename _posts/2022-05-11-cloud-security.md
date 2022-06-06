@@ -1277,4 +1277,4 @@ Starting with access to the external website the attacker needs to find a remote
   <img src="/images/cloud/route_ecstakeover.png">
 </p>
 
-**Route Walkthrough **
+**Route Walkthrough**
