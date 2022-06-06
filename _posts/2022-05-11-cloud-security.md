@@ -1246,3 +1246,35 @@ cat out.txt
 <p align="center">
   <img src="/images/cloud/you_win_ec2_admin.png">
 </p>
+
+**Scenario:** ECS Takeover
+
+**Command:** `./cloudgoat.py create ecs_takeover`
+
+**Scenario Resources**
+
+- 1 VPC and Subnet with:
+    - 2 EC2 Instances
+    - 1 ECS Cluster
+    - 3 ECS Services
+    - 1 Internet Gateway
+
+**Scenario Start**
+
+1. Access the external website via the EC2 Instance's public IP.
+
+**Scenario Goal**
+
+Gain access to the "vault" container and retrieve the flag.
+
+**Summary**
+
+Starting with access to the external website the attacker needs to find a remote code execution vulnerability. Through this the attacker can take advantage of resources available to the container hosting the website. The attacker discovers that the container has access to the host's metadata service and role credentials. They also discover the Docker socket mounted in the container giving full unauthenticated access to Docker on one host in the cluster. Abusing the mount misconfiguration, the attacker can enumerate other running containers on the instance and compromise the container role of a semi-privileged privd container. Using the privd role the attacker can enumerate the nodes and running tasks across the ECS cluster where another task "vault" is discovered to be running on a second node. With the host container privileges gained earlier, the attacker modifies the state of the cluster and forces ECS to reschedule the container to the compromised host. This allows the attacker to access the flag stored in the root of the "vault" container instance through docker.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/route_ecstakeover.png">
+</p>
+
+**Route Walkthrough **
