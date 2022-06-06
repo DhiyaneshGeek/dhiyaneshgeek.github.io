@@ -1263,6 +1263,10 @@ cat out.txt
 
 1. Access the external website via the EC2 Instance's public IP.
 
+<p align="center">
+  <img src="/images/cloud/start_ecs_attack.png">
+</p>
+
 **Scenario Goal**
 
 Gain access to the "vault" container and retrieve the flag.
