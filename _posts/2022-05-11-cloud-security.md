@@ -1273,7 +1273,9 @@ Gain access to the "vault" container and retrieve the flag.
 
 **Summary**
 
-Starting with access to the external website the attacker needs to find a remote code execution vulnerability. Through this the attacker can take advantage of resources available to the container hosting the website. The attacker discovers that the container has access to the host's metadata service and role credentials. They also discover the Docker socket mounted in the container giving full unauthenticated access to Docker on one host in the cluster. Abusing the mount misconfiguration, the attacker can enumerate other running containers on the instance and compromise the container role of a semi-privileged privd container. Using the privd role the attacker can enumerate the nodes and running tasks across the ECS cluster where another task "vault" is discovered to be running on a second node. With the host container privileges gained earlier, the attacker modifies the state of the cluster and forces ECS to reschedule the container to the compromised host. This allows the attacker to access the flag stored in the root of the "vault" container instance through docker.
+* Starting with access to the external website the attacker needs to find a remote code execution vulnerability. Through this the attacker can take advantage of resources available to the container hosting the website. The attacker discovers that the container has access to the host's metadata service and role credentials. 
+* They also discover the Docker socket mounted in the container giving full unauthenticated access to Docker on one host in the cluster. Abusing the mount misconfiguration, the attacker can enumerate other running containers on the instance and compromise the container role of a semi-privileged privd container. Using the privd role the attacker can enumerate the nodes and running tasks across the ECS cluster where another task "vault" is discovered to be running on a second node.
+* With the host container privileges gained earlier, the attacker modifies the state of the cluster and forces ECS to reschedule the container to the compromised host. This allows the attacker to access the flag stored in the root of the "vault" container instance through docker.
 
 **Exploitation Route**
 
@@ -1282,3 +1284,23 @@ Starting with access to the external website the attacker needs to find a remote
 </p>
 
 **Route Walkthrough**
+
+* Find the command injection vulnerability in the website. The following payload could contain any bash command, it's just a POC.
+
+```bash
+; echo 'hello world'
+```
+
+<p align="center">
+  <img src="/images/cloud/command_injection.png">
+</p>
+
+* Using command injection list all of the containers on the host.
+
+```bash
+docker ps
+```
+
+<p align="center">
+  <img src="/images/cloud/docker_ps.png">
+</p>
