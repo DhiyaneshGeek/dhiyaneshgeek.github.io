@@ -1336,3 +1336,23 @@ docker ps
 <p align="center">
   <img src="/images/cloud/aws_ecs_keys.png">
 </p>
+
+* Configure the leaked AWS credentials into a profile.
+
+```bash
+aws configure --profile container
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_configure_container.png">
+</p>
+
+* Manually add the **SessionToken**.
+
+```bash
+vi .aws/credentials
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_session_container.png">
+</p>
