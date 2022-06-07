@@ -1316,7 +1316,7 @@ docker ps
 ```
 
 <p align="center">
-  <img src="/images/cloud/container_id.png">
+  <img src="/images/cloud/container_id1.png">
 </p>
 
 * Using command injection get the container credentials for the privd container.
