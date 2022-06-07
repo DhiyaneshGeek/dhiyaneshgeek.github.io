@@ -1349,7 +1349,7 @@ vi .aws/credentials
   <img src="/images/cloud/aws_session_container1.png">
 </p>
 
-* List the clusters using the configured AWS Profile.
+* **List** the clusters using the configured AWS Profile.
 
 ```bash
 aws --profile privd ecs list-clusters
@@ -1359,7 +1359,7 @@ aws --profile privd ecs list-clusters
   <img src="/images/cloud/list_clusters.png">
 </p>
 
-* Enumerate Tasks from the cluster.
+* Enumerate **Tasks** from the cluster.
 
 ```bash
 aws --profile <container_credentials> ecs list-tasks --cluster <your_cluster_name> --query taskArns
@@ -1368,3 +1368,15 @@ aws --profile <container_credentials> ecs list-tasks --cluster <your_cluster_nam
 <p align="center">
   <img src="/images/cloud/enumerate_task_ecs.png">
 </p>
+
+* Enumerate **List of Containers** from the cluster.
+
+```bash
+aws ecs list-container-instances --cluster <your_cluster_name> --profile privd
+```
+
+<p align="center">
+  <img src="/images/cloud/container_id_list.png">
+</p>
+
+
