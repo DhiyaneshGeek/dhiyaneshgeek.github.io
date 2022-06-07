@@ -1379,4 +1379,22 @@ aws ecs list-container-instances --cluster <your_cluster_name> --profile privd
   <img src="/images/cloud/container_id_list.png">
 </p>
 
+* Iterate information about the **target task** which will include the name of the corresponding **service**.
 
+```bash
+aws --profile <container_credentials> ecs describe-tasks --cluster <your_cluster_name> --tasks <target_task>
+````
+
+<p align="center">
+  <img src="/images/cloud/tasks_ecs_takeover.png">
+</p>
+
+* Reveal if the service is scheduled as a **Replica** or **Daemon**.
+
+```bash
+aws --profile <container_credentials> ecs describe-services --cluster <your_cluster_name> --services <target_service>
+```
+
+<p align="center">
+  <img src="/images/cloud/replica.png">
+</p>
