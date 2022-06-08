@@ -1487,6 +1487,10 @@ aws --profile <host_credentials> ecs update-container-instances-state --cluster 
 1. IAM User "Lara"
 2. IAM User "McDuck"
 
+<p align="center">
+  <img src="/images/cloud/start_rce.png">
+</p>
+
 **Scenario Goal**
 
 Find a secret stored in the RDS database.
