@@ -1468,3 +1468,40 @@ aws --profile <host_credentials> ecs update-container-instances-state --cluster 
 <p align="center">
   <img src="/images/cloud/aws_ecstakeover_flag.png">
 </p>
+
+**Scenario:** RCE Web Application
+
+**Command:** `./cloudgoat.py create rce_web_app`
+
+**Scenario Resources**
+
+* 1 VPC with:
+  * ELB x 1
+  * EC2 x 1
+  * S3 x 3
+  * RDS x 1
+* 2 IAM Users
+
+**Scenario Start**
+
+1. IAM User "Lara"
+2. IAM User "McDuck"
+
+**Scenario Goal**
+
+Find a secret stored in the RDS database.
+
+**Summary**
+
+* Starting as the IAM user Lara, the attacker explores a Load Balancer and S3 bucket for clues to vulnerabilities, leading to an RCE exploit on a vulnerable web app which exposes confidential files and culminates in access to the scenario’s goal: a highly-secured RDS database instance.
+
+* Alternatively, the attacker may start as the IAM user McDuck and enumerate S3 buckets, eventually leading to SSH keys which grant direct access to the EC2 server and the database beyond.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/exploitation_rce.png">
+</p>
+
+**Route Walkthrough - IAM User “Lara”**
+
