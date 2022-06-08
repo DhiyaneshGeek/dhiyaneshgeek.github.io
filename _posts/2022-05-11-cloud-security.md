@@ -1509,3 +1509,22 @@ Find a secret stored in the RDS database.
 
 **Route Walkthrough - IAM User “Lara”**
 
+* Configure the AWS Profile for lara using the following command.
+
+```bash
+aws configure --profile lara
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_cli_lara.png">
+</p>
+
+* List the S3 bucket using the configured lara user profile.
+
+```bash
+aws s3 ls --profile lara
+```
+
+<p align="center">
+  <img src="/images/cloud/list_ls_lara.png">
+</p>
