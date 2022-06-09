@@ -2002,14 +2002,14 @@ aws ssm describe-parameters --profile solo
   <img src="/images/cloud/ssh_keys_solo.png">
 </p>
 
-* Get the details of the **private keys**.
+* Get the details of the **private key**.
 
 ```bash
 aws ssm get-parameter --name <private key name> --profile solo
 ```
 
 <p align="center">
-  <img src="/images/cloud/ssh_keys_solo.png">
+  <img src="/images/cloud/private_keys_solo.png">
 </p>
 
 * Save the **private keys**.
@@ -2032,3 +2032,8 @@ chmod 400 ec2_ssh_key
   <img src="/images/cloud/permission_solo_key.png">
 </p>
 
+* Get the details of the **public key**.
+
+<p align="center">
+  <img src="/images/cloud/public_keys_solo.png">
+</p>
