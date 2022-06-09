@@ -1872,3 +1872,23 @@ A pair of secret strings stored in a secure RDS database.
 </p>
 
 **Walkthrough - "Calrissian" via RDS Snapshot**
+
+* Configure the AWS Profile for **solo** using the following command.
+
+```bash
+aws configure --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/solo_aws_codebuild.png">
+</p>
+
+* List the code build projects for solo profile
+
+```bash
+aws codebuild list-projects --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/list_codebuild.png">
+</p>
