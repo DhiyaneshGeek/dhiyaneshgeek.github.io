@@ -1509,7 +1509,7 @@ Find a secret stored in the RDS database.
 
 **Route Walkthrough - IAM User “Lara”**
 
-* Configure the AWS Profile for lara using the following command.
+* Configure the **AWS Profile** for lara using the following command.
 
 ```bash
 aws configure --profile lara
@@ -1519,7 +1519,7 @@ aws configure --profile lara
   <img src="/images/cloud/aws_cli_lara.png">
 </p>
 
-* List the S3 bucket using the configured lara user profile.
+* List the **S3 bucket** using the configured lara user profile.
 
 ```bash
 aws s3 ls --profile lara
@@ -1527,4 +1527,40 @@ aws s3 ls --profile lara
 
 <p align="center">
   <img src="/images/cloud/list_ls_lara.png">
+</p>
+
+* Access the buckets.
+
+```bash
+aws s3 ls <insert s3 bucket name here> --profile <insert profile name here>
+```
+
+<p align="center">
+  <img src="/images/cloud/log_rce1.png">
+</p>
+
+* Copy the bucket to the local machine using the **sync** command as shown below.
+
+```bash
+aws s3 sync s3://<bucket-name> . --profile lara
+```
+
+<p align="center">
+  <img src="/images/cloud/log_download.png">
+</p>
+
+* Found a _ELB_ Log file.
+
+<p align="center">
+  <img src="/images/cloud/log_file.png">
+</p>
+
+* Read the log file by using [elb-log-analyzer](https://github.com/ozantunca/elb-log-analyzer).
+
+```bash
+elb-log-analyzer <elb log filename>
+```
+
+<p align="center">
+  <img src="/images/cloud/elb_log.png">
 </p>
