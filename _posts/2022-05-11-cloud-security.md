@@ -1564,3 +1564,29 @@ elb-log-analyzer <elb log filename>
 <p align="center">
   <img src="/images/cloud/elb_log.png">
 </p>
+
+* Tried accessing those URL's from log file, but were **not accessible**.
+
+<p align="center">
+  <img src="/images/cloud/rce_not_access.png">
+</p>
+
+* Enumerate more information about ELB.
+
+```bash
+aws elbv2 describe-load-balancers --profile lara
+```
+
+<p align="center">
+  <img src="/images/cloud/public_dns_rce.png">
+</p>
+
+* Append the _.html_ file name, got from the ELB log file with the **Public DNS**.
+
+<p align="center">
+  <img src="/images/cloud/webpage_rce.png">
+</p>
+
+<p align="center">
+  <img src="/images/cloud/webpage_full.png">
+</p>
