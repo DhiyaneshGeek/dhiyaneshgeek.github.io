@@ -2072,7 +2072,7 @@ ssh -i ec2_ssh_key ubuntu@<instance ip>
   <img src="/images/cloud/ssh_into_solo.png">
 </p>
 
-* Querying for metadata in the instance.
+* Query for metadata in the instance.
 
 ```bash
 curl http://169.254.169.254/latest/user-data
