@@ -1621,6 +1621,26 @@ cat /home/ubuntu/.ssh/id_rsa
   <img src="/images/cloud/cat_rsa_key.png">
 </p>
 
+* Add the new public key to the **authorized_keys** file on the EC2 instance.
+
+```bash
+cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
+```
+
+<p align="center">
+  <img src="/images/cloud/mv_keys.png">
+</p>
+
+* Get the IP Address of the EC2 Instance.
+
+```bash
+curl ifconfig.me
+```
+
+<p align="center">
+  <img src="/images/cloud/curl_ifconfig.png">
+</p>
+
 * Check for user data specified during the creation of the EC2 instance.
 
 ```bash
