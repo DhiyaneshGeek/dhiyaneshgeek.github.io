@@ -1687,3 +1687,75 @@ select * from sensitive_information;
 <p align="center">
   <img src="/images/cloud/lara_secret.png">
 </p>
+
+**Route Walkthrough - IAM User “McDuck”**
+
+* Configure the **AWS Profile** for mcduck using the following command.
+
+```bash
+aws configure --profile mcduck
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_cli_mcduck.png">
+</p>
+
+* List the **S3 bucket** using the configured mcduck user profile.
+
+```bash
+aws s3 ls --profile mcduck
+```
+
+<p align="center">
+  <img src="/images/cloud/list_mcduck.png">
+</p>
+
+* Access the buckets.
+
+```bash
+aws s3 ls <insert s3 bucket name here> --profile mcduck
+```
+
+<p align="center">
+  <img src="/images/cloud/key_mcduck.png">
+</p>
+
+* Copy the bucket to the local machine using the **sync** command as shown below.
+
+```bash
+aws s3 sync s3://<bucket-name> . --profile mcduck
+```
+
+<p align="center">
+  <img src="/images/cloud/download_mcduck.png">
+</p>
+
+* Change the **permission** of the key.
+
+```bash
+chmod 700 <filename>
+```
+
+<p align="center">
+  <img src="/images/cloud/permission_mcduck.png">
+</p>
+
+* Enumerate more information about the running EC2 Instances.
+
+```bash
+aws ec2 describe-instances --profile mcduck
+```
+
+<p align="center">
+  <img src="/images/cloud/public_mcduck.png">
+</p>
+
+* SSH into the EC2 Instance using the following command.
+
+```bash
+ssh -i ./<filename> ubuntu@ipaddress
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_mcduck.png">
+</p>
