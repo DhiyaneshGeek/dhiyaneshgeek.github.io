@@ -2051,3 +2051,23 @@ echo -e "<public key>" > ec2_ssh_key.pub
 <p align="center">
   <img src="/images/cloud/save_public_key_solo.png">
 </p>
+
+* Enumerate more information about the **running** EC2 Instances.
+
+```bash
+aws ec2 describe-instances --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/ec2_solo_running.png">
+</p>
+
+* **SSH** into the EC2 Instance using the following command.
+
+```bash
+ssh -i ec2_ssh_key ubuntu@<instance ip>
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_into_solo.png">
+</p>
