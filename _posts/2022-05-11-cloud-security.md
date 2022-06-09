@@ -1831,3 +1831,40 @@ select * from sensitive_information;
 <p align="center">
   <img src="/images/cloud/secret_mcduck.png">
 </p>
+
+**Scenario:** Code Build Secrets
+
+**Command:** `./cloudgoat.py create codebuild_secrets`
+
+**Scenario Resources**
+
+* 1 CodeBuild Project
+* 1 Lambda function
+* 1 VPC with:
+  * RDS x 1
+  * EC2 x 1
+* 2 IAM Users
+
+**Scenario Start**
+
+IAM User "Solo"
+
+**Scenario Goal**
+
+A pair of secret strings stored in a secure RDS database.
+
+**Summary**
+
+* Starting as the IAM user Solo, the attacker first enumerates and explores CodeBuild projects, finding unsecured IAM keys for the IAM user Calrissian therein. Then operating as Calrissian, the attacker discovers an RDS database. Unable to access the database's contents directly, the attacker can make clever use of the RDS snapshot functionality to acquire the scenario's goal: a pair of secret strings.
+
+* Alternatively, the attacker may explore SSM parameters and find SSH keys to an EC2 instance. Using the metadata service, the attacker can acquire the EC2 instance-profile's keys and push deeper into the target environment, eventually gaining access to the original database and the scenario goal inside (a pair of secret strings) by a more circuitous route.
+
+**Note:** This scenario may require you to create some AWS resources, and because CloudGoat can only manage resources it creates, you should remove them manually before running `./cloudgoat destroy`.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/exploitation_codebuild.png">
+</p>
+
+**Walkthrough - "Calrissian" via RDS Snapshot**
