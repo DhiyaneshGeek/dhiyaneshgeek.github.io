@@ -1883,7 +1883,7 @@ aws configure --profile solo
   <img src="/images/cloud/solo_aws_codebuild.png">
 </p>
 
-* List the code build projects for solo profile
+* **List** the code build projects for solo profile.
 
 ```bash
 aws codebuild list-projects --profile solo
@@ -1891,4 +1891,42 @@ aws codebuild list-projects --profile solo
 
 <p align="center">
   <img src="/images/cloud/list_codebuild.png">
+</p>
+
+* Enumerate more information about the project.	
+
+```bash
+aws codebuild batch-get-projects --names <project> --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/calrissian_aws.png">
+</p>
+
+**Note:** From the above image it was observed that the project leaked the AWS keys of _calrissian_ user.
+
+* Configure the AWS Profile for **calrissian** using the following command.
+
+```bash
+aws configure --profile calrissian
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_calrissian.png">
+</p>
+
+* Look for **RDS** instance.
+
+```bash
+aws rds describe-db-instances --profile calrissian
+```
+
+<p align="center">
+  <img src="/images/cloud/rds_instance_codebuild1.png">
+</p>
+
+* Create a **snapshot** of the database.
+
+<p align="center">
+  <img src="/images/cloud/rds_creation_instance.png">
 </p>
