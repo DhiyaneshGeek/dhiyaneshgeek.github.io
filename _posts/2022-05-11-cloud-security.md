@@ -1849,6 +1849,10 @@ select * from sensitive_information;
 
 IAM User "Solo"
 
+<p align="center">
+  <img src="/images/cloud/start_code.png">
+</p>
+
 **Scenario Goal**
 
 A pair of secret strings stored in a secure RDS database.
