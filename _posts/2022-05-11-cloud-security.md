@@ -1759,3 +1759,33 @@ ssh -i ./<filename> ubuntu@ipaddress
 <p align="center">
   <img src="/images/cloud/ssh_mcduck.png">
 </p>
+
+* Install AWS CLI.
+
+```bash
+sudo apt-get install awscli
+```
+
+<p align="center">
+  <img src="/images/cloud/install_aws_mcduck.png">
+</p>
+
+* List the S3 bucket.
+
+```bash
+aws s3 ls
+```
+
+<p align="center">
+  <img src="/images/cloud/s3_ls.png">
+</p>
+
+* Try accessing the **secret** S3 bucket from here.
+
+```bash
+aws s3 ls s3://<insert s3 bucket name here>
+```
+
+<p align="center">
+  <img src="/images/cloud/secret_bucket.png">
+</p>
