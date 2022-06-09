@@ -1979,3 +1979,56 @@ select * from sensitive_information;
 <p align="center">
   <img src="/images/cloud/flag_calrissian.png">
 </p>
+
+**Walkthrough - Solo via EC2 Metadata service**
+
+* Configure the AWS Profile for **solo** using the following command.
+
+```bash
+aws configure --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/solo_aws_codebuild.png">
+</p>
+
+* Query the AWS Systems Manager Parameter Store.
+
+```bash
+aws ssm describe-parameters --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_keys_solo.png">
+</p>
+
+* Get the details of the **private keys**.
+
+```bash
+aws ssm get-parameter --name <private key name> --profile solo
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_keys_solo.png">
+</p>
+
+* Save the **private keys**.
+
+```bash
+echo -e "<private key>" > ec2_ssh_key
+```
+
+<p align="center">
+  <img src="/images/cloud/save_ssh_keys.png">
+</p>
+
+* **Change** the permission of SSH Key.
+
+```bash
+chmod 400 ec2_ssh_key
+```
+
+<p align="center">
+  <img src="/images/cloud/permission_solo_key.png">
+</p>
+
