@@ -2034,6 +2034,20 @@ chmod 400 ec2_ssh_key
 
 * Get the details of the **public key**.
 
+```bash
+aws ssm get-parameter --name <public key name> --profile solo
+```
+
 <p align="center">
   <img src="/images/cloud/public_keys_solo.png">
+</p>
+
+* Save the **public keys**.
+
+```bash
+echo -e "<public key>" > ec2_ssh_key.pub
+```
+
+<p align="center">
+  <img src="/images/cloud/save_public_key_solo.png">
 </p>
