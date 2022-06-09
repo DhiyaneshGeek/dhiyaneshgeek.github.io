@@ -1789,3 +1789,13 @@ aws s3 ls s3://<insert s3 bucket name here>
 <p align="center">
   <img src="/images/cloud/secret_bucket.png">
 </p>
+
+* Copy the bucket to the local machine using the **sync** command as shown below.
+
+```bash
+aws s3 sync s3://<bucket-name> .
+```
+
+<p align="center">
+  <img src="/images/cloud/download_new_bucket.png">
+</p>
