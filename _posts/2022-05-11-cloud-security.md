@@ -1930,3 +1930,10 @@ aws rds describe-db-instances --profile calrissian
 <p align="center">
   <img src="/images/cloud/rds_creation_instance.png">
 </p>
+
+* Identify the **subnet group** of created snapshot.
+
+<p align="center">
+  <img src="/images/cloud/subnet_group.png">
+</p>
+
