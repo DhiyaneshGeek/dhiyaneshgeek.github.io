@@ -2231,3 +2231,12 @@ aws ecs describe-task-definition --task-definition <TASK_NAME>:<VERSION> --profi
   <img src="/images/cloud/describe_task_definition.png">
 </p>
 
+* Download **template** to register a new task.
+
+```bash
+aws ecs register-task-definition --generate-cli-skeleton --profile ruse > task_template.json
+```
+
+<p align="center">
+  <img src="/images/cloud/register_task_definition.png">
+</p>
