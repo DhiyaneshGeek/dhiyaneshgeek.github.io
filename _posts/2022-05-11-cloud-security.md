@@ -2221,4 +2221,13 @@ aws ecs describe-services --cluster <cluster-name> --services <service-name>
   <img src="/images/cloud/describe_service_ruse.png">
 </p>
 
-* 
+* Download **task definition**.
+
+```bash
+aws ecs describe-task-definition --task-definition <TASK_NAME>:<VERSION> --profile ruse > task_def.json
+```
+
+<p align="center">
+  <img src="/images/cloud/describe_task_definition.png">
+</p>
+
