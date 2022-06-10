@@ -2190,3 +2190,13 @@ aws ec2 describe-instances --profile ruse
 <p align="center">
   <img src="/images/cloud/list_ec2_ruse.png">
 </p>
+
+* List all available **ECS clusters**.
+
+```bash
+aws ecs list-clusters --profile ruse
+```
+
+<p align="center">
+  <img src="/images/cloud/list_cluster_ruse.png">
+</p>
