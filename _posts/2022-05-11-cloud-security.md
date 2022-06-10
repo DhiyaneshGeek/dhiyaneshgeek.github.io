@@ -2200,3 +2200,25 @@ aws ecs list-clusters --profile ruse
 <p align="center">
   <img src="/images/cloud/list_cluster_ruse.png">
 </p>
+
+* List **services** in cluster.
+
+```bash
+aws ecs list-services --cluster <CLUSTER ARN> --profile ruse
+```
+
+<p align="center">
+  <img src="/images/cloud/list_service_ruse.png">
+</p>
+
+* Enumerate more information about the cluster and services.
+
+```bash
+aws ecs describe-services --cluster <cluster-name> --services <service-name>
+```
+
+<p align="center">
+  <img src="/images/cloud/describe_service_ruse.png">
+</p>
+
+* 
