@@ -2180,3 +2180,13 @@ aws iam list-policies --profile ruse
 <p align="center">
   <img src="/images/cloud/list_policy_ruse.png">
 </p>
+
+* List EC2 instances.
+
+```bash
+aws ec2 describe-instances --profile ruse
+```
+
+<p align="center">
+  <img src="/images/cloud/list_ec2_ruse.png">
+</p>
