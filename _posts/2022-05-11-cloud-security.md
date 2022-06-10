@@ -2170,3 +2170,13 @@ vi .aws/credentials
 <p align="center">
   <img src="/images/cloud/session_token_ruse.png">
 </p>
+
+* List the **policies**. 
+
+```bash
+aws iam list-policies --profile ruse
+```
+
+<p align="center">
+  <img src="/images/cloud/list_policy_ruse.png">
+</p>
