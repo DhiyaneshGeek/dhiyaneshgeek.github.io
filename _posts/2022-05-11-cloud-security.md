@@ -2093,3 +2093,40 @@ select * from sensitive_information;
 <p align="center">
   <img src="/images/cloud/flag_codebuild_solo.png">
 </p>
+
+**Scenario:** ECS EFS Attack
+
+**Command:** `./cloudgoat.py create ecs_efs_attack`
+
+**Scenario Resources**
+
+- 1 VPC with:
+	- EC2 x 2
+	- 1 ECS Cluster
+	- 1 ECS Service 
+	- 1 EFS
+
+**Scenario Start**
+
+1. SSH access to "Ruse_Box" EC2
+
+<p align="center">
+  <img src="/images/cloud/start_efs.png">
+</p>
+
+**Scenario Goal**
+
+Mount the "cg-efs-[CG_ID]" efs and obtain the flag.
+
+**Summary**
+
+Starting with accessing the "ruse" EC2 the user leverages the instance profile to backdoor the running ECS container. Using the backdoored container the attacker can retrieve credentials from the container metadata API. These credentials allow the attacker to start a session on any EC2 with the proper tags set. The attacker uses their permissions to change the tags on the Admin EC2 and starts a session. Once in the Admin EC2 the attacker will port scan the subnet for an open EFS to mount. Once mounted the attacker can retrieve the flag from the elastic file system.
+
+**Exploitation Route**
+
+<p align="center">
+  <img src="/images/cloud/exploitation_efs.png">
+</p>
+
+**Route Walkthrough**
+
