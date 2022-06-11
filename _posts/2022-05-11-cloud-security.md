@@ -2240,3 +2240,9 @@ aws ecs register-task-definition --generate-cli-skeleton --profile ruse > task_t
 <p align="center">
   <img src="/images/cloud/register_task_definition.png">
 </p>
+
+* Use **task_def.json** to fill out **template.json** with the desired payload.
+
+<p align="center">
+  <img src="/images/cloud/.png">
+</p>
