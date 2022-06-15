@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AWS Misconfigurations
-date: 2022-05-11
+date: 2022-06-15
 summary: Deep Dive into AWS Cloud Security
 categories: Cloud Security
 tags: [AWS, Write-Ups, Cloud Security]
