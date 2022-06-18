@@ -2376,3 +2376,14 @@ Retrieve the sensitive data submitted by customers.
 
 **Route Walkthrough**
 
+* Configure the AWS Profile for cicd using the following command.
+
+```bash
+aws configure --profile cicd
+```
+
+<p align="center">
+  <img src="/images/cloud/aws_cicd_cli.png">
+</p>
+
+* 
