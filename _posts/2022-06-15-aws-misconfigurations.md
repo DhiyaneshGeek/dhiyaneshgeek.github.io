@@ -2368,15 +2368,10 @@ Because FooCorp implements DevOps, it has a continuous deployment pipeline autom
 
 Retrieve the sensitive data submitted by customers.
 
-Note that simulated user activity is taking place in the account. This is implemented through a CodeBuild project running every minute and simulating customers requests to the API. This CodeBuild project is out of scope.
+**Note:** That simulated user activity is taking place in the account. This is implemented through a CodeBuild project running every minute and simulating customers requests to the API. This CodeBuild project is out of scope.
 
 **Summary**
 
-<details>
-  <summary>Spoiler warning</summary>
-  
   You get access to an initial AWS access key. Escalate your privileges by overwriting the tag of an EC2 instance used for attribute-based access control. Steal the SSH key on the instance, and use it to clone a CodeCommit repository. Go through the commit history, and find a new set of AWS credentials. Use them to backdoor the application and steal the sensitive data.
-  
-</details>
 
 **Route Walkthrough **
