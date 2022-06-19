@@ -2386,4 +2386,14 @@ aws configure --profile cicd
   <img src="/images/cloud/aws_cicd_cli.png">
 </p>
 
+* Enumerate information about the running **EC2 Instances**.
+
+```bash
+aws ec2 describe-instances --region us-east-1 --profile cicd
+```
+
+<p align="center">
+  <img src="/images/cloud/instance_id_cicd.png">
+</p>
+
 * 
