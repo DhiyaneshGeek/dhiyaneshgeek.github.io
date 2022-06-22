@@ -2413,4 +2413,13 @@ aws ssm start-session --target i-xxxx
   <img src="/images/cloud/start_session.png">
 </p>
 
+* Under the home directory, find a SSH private key.
 
+```bash
+cd
+cat .ssh/id_rsa
+```
+
+<p align="center">
+  <img src="/images/cloud/id_rsa_cicd.png">
+</p>
