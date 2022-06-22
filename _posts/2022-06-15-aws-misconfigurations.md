@@ -2448,3 +2448,10 @@ aws iam get-ssh-public-key --user-name cloner --ssh-public-key-id <SSHPublicKeyI
   <img src="/images/cloud/get_ssh_cicd1.png">
 </p>
 
+* Find the CodeCommit user ID of cloner using 
+
+```aws iam list-ssh-public-keys --user-name cloner --output text --query 'SSHPublicKeys[0].SSHPublicKeyId'```
+
+<p align="center">
+  <img src="/images/cloud/list_ssh_public.png">
+</p>
