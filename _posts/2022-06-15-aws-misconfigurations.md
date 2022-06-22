@@ -2396,4 +2396,21 @@ aws ec2 describe-instances --region us-east-1 --profile cicd
   <img src="/images/cloud/instance_id_cicd1.png">
 </p>
 
-* 
+* Check the running EC2 instances. You notice one is tagged with ```bashEnvironment=dev```, and you therefore can't SSM to it. Instead, overwrite the ```Environment``` tag with the value sandbox, then establish a SSM session to the instance.
+
+```bash
+aws ec2 create-tags --resources i-xxxx --tags Key=Environment,Value=sandbox
+```
+
+<p align="center">
+  <img src="/images/cloud/create_tags.png">
+</p>
+
+```bash
+aws ssm start-session --target i-xxxx
+```
+<p align="center">
+  <img src="/images/cloud/start_session.png">
+</p>
+
+
