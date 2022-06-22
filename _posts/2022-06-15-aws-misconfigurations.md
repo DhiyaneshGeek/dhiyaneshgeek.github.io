@@ -2439,3 +2439,12 @@ aws iam list-ssh-public-keys --user-name cloner --profile cicd
 <p align="center">
   <img src="/images/cloud/cloner_username.png">
 </p>
+
+```bash
+aws iam get-ssh-public-key --user-name cloner --ssh-public-key-id <SSHPublicKeyId found above> --encoding PEM --output text --query 'SSHPublicKey.Fingerprint'
+```
+
+<p align="center">
+  <img src="/images/cloud/get_ssh_cicd1.png">
+</p>
+
