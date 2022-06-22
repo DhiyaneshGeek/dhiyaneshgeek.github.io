@@ -2430,3 +2430,12 @@ cat .ssh/id_rsa
   <img src="/images/cloud/stolen_key_cicd.png">
 </p>
 
+* Extract the corresponding public key fingerprint to notice it is linked to the ```CodeCommit``` credentials of the IAM user ```cloner```.
+
+```bash
+aws iam list-ssh-public-keys --user-name cloner --profile cicd
+```
+
+<p align="center">
+  <img src="/images/cloud/cloner_username.png">
+</p>
