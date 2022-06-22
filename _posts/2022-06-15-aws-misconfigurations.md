@@ -2423,3 +2423,10 @@ cat .ssh/id_rsa
 <p align="center">
   <img src="/images/cloud/id_rsa_cicd.png">
 </p>
+
+* Copy the SSH key to your local machine ```(~/.ssh/stolen_key)``` and run ```chmod 600 ~/.ssh/stolen_key``` on it.
+
+<p align="center">
+  <img src="/images/cloud/stolen_key_cicd.png">
+</p>
+
