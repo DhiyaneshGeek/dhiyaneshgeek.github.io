@@ -2393,7 +2393,7 @@ aws ec2 describe-instances --region us-east-1 --profile cicd
 ```
 
 <p align="center">
-  <img src="/images/cloud/instance_id_cicd.png">
+  <img src="/images/cloud/instance_id_cicd1.png">
 </p>
 
 * 
