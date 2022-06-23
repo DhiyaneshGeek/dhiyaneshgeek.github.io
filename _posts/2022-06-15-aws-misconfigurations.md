@@ -2455,3 +2455,30 @@ aws iam get-ssh-public-key --user-name cloner --ssh-public-key-id <SSHPublicKeyI
 <p align="center">
   <img src="/images/cloud/list_ssh_public.png">
 </p>
+
+* Use the following SSH configuration ```(in your .ssh/config)```
+
+```bash
+Host *.amazonaws.com
+  IdentityFile ~/.ssh/stolen_key
+```
+
+<p align="center">
+  <img src="/images/cloud/ssh_config_cicd.png">
+</p>
+
+* Clone the repository.
+
+```bash
+git clone ssh://<SSH-KEY-ID>@git-codecommit.us-west-1.amazonaws.com/v1/repos/backend-api
+```
+
+<p align="center">
+  <img src="/images/cloud/git_clone.png">
+</p>
+
+* Access to Code.
+
+<p align="center">
+  <img src="/images/cloud/access_to_code.png">
+</p>
