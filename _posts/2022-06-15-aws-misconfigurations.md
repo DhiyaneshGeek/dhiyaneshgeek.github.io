@@ -2493,4 +2493,13 @@ git log
   <img src="/images/cloud/git_log.png">
 </p>
 
-* 
+* View the commit history.
+
+```bash
+git show <commit-id>
+```
+
+<p align="center">
+  <img src="/images/cloud/commit_id.png">
+</p>
+
