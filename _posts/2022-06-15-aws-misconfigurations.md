@@ -2493,7 +2493,7 @@ git log
   <img src="/images/cloud/git_log.png">
 </p>
 
-* View the commit history.
+* The repository contains the backend code of the _Lambda function_ exposed through the API gateway. Check the commit history to note a leaked access key.
 
 ```bash
 git show <commit-id>
@@ -2502,6 +2502,3 @@ git show <commit-id>
 <p align="center">
   <img src="/images/cloud/commit_id.png">
 </p>
-
-**Note:** 
-The repository contains the backend code of the Lambda function exposed through the API gateway. Check the commit history to note a leaked access key.
