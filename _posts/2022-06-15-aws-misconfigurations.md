@@ -2510,3 +2510,7 @@ git show <commit-id>
 <p align="center">
   <img src="/images/cloud/cat_app_py.png">
 </p>
+
+* Ensure the credentials found are set in your environment or a profile.
+
+
