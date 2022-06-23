@@ -2503,3 +2503,4 @@ git show <commit-id>
   <img src="/images/cloud/commit_id.png">
 </p>
 
+Note: The repository contains the backend code of the Lambda function exposed through the API gateway. Check the commit history to note a leaked access key.
