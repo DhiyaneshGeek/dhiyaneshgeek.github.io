@@ -2482,3 +2482,15 @@ git clone ssh://<SSH-KEY-ID>@git-codecommit.us-west-1.amazonaws.com/v1/repos/bac
 <p align="center">
   <img src="/images/cloud/access_to_code.png">
 </p>
+
+* View the git log information.
+
+```bash
+git log
+```
+
+<p align="center">
+  <img src="/images/cloud/git_log.png">
+</p>
+
+* 
