@@ -2521,3 +2521,36 @@ aws configure profile --flag
   <img src="/images/cloud/aws_configure_flag.png">
 </p>
 
+* Commit the file and push it with the following AWS command.
+
+```bash
+aws codecommit get-branch --repository-name backend-api  --branch-name master
+```
+
+<p align="center">
+  <img src="/images/cloud/get_branch.png">
+</p>
+
+```bash
+aws codecommit put-file --repository-name backend-api --branch-name master --file-content fileb://./app.py --file-path app.py --parent-commit-id <Commit ID found above>
+```
+
+<p align="center">
+  <img src="/images/cloud/push_cicd.png">
+</p>
+
+<p align="center">
+  <img src="/images/cloud/flag_cicd.png">
+</p>
+
+**Reference:**   
+* [CloudGoat is Rhino Security Labs' "Vulnerable by Design" AWS deployment tool](https://github.com/RhinoSecurityLabs/cloudgoat)            
+* [Hacker Days: Understanding AWS cloud attacks using CloudGoat — OWASP Bay Area](https://blog.appsecco.com/hacker-days-understanding-aws-cloud-attacks-using-cloudgoat-owasp-bay-area-cdeb39006e12)                
+* [Pacu: The Open Source AWS Exploitation Framework](https://rhinosecuritylabs.com/aws/pacu-open-source-aws-exploitation-framework/)           
+* [Security Industry Call-to-Action: We Need a Cloud Vulnerability Database](https://youtu.be/JEA_Zgi8Tjg)    
+
+<p align="center">
+  <img src="https://media.giphy.com/media/oVvhEYvWDvE1G/giphy.gif">
+</p>
+
+Thanks a lot for reading !!!.
