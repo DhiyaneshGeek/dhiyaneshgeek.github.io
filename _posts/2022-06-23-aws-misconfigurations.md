@@ -1070,7 +1070,7 @@ aws ec2 terminate-instances --instance-ids <insert the EC2 instance id here> --r
   <img src="/images/cloud/shutdown_kerrigan.png">
 </p>
 
-**Scenario:** ec2_ssrf
+**Scenario:** EC2 SSRF
 
 **Command:** `./cloudgoat.py create ec2_ssrf`
 
