@@ -2543,7 +2543,7 @@ aws codecommit put-file --repository-name backend-api --branch-name master --fil
   <img src="/images/cloud/flag_cicd.png">
 </p>
 
-**Note:** Note that the application is automatically being built by a CI/CD pipeline in CodePipeline. It may take a bit to deploy, give it some time and you should see the flag show up on hookbin if you used the method above (you may need to refresh the page though).
+**Note:**  The application automatically being built by a **CI/CD pipeline** in ```CodePipeline```. It may take a bit to deploy, give it some time and you should see the flag.
 
 **Reference:**   
 * [CloudGoat is Rhino Security Labs' "Vulnerable by Design" AWS deployment tool](https://github.com/RhinoSecurityLabs/cloudgoat)            
