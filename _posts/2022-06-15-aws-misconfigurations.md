@@ -2502,3 +2502,11 @@ git show <commit-id>
 <p align="center">
   <img src="/images/cloud/commit_id.png">
 </p>
+
+* These credentials found belong to the user ```developer```, who has pull and push access to this repository. Use this access to backdoor the application and steal the sensitive data that customers are sending to the API.
+
+* For instance, add a piece of code to the checked out repo that sends the secret data to an _attacker-controlled_ server.
+
+<p align="center">
+  <img src="/images/cloud/cat_app_py.png">
+</p>
