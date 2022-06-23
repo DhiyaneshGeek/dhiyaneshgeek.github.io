@@ -2508,9 +2508,16 @@ git show <commit-id>
 * For instance, add a piece of code to the checked out repo that sends the secret data to an _attacker-controlled_ server.
 
 <p align="center">
-  <img src="/images/cloud/cat_app_py.png">
+  <img src="/images/cloud/cat_app_py1.png">
 </p>
 
 * Ensure the credentials found are set in your environment or a profile.
 
+```bash
+aws configure profile --flag
+````
+
+<p align="center">
+  <img src="/images/cloud/aws_configure_flag.png">
+</p>
 
