@@ -184,7 +184,7 @@ dnsenum --no-reverse google.com
 nmap -T4 -p 53 --script dns-brute google.com
 ```
 <p align="center">
-  <img src="/images/reconnaissance/nmap.png">
+  <img src="/images/reconnaissance/dnsbrute.png">
 </p>
 
 * [dnsrecon](https://github.com/darkoperator/dnsrecon) - Check all NS Records for **Zone Transfers**. Enumerate General DNS Records for a given Domain (MX, SOA, NS, A, AAAA, SPF and TXT). Perform common **SRV Record Enumeration**. Top Level Domain **(TLD)** Expansion.
