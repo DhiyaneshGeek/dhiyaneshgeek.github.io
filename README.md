@@ -1,6 +1,6 @@
 # Personal Website
 
-Created to post my blogs , hosted using Github
+Created to post my blogs , hosted using Github Server
 # dhiyaneshgeek.github.io
 
 Twitter: https://twitter.com/DhiyaneshDK.     
