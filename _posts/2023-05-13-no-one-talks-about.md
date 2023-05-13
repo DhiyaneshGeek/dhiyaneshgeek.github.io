@@ -2,7 +2,7 @@
 layout: post
 title: No One Talks About !
 date: 2023-05-13
-summary: Gratefulness, Imposter Syndrone & Burnout
+summary: Gratefulness, Imposter Syndrome & Burnout
 categories: Self Help
 tags: [Life, Mental Health, Psychology]
 ---
