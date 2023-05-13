@@ -34,3 +34,22 @@ Numerous studies have shown that practicing gratitude regularly can contribute t
 * **Celebrate achievements:** Take the time to **acknowledge** and celebrate your accomplishments, no matter how small they may seem. Recognize _your efforts and give yourself credit_ for what you have achieved.
 
 * **Surround Yourself with Positive people:** Spend time with **supportive** and uplifting individuals who value and appreciate you. **Avoid toxic relationships** that bring you down or undermine your self-esteem.
+
+**Imposter Syndrome (or) Self Doubt**
+
+<p align="center">
+  <img src="/images/mental/imposter-syndrome.png">
+</p>
+<p align="center"><strong>Investing in yourself leads to success! 🔥</strong></p>
+
+"No one has it all figured out". Remember that even the most successful individuals have experienced self-doubt. You're **not alone** in feeling like an _imposter_. Here are some ways to deal with imposter syndrome.
+
+* **Normalize Self-Doubt:** Understand that imposter syndrome is a _common experience_, and many **high-achieving** individuals have struggled with it. Recognize that feeling like an imposter doesn't mean you are one it's often a sign of growth and pushing yourself out of your **comfort zone**.
+
+* **Embrace Vulnerability:** Share your feelings of imposter syndrome with **trusted individuals**. Opening up about your _insecurities_ can not only provide relief but also allow others to offer support, empathy, and reassurance.
+
+* **Writing Journals:** Create a **record** of your accomplishments, big and small. Whenever you achieve something or receive positive feedback, **write it down**. Reflecting on this journal can serve as a powerful _reminder_ of your abilities and achievements during **moments of self-doubt**.
+
+* **Focus on Continuous Learning:** Imposter syndrome can be fueled by a fear of being exposed as **inadequate**. Combat this by _actively pursuing_ opportunities for growth and learning. Invest in your professional development and acquire new skills to **boost your confidence**.
+
+* **Help Others and Share your Knowledge:** By mentoring or assisting others in their journey, you can gain a **sense of validation** and realize the value you bring. Helping others can also help you gain perspective and _build confidence in your own abilities_.
