@@ -40,6 +40,7 @@ Numerous studies have shown that practicing gratitude regularly can contribute t
 <p align="center">
   <img src="/images/mental/imposter-syndrome.png">
 </p>
+
 <p align="center"><strong>Investing in yourself leads to success! 🔥</strong></p>
 
 "No one has it all figured out". Remember that even the most successful individuals have experienced self-doubt. You're **not alone** in feeling like an _imposter_. Here are some ways to deal with imposter syndrome.
@@ -53,3 +54,12 @@ Numerous studies have shown that practicing gratitude regularly can contribute t
 * **Focus on Continuous Learning:** Imposter syndrome can be fueled by a fear of being exposed as **inadequate**. Combat this by _actively pursuing_ opportunities for growth and learning. Invest in your professional development and acquire new skills to **boost your confidence**.
 
 * **Help Others and Share your Knowledge:** By mentoring or assisting others in their journey, you can gain a **sense of validation** and realize the value you bring. Helping others can also help you gain perspective and _build confidence in your own abilities_.
+
+**Burnout (or) Exhaustion**
+
+<p align="center">
+  <img src="/images/mental/burnout.png">
+</p>
+
+<p align="center"><strong>Sometimes the most productive thing you can do is relax 😌</strong></p>
+
