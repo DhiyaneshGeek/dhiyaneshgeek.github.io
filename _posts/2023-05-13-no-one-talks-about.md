@@ -75,6 +75,15 @@ Burnout occurs when your body and mind can **no longer** keep up with the tasks 
 
 * **Take Care of Your Physical Health:** Ensure you're taking care of your physical well-being by eating nutritious meals, staying hydrated, and getting regular exercise. Physical health **plays a significant role** in managing stress and **preventing burnout**.
 
+**Interesting Reads📝**   
+* [Will I ever get better?](https://s0md3v.github.io/blog/will-i-get-better)
+* [Overcoming Self-Hate & Regrets](https://s0md3v.github.io/blog/self-hate-and-regrets)
+* [Creativity, Self-Doubt & Doing Remarkable Work](https://s0md3v.github.io/blog/creativity-and-self-doubt)
+* [Dealing with Imposter Syndrome](https://itsc0rg1.medium.com/dealing-with-imposter-syndrome-a5e044d31b68)
+* [Advice I wish I received when I started in security](https://itsc0rg1.medium.com/advice-i-wish-i-received-when-i-started-in-security-e47552033d57)
 
+<p align="center">
+  <img src="https://media.giphy.com/media/Rb0qg5uHQXQ1rP6Pw5/giphy.gif" width="280" height="250">
+</p>
 
-
+Thanks a lot for reading !!!.
