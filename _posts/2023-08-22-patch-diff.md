@@ -14,7 +14,7 @@ Hey, Everyone!
 **What is Patch Diff ?**
 
 <p align="center">
-  <img src="/images/patch/patch-diff-logo.png> 
+  <img src="/images/patch/patch-diff-logo.png"> 
 </p>
 
 **"patch"** or **"diff"** , is a utility used in software development and version control systems to compare two sets of files and identify the differences between them. The term "diff" is short for "difference.”
