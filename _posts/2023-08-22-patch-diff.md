@@ -26,12 +26,12 @@ diff -u <original_file> <modified_file> > <patch_file>
 ```
 Here's what each part of the command means:
 
-- _diff_ : This is the command itself, which is used to compare files and generate the patch diff.
-- _u_ : This option tells **diff** to use the unified diff format, which is the most commonly used and human-readable format for patches.
-- _<original_file>_ : This is the path to the original file, the one you want to compare against.
-- _<modified_file>_ : This is the path to the modified file, the one you have made changes to.
-- _>_ : This is the output redirection symbol that saves the generated patch diff to a file.
-- _<patch_file>_ : This is the name of the file where the patch diff will be saved.
+- diff : This is the command itself, which is used to compare files and generate the patch diff.
+- u : This option tells **diff** to use the unified diff format, which is the most commonly used and human-readable format for patches.
+- original_file : This is the path to the original file, the one you want to compare against.
+- modified_file : This is the path to the modified file, the one you have made changes to.
+- > : This is the output redirection symbol that saves the generated patch diff to a file.
+- patch_file : This is the name of the file where the patch diff will be saved.
 
 Let's illustrate this with an example. Suppose we have two text files, **file1.txt** and **file2.txt**, and we want to generate a patch diff (see what codes are changed) between them:
 
