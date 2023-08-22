@@ -9,7 +9,7 @@ tags: [Reversing, N Day, Zero Day]
 
 Hey, Everyone! 
 
-I'm back with blog post, this time will be focus on _Patch Diff Analysis_ part.
+I'm back with a blog post, focussing on _Patch Diff Analysis_ part.
 
 **What is Patch Diff ?**
 
