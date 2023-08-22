@@ -28,26 +28,26 @@ Here's what each part of the command means:
 
 - **diff** : This is the command itself, which is used to compare files and generate the patch diff.
 - **u** : This option tells **`diff`** to use the unified diff format, which is the most commonly used and human-readable format for patches.
-- **<original_file>** : This is the path to the original file, the one you want to compare against.
-- **<modified_file>** : This is the path to the modified file, the one you have made changes to.
+- __<original_file>__ : This is the path to the original file, the one you want to compare against.
+- __<modified_file>__ : This is the path to the modified file, the one you have made changes to.
 - **>** : This is the output redirection symbol that saves the generated patch diff to a file.
-- **<patch_file>** : This is the name of the file where the patch diff will be saved.
+- __<patch_file>__ : This is the name of the file where the patch diff will be saved.
 
-Let's illustrate this with an example. Suppose we have two text files, file1.txt and file2.txt, and we want to generate a patch diff (see what codes are changed) between them:
+Let's illustrate this with an example. Suppose we have two text files, **file1.txt** and **file2.txt**, and we want to generate a patch diff (see what codes are changed) between them:
 
-file1.txt
+**file1.txt**
 
-```file
+```bash
 This is the original text.
 ```
 
-file2.txt
+**file2.txt**
 
-```file
+```bash
 This is the modified text.
 ```
 
-We can use the `diff` command to generate the patch diff:
+We can use the **diff** command to generate the patch diff:
 
 ```bash
 diff -u file1.txt file2.txt > my_patch.diff
@@ -55,9 +55,9 @@ diff -u file1.txt file2.txt > my_patch.diff
 
 This command will compare **file1.txt** and **file2.txt**, and the output will be redirected to a file named **my_patch.diff**. 
 
-The content of my_patch.diff will look like this:
+The content of **my_patch.diff** will look like this:
 
-```file
+```bash
 --- file1.txt	2023-07-23 10:00:00.000000000 -0400
 +++ file2.txt	2023-07-23 10:00:00.000000000 -0400
 @@ -1 +1 @@
