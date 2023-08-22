@@ -27,13 +27,9 @@ diff <option> <original_file> <modified_file> > <patch_file>
 
 <p align="center"><strong>Most commonly used diff options</strong></p>
 
-| Option              | Description                                               | Example                                   |
-|---------------------|-----------------------------------------------------------|-------------------------------------------|
-| -u or --unified     | Unified context diff output                               | `diff -u file1.txt file2.txt`             |
-| -r or --recursive   | Recursive comparison for directories                      | `diff -r dir1 dir2`                       |
-| -w or --ignore-all-space | Ignore all white space when comparing lines          | `diff -w file1.txt file2.txt`             |
-| --side-by-side      | Side-by-side comparison                                   | `diff --side-by-side file1.txt file2.txt` |
-| --color             | Enable colored output to highlight differences            | `diff --color file1.txt file2.txt`        |
+<p align="center">
+  <img src="/images/patch/patch-diff-table.png"> 
+</p>
 
 More options can be found here [Options to diff](https://www.gnu.org/software/diffutils/manual/html_node/diff-Options.html)
 
