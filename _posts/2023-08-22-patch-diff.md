@@ -7,7 +7,7 @@ categories: Research
 tags: [Reversing, N Day, Zero Day]
 ---
 
-Hey, Everyone! </br>
+Hey, Everyone! 
 
 I'm back with blog post, this time will be focus on _Patch Diff Analysis_ part.
 
