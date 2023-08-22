@@ -70,3 +70,15 @@ The content of **my_patch.diff** will look like this:
 - **-** and **+** represent the lines removed and added, respectively.
 
 In this example, the diff shows that the original line was removed, and the modified line was added.
+
+**Reference:**   
+* [An introduction to diffs and patches](https://opensource.com/article/18/8/diffs-patches)            
+* [Patch Diffing](https://cve-north-stars.github.io/docs/Patch-Diffing)                
+* [How to use diff and patch](https://www.pair.com/support/kb/paircloud-diff-and-patch/)           
+* [Diff and Patch : A Guide](https://boseji.com/posts/diff-and-patch-a-guide/)    
+
+<p align="center">
+  <img src="https://media.giphy.com/media/BgKEiHf1xNV0h6IcSX/giphy.gif">
+</p>
+
+Thanks a lot for reading !!!.
