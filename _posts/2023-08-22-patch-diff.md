@@ -85,6 +85,51 @@ The content of **my_patch.diff** will look like this:
 
 In this example, the diff shows that the original line was removed, and the modified line was added.
 
+**How Patch Diff can be used in Security Code Review ?**
+
+Let's consider a patch diff analysis with a focus on a security-related change in an open-source project. In this example, we'll analyze a security fix applied to a web application project.
+
+* Clone the Repository.
+
+```bash
+git clone <repository_url>
+cd web-app-project
+```
+
+* Identify the Versions: Suppose we want to analyze the security fix applied between commit **v1.0** (old version) and commit **v1.1** (new version).
+
+* Generate the Patch.
+
+```bash
+git diff v1.0 v1.1 > security_patch.diff
+```
+
+* Read and Analyze the Patch: Open the security_patch.diff file using a text editor. Let's assume you find the following change related to authentication:
+
+```bash
+-// Insecure authentication method
+-function authenticateUser(username, password) {
+-    // No hashing, plain password comparison
+-    return users[username] === password;
+-}
++
++// Secure authentication method
++function authenticateUser(username, password) {
++    // Hash the password before comparison
++    const hashedPassword = hashPassword(password);
++    return users[username] === hashedPassword;
++}
++
++function hashPassword(password) {
++    // Implement secure password hashing algorithm
++    // ...
++}
+```
+
+In this example, the project has replaced the _Insecure Password Comparison_ method with a more **secure** approach that involves hashing passwords before comparing them.
+
+This change aims to **prevent plain text password storage** and improve authentication security.
+
 **Reference:**   
 * [An introduction to diffs and patches](https://opensource.com/article/18/8/diffs-patches)            
 * [Patch Diffing](https://cve-north-stars.github.io/docs/Patch-Diffing)                
