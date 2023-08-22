@@ -12,3 +12,15 @@ Hey, Everyone!
      In this blog post we will be focus on _Patch Diff Analysis_ part.
 
 **What is Patch Diff ?**
+
+<p align="center">
+  <img src="images/patch/patch-diff-logo.png"> 
+</p>
+
+**"patch"** or **"diff"** , is a utility used in software development and version control systems to compare two sets of files and identify the differences between them. The term "diff" is short for "difference.”
+
+To generate a patch diff using the `diff` command in `Unix/Linux`, you typically use the following format:
+
+```bash
+diff -u <original_file> <modified_file> > <patch_file>
+```
