@@ -8,8 +8,9 @@ tags: [Reversing, N Day, Zero Day]
 ---
 
 Hey, Everyone!  
-     I'm back with blog post, and this time I want to share my experience on **Code Review**, it all started from doing **PentesterLab** [Code Review Badge](https://pentesterlab.com/exercises/codereview/course), It provides a solid foundation by initially focusing on understanding smaller code sections, then advancing to the comparison of code changes through patch differentials, and ultimately culminating in a thorough grasp of the entire source code.          
-     In this blog post we will be focus on _Patch Diff Analysis_ part.
+     I'm back with blog post, and this time I want to share my experience on **Code Review**, it all started from doing **PentesterLab** [Code Review Badge](https://pentesterlab.com/exercises/codereview/course), It provides a solid foundation by initially focusing on understanding smaller code sections, then advancing to the comparison of code changes through patch differentials, and ultimately culminating in a thorough grasp of the entire source code.</br>
+
+In this blog post we will be focus on _Patch Diff Analysis_ part.
 
 **What is Patch Diff ?**
 
@@ -26,12 +27,12 @@ diff -u <original_file> <modified_file> > <patch_file>
 ```
 Here's what each part of the command means:
 
-- **`diff`**: This is the command itself, which is used to compare files and generate the patch diff.
-- **`u`**: This option tells **`diff`** to use the unified diff format, which is the most commonly used and human-readable format for patches.
-- **`<original_file>`**: This is the path to the original file, the one you want to compare against.
-- **`<modified_file>`**: This is the path to the modified file, the one you have made changes to.
-- **`>`**: This is the output redirection symbol that saves the generated patch diff to a file.
-- **`<patch_file>`**: This is the name of the file where the patch diff will be saved.
+- **diff**: This is the command itself, which is used to compare files and generate the patch diff.
+- **u**: This option tells **`diff`** to use the unified diff format, which is the most commonly used and human-readable format for patches.
+- **<original_file>**: This is the path to the original file, the one you want to compare against.
+- **<modified_file>**: This is the path to the modified file, the one you have made changes to.
+- **>**: This is the output redirection symbol that saves the generated patch diff to a file.
+- **<patch_file>**: This is the name of the file where the patch diff will be saved.
 
 Let's illustrate this with an example. Suppose we have two text files, file1.txt and file2.txt, and we want to generate a patch diff (see what codes are changed) between them:
 
@@ -65,8 +66,8 @@ The content of my_patch.diff will look like this:
 +This is the modified text.
 ```
 
-- **`---`** and **`+++`** indicate the file names and timestamps.
-- **`@@`** provides information about the line numbers and context of the changes.
-- **`-`** and **`+`** represent the lines removed and added, respectively.
+- **---** and **+++** indicate the file names and timestamps.
+- **@@** provides information about the line numbers and context of the changes.
+- **-** and **+** represent the lines removed and added, respectively.
 
 In this example, the diff shows that the original line was removed, and the modified line was added.
