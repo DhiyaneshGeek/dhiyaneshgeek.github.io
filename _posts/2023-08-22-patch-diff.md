@@ -19,6 +19,24 @@ I'm back with blog post, this time will be focus on _Patch Diff Analysis_ part.
 
 **"patch"** or **"diff"** , is a utility used in software development and version control systems to compare two sets of files and identify the differences between them. The term "diff" is short for "difference.”
 
+**Syntax for Diff**
+
+```bash
+diff <option> <original_file> <modified_file> > <patch_file>
+```
+
+<p align="center"><strong>Most commonly used diff options</strong></p>
+
+| Option              | Description                                               | Example                                   |
+|---------------------|-----------------------------------------------------------|-------------------------------------------|
+| -u or --unified     | Unified context diff output                               | `diff -u file1.txt file2.txt`             |
+| -r or --recursive   | Recursive comparison for directories                      | `diff -r dir1 dir2`                       |
+| -w or --ignore-all-space | Ignore all white space when comparing lines          | `diff -w file1.txt file2.txt`             |
+| --side-by-side      | Side-by-side comparison                                   | `diff --side-by-side file1.txt file2.txt` |
+| --color             | Enable colored output to highlight differences            | `diff --color file1.txt file2.txt`        |
+
+More options can be found here [Options to diff](https://www.gnu.org/software/diffutils/manual/html_node/diff-Options.html)
+
 To generate a patch diff using the **diff** command in `Unix/Linux`, you typically use the following format:
 
 ```bash
