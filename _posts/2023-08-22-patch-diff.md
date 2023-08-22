@@ -85,7 +85,7 @@ The content of **my_patch.diff** will look like this:
 
 In this example, the diff shows that the original line was removed, and the modified line was added.
 
-**How Patch Diff can be used in Security Code Review ?**
+**How Patch Diff can be used in Security Code Review ?** (What is Fixed & What was Vulnerable ?)
 
 Let's consider a patch diff analysis with a focus on a security-related change in an open-source project. In this example, we'll analyze a security fix applied to a web application project.
 
