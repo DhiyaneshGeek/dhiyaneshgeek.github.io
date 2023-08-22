@@ -87,7 +87,9 @@ In this example, the diff shows that the original line was removed, and the modi
 
 **Patch Diff to see What is Changed & What was Vulnerable ?** 
 
-Let's consider a patch diff analysis with a focus on a security-related change in an open-source project. In this example, we'll analyze a security fix applied to a web application project.
+Let's consider a patch diff analysis with a focus on a security-related change in an open-source project.
+
+In this example, we'll analyze a security fix applied to a web application project.
 
 * Clone the Repository.
 
@@ -126,9 +128,9 @@ git diff v1.0 v1.1 > security_patch.diff
 +}
 ```
 
-In this example, the project has replaced the _Insecure Password Comparison_ method with a more **secure** approach that involves hashing passwords before comparing them.
+* In this example, the project has replaced the _Insecure Password Comparison_ method with a more **secure** approach that involves hashing passwords before comparing them.
 
-This change aims to **prevent plain text password storage** and improve authentication security.
+* This change aims to **prevent plain text password storage** and improve authentication security.
 
 **Reference:**   
 * [An introduction to diffs and patches](https://opensource.com/article/18/8/diffs-patches)            
