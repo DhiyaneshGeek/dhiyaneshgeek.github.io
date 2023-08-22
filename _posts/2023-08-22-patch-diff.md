@@ -37,7 +37,7 @@ diff <option> <original_file> <modified_file> > <patch_file>
 
 More options can be found here [Options to diff](https://www.gnu.org/software/diffutils/manual/html_node/diff-Options.html)
 
-To generate a patch diff using the **diff** command in `Unix/Linux`, you typically use the following format:
+To generate a diff use the **diff** command in `Unix/Linux`, you typically use the following format:
 
 ```bash
 diff -u <original_file> <modified_file> > <patch_file>
