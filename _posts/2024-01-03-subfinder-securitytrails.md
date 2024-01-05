@@ -106,7 +106,6 @@ Content-Type: application/json
 After figuring out the solution, initally wrote a Nuclei Template for Subdomain Enumeration 😎
 
 ```yaml
-
 id: securitytrails-subdomain
 
 info:
@@ -180,3 +179,58 @@ http:
 - **.["records"] | .[] | .["hostname"]** - JSON regex to display hostnames in CLI.
 
 - **to: "subdomains.txt"** - Saves the output in subdomains.txt file.
+
+```nuclei -t securitytrails-subdomain.yaml -var api_key=YOUR_API_KEY_HERE -var domain=apple.com -vv -rl 1```
+
+<p align="center">
+  <img src="/images/subfinder/term-2.png" width="750">
+</p>
+
+<p align="center">
+  <img src="/images/subfinder/sub-count.png" width="750">
+</p>
+
+<p align="center">
+  <img src="/images/subfinder/sb.png" width="750">
+</p>
+
+Now we are able to get all the subdomains from SecurityTrails, the above results matchs with the Dashboard Results as well 😄 !
+
+- Later i raised a [Issue](https://github.com/projectdiscovery/subfinder/issues/1104) in Subfinder Repository to Support Pagination in SecurityTrails Paid API Keys.
+
+<p align="center">
+  <img src="/images/subfinder/issue.png" width="750">
+</p>
+
+- Same Day, the issue was fixed by [dogancanbakir](https://github.com/dogancanbakir) and [PR](https://github.com/projectdiscovery/subfinder/pull/1105) was raised 🔥
+
+<p align="center">
+  <img src="/images/subfinder/pr.png" width="750">
+</p>
+
+- I went ahead and tested out the PR using the following command.
+
+```go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@introduce_pagination_to_st```
+
+```subfinder -d apple.com -s securitytrails -rl 1 -t 1 -v -max-time 20```
+
+- And **it Worked** and matched with the Dashboard results as shown below.
+
+<p align="center">
+  <img src="/images/subfinder/match.png" width="750">
+</p>
+
+Thanks to [ᴠɪɴᴏᴛʜ ᴋᴜᴍᴀʀ](https://twitter.com/vinnyvinoth242), for sharing the trick to supply dummy parameter with value in second request in the Nuclei Template and move to next page with numbers 😃
+
+Shoutout to [Dogan Can Bakir](https://github.com/dogancanbakir), for fixing the Pagination issue SecurityTrails API on Subfinder and enhancing further to support both Free/Paid Version along with rate limit 💯
+
+**Reference:**
+- [Subfinder: Fast passive subdomain enumeration tool](https://github.com/projectdiscovery/subfinder)
+- [Security Trails Subdomain Enumeration Docs](https://docs.securitytrails.com/reference/domain-subdomains)
+- [Recon with Me !!!](https://dhiyaneshgeek.github.io/bug/bounty/2020/02/06/recon-with-me/)
+
+<p align="center">
+  <img src="/images/subfinder/last.png" height="300" width="450">
+</p>
+
+Thanks a lot for reading !!!.
