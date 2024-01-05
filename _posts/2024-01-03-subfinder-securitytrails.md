@@ -103,63 +103,11 @@ Content-Type: application/json
   <img src="/images/subfinder/scroll-id-req.png">
 </p>
 
-After figuring out the solution, initally wrote a Nuclei Template for Subdomain Enumeration 😎
+After figuring out the solution, initally wrote a [Nuclei Template](https://gist.github.com/DhiyaneshGeek/b5632cba2131c11051397feed91ce4cd) for Subdomain Enumeration 😎
 
-```bash
-
-id: securitytrails-subdomain
-
-info:
-  name: SecurityTrail Subdomain Enum
-  author: DhiyaneshDK,vinothkumar
-  severity: unknown
-
-self-contained: true
-http:
-  - raw:
-      - |
-        @once
-        POST https://api.securitytrails.com/v1/domains/list?include_ips=false&scroll=true HTTP/1.1
-        Host: api.securitytrails.com
-        User-Agent: curl/7.84.0
-        Accept: */*
-        Apikey: {{api_key}}
-        Content-Type: application/json
-
-        {  "query": "apex_domain = '{{domain}}'"}
-
-      - |
-        GET https://api.securitytrails.com/v1/scroll/{{scroll_id}}?nuclei={{number}} HTTP/1.1
-        Host: api.securitytrails.com
-        User-Agent: curl/7.84.0
-        Apikey: {{api_key}}
-        Accept: application/json
-
-    payloads:
-      number: numbers.txt
-
-    matchers:
-      - type: dsl
-        dsl:
-          - 'contains(body_1,"scroll_id")'
-          - 'status_code_2 == 200'
-        condition: and
-
-    extractors:
-      - type: regex
-        internal: true
-        part: body_1
-        name: scroll_id
-        group: 1
-        regex:
-          - '"scroll_id": "([0-9a-z]+)"'
-
-      - type: json
-        part: body_2
-        json:
-          - '.["records"] | .[] | .["hostname"]'
-        to: "subdomains.txt"
-```
+<p align="center">
+  <img src="/images/subfinder/securitytrail-yaml.png">
+</p>
 
 **First Request:** 
 
