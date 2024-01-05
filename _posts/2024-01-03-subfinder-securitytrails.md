@@ -174,11 +174,11 @@ http:
 
 **Extractors:**
 
-- **"scroll_id": "([0-9a-z]+)"** - regex to extract scroll_id
+- ```"scroll_id": "([0-9a-z]+)"``` - Regex to extract **scroll_id**
 
-- **.["records"] | .[] | .["hostname"]** - JSON regex to display hostnames in CLI.
+- ```.["records"] | .[] | .["hostname"]``` - JSON regex to display **hostnames** in CLI.
 
-- **to: "subdomains.txt"** - Saves the output in subdomains.txt file.
+- ```to: "subdomains.txt"``` - Saves the **output** in subdomains.txt file.
 
 ```nuclei -t securitytrails-subdomain.yaml -var api_key=YOUR_API_KEY_HERE -var domain=apple.com -vv -rl 1```
 
