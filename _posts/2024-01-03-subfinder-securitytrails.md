@@ -28,7 +28,7 @@ I was doing recon using Subfinder with API Keys configured in it and observed th
 - Here in the below image, you can see `apple.com` contains around 39,904 subdomains.
 
 <p align="center">
-  <img src="/images/subfinder/securitytrail.png" width="800" height="600">
+  <img src="/images/subfinder/securitytrail.png" width="750">
 </p>
 
 - Securitytrails (Free Version) API Configured with Subfinder. (Only 2000 results returned)
@@ -166,19 +166,19 @@ http:
 
 **Second Request:**
 
-- **{{scroll_id}}** - Extracted Scroll ID from the first request will be **re-use** in the second request.
+- <strong>{{scroll_id}}</strong> - Extracted Scroll ID from the first request will be <strong>re-use</strong> in the second request.
 
-- **?nuclei=** - This is just a **dummy parameter** to bypass, move to the next page and view the results.
+- <strong>?nuclei=</strong> - This is just a <strong>dummy parameter</strong> to bypass, move to the next page and view the results.
 
-- **{{number}}** - We need create a file name called **numbers.txt** to supply in the template(page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
+- <strong>{{number}}</strong> - We need create a file name called **numbers.txt** to supply in the template(page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
 
 **Extractors:**
 
-- ```"scroll_id": "([0-9a-z]+)"``` - Regex to extract **scroll_id**
+- <strong>scroll_id": "([0-9a-z]+)"</strong> - Regex to extract **scroll_id**
 
-- ```.["records"] | .[] | .["hostname"]``` - JSON regex to display **hostnames** in CLI.
+- <strong>.["records"] | .[] | .["hostname"]</strong> - JSON regex to display **hostnames** in CLI.
 
-- ```to: "subdomains.txt"``` - Saves the **output** in subdomains.txt file.
+- <strong>to: "subdomains.txt"</strong> - Saves the **output** in subdomains.txt file.
 
 ```nuclei -t securitytrails-subdomain.yaml -var api_key=YOUR_API_KEY_HERE -var domain=apple.com -vv -rl 1```
 
