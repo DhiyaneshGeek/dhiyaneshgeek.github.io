@@ -166,11 +166,11 @@ http:
 
 **Second Request:**
 
-- <strong> {{scroll_id}} </strong> - Extracted Scroll ID from the first request will be <strong>re-use</strong> in the second request.
+- ```{{scroll_id}}``` - Extracted Scroll ID from the first request will be **re-use** in the second request.
 
-- <strong> ?nuclei= </strong> - This is just a <strong>dummy parameter</strong> to bypass, move to the next page and view the results.
+- **?nuclei=** - This is just a <strong>dummy parameter</strong> to bypass, move to the next page and view the results.
 
-- <strong> {{number}} </strong> - We need create a file name called **numbers.txt** to supply in the template(page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
+- ```{{number}}``` - We need create a file name called **numbers.txt** to supply in the template(page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
 
 **Extractors:**
 
