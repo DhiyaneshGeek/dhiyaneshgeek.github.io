@@ -105,7 +105,8 @@ Content-Type: application/json
 
 After figuring out the solution, initally wrote a Nuclei Template for Subdomain Enumeration 😎
 
-```yaml
+```bash
+
 id: securitytrails-subdomain
 
 info:
