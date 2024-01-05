@@ -59,7 +59,7 @@ I was doing recon using Subfinder with API Keys configured in it and observed th
   <img src="/images/subfinder/docs-2.png">
 </p>
 
-- To get all subdomains, we need to use the [Domain Search Endpoint](https://docs.securitytrails.com/reference/domain-search)https://docs.securitytrails.com/reference/domain-search with **Scroll ID** Enabled as shown in the above image.
+- To get all subdomains, we need to use the [Domain Search Endpoint](https://docs.securitytrails.com/reference/domain-search) with **Scroll ID** Enabled as shown in the above image.
 
 - After going through the documentation found this POST request, where it discloses the **scroll_id**, **total_pages**, **record_count**.
 
