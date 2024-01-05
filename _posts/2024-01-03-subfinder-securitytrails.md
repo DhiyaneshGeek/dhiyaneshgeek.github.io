@@ -170,11 +170,11 @@ http:
 
 - **?nuclei=** - This is just a **dummy parameter** to bypass, move to the next page and view the results.
 
-- **number** - We need create a file name called **numbers.txt** to supply in the template (page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
+- **number** - We need to create a file name called **numbers.txt** to supply in the template (page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
 
 **Extractors:**
 
-- <strong>scroll_id": "([0-9a-z]+)"</strong> - Regex to extract **scroll_id**
+- <strong>"scroll_id": "([0-9a-z]+)"</strong> - Regex to extract **scroll_id**
 
 - <strong>.["records"] | .[] | .["hostname"]</strong> - JSON regex to display **hostnames** in CLI.
 
