@@ -82,8 +82,101 @@ Accept-Encoding: gzip, deflate, br
   <img src="/images/subfinder/post-request.png">
 </p>
 
-**scroll_id -** Scroll ID is generated newly every time when the POST request is sent with requested domain or subdomain. (Not Constant & Has Time Limit)
+- **scroll_id -** Scroll ID is generated newly every time when the POST request is sent with requested domain or subdomain. (Not Constant & Has Time Limit)
 
-**total_pages -** Per Page 100 hostnames are present by default. (ie: if the total page is 400 means 400*100 = 40000 will be present or lesser than that)
+- **total_pages -** Per Page 100 hostnames are present by default. (ie: if the total page is 400 means 400*100 = 40000 will be present or lesser than that)
 
-**record_count** - Shows what’s the exact total number of subdomains present.
+- **record_count** - Shows what’s the exact total number of subdomains present.
+
+- Now we need to extract the `scroll_id` and `re-use` again in the next request to move to the next page.
+
+```
+GET https://api.securitytrails.com/v1/scroll/8755a518ef6ad0dd71f6b89035d0de2f HTTP/1.1
+Host: api.securitytrails.com
+User-Agent: curl/7.84.0
+Apikey: YOUR_API_KEY_HERE
+Content-Type: application/json
+
+```
+
+<p align="center">
+  <img src="/images/subfinder/scroll-id-req.png">
+</p>
+
+After figuring out the solution, initally wrote a Nuclei Template for Subdomain Enumeration 😎
+
+```yaml
+
+id: securitytrails-subdomain
+
+info:
+  name: SecurityTrail Subdomain Enum
+  author: DhiyaneshDK,vinnyvinoth242
+  severity: unknown
+
+self-contained: true
+http:
+  - raw:
+      - |
+        @once
+        POST https://api.securitytrails.com/v1/domains/list?include_ips=false&scroll=true HTTP/1.1
+        Host: api.securitytrails.com
+        User-Agent: curl/7.84.0
+        Accept: */*
+        Apikey: {{api_key}}
+        Content-Type: application/json
+
+        {  "query": "apex_domain = '{{domain}}'"}
+
+      - |
+        GET https://api.securitytrails.com/v1/scroll/{{scroll_id}}?nuclei={{number}} HTTP/1.1
+        Host: api.securitytrails.com
+        User-Agent: curl/7.84.0
+        Apikey: {{api_key}}
+        Accept: application/json
+
+    payloads:
+      number: numbers.txt
+
+    matchers:
+      - type: dsl
+        dsl:
+          - 'contains(body_1,"scroll_id")'
+          - 'status_code_2 == 200'
+        condition: and
+
+    extractors:
+      - type: regex
+        internal: true
+        part: body_1
+        name: scroll_id
+        group: 1
+        regex:
+          - '"scroll_id": "([0-9a-z]+)"'
+
+      - type: json
+        part: body_2
+        json:
+          - '.["records"] | .[] | .["hostname"]'
+        to: "subdomains.txt"
+```
+
+**First Request:** 
+
+- **@once** - the 1st request will be sent _once_ during in the template execution, which means that it will **extract** the **scroll_id** and re-use in the second request again and again **without** generating a new scroll_id.
+
+**Second Request:**
+
+- **{{scroll_id}}** - Extracted Scroll ID from the first request will be **re-use** in the second request.
+
+- **?nuclei=** - This is just a **dummy parameter** to bypass, move to the next page and view the results.
+
+- **{{number}}** - We need create a file name called **numbers.txt** to supply in the template(page number is referred here, suppose if the **total_pages** is 400 the numbers.txt file should contains numbering from 1 to 400 line by line).
+
+**Extractors:**
+
+- **"scroll_id": "([0-9a-z]+)"** - regex to extract scroll_id
+
+- **.["records"] | .[] | .["hostname"]** - JSON regex to display hostnames in CLI.
+
+- **to: "subdomains.txt"** - Saves the output in subdomains.txt file.
