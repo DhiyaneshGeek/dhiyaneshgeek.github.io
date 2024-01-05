@@ -110,7 +110,7 @@ id: securitytrails-subdomain
 
 info:
   name: SecurityTrail Subdomain Enum
-  author: DhiyaneshDK,vinnyvinoth242
+  author: DhiyaneshDK,vinothkumar
   severity: unknown
 
 self-contained: true
@@ -219,6 +219,11 @@ Now we are able to get all the subdomains from SecurityTrails, the above results
 <p align="center">
   <img src="/images/subfinder/match.png" width="750">
 </p>
+
+**Note:**
+- If the subdomains are more than **30k** while enumerating with SecurityTrails Paid Version of API key, users need to supply `-max-time` to increase the time limit of enumeration, since the minutes to wait for enumeration results `(default 10)`.
+- Only the **Paid** Version of SecurityTrails returns the **Scroll ID**.
+- Subfinder Supports both Free & Paid version, Free means 2000 results limited / Paid means full results (depends on **API quota left** in the account).
 
 Thanks to [ᴠɪɴᴏᴛʜ ᴋᴜᴍᴀʀ](https://twitter.com/vinnyvinoth242), for sharing the trick to supply dummy parameter with value in second request in the Nuclei Template and move to next page with numbers 😃
 
