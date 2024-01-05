@@ -17,10 +17,14 @@ I’m back with a blog post, sharing my experience about subdomain enumeration u
 
 I was doing recon using Subfinder with API Keys configured in it and observed the following stats.
 
-
 ```subfinder -d apple.com -all -v -rl 1 -t 1 -o apple-subs.txt```
-
 
 <p align="center">
   <img src="/images/subfinder/terminal-1.png"> 
+</p>
+
+I remember seeing more subdomain count for SecurityTrails in the Dashboard but it's showing only 2000 Subdomains.
+
+<p align="center">
+  <img src="/images/subfinder/securitytrail.png" width="800" height="600">
 </p>
