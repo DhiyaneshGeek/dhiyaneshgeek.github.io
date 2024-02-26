@@ -118,13 +118,13 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXhudHB2cHpqYWNoNDc3NWgwb25yNm4wcHgyaWw5OTk5dXQxZjVqZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Q2W4hziDOyzu0/giphy.gif" width="650">
 </p>
 
-Thanks a lot for reading !!!.
-
 **Final Thougths about OAWSP**
 
 * If you are looking for Intense 24 hours Exam Pattern with Real World Cloud Misconfiguration, you surely go ahead for **OAWSP**.
 * CloudBreach [Discord Server](https://discord.com/invite/NyP44PCFpD) is quite active, there they share about the New Cloud Misconfigurations, Trending Topics and New Tools in Cloud Security.
 * Support System in CloudBreach is pretty fast and quick.
+
+Thanks a lot for reading !!!.
 
 ## Reference
 [How to get into cloud security - Breaching AWS](https://www.youtube.com/watch?v=upQCy5WmSyo)     
