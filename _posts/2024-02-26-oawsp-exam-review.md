@@ -46,7 +46,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * There are around 27 Flags in the course, on completion you will receive the **Certificate Of Completion Breaching AWS**.
 
 <p align="center">
-  <img src="/images/oawsp/lab-certs.png"  height="500" width="650">
+  <img src="/images/oawsp/lab-certs.png">
 </p>
 
 **CloudBreach Portal**
