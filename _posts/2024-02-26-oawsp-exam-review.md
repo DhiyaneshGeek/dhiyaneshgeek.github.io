@@ -20,21 +20,29 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 **About the Course Content**
 
 * Contains Course Content PDF of 150 Pages.
+
 * Detailed Information about each AWS Services that is used in the Labs.
+
 * Solution to the Lab Exercises.
 
 **Course Access**
 
 * Access to CloudbBreach Portal and Breaching AWS Lab Credentials are sent via email after enrollment.
+
 * Web Browser Based Access from Anywhere (Stable Internet Connection)
 
 **Breaching AWS Labs**
 
-* The Course showcases more than 40 AWS different resources/services including 20 cloud specific attack vectors and remediation. 
+* The Course showcases more than 40 AWS different resources/services including 20 cloud specific attack vectors and remediation.
+
 * The Breaching AWS labs simulate a fictional corporation “**TwoCapital**” hosting its infrastructure on the AWS environment.
+
 * Based on past cloud breaches the challenges have a variety degree of difficulty and solving them will lead to the total compromise of the target cloud environment.
+
 * The aim is to breach “**TwoCapital**” company and move laterally, exploit weak AWS configurations/policies and find a way to compromise the super secure Amazon Relational Database Service (RDS).
-* The Lab also contains all the Necessary Tools that are required to solve the Labs under **/Desktop/Tools/** Folder
+
+* The Lab also contains all the Necessary Tools that are required to solve the Labs under **/Desktop/Tools/** Folder.
+
 * There are around 27 Flags in the course, on completion you will receive the **Certificate Of Completion Breaching AWS**.
 
 <p align="center">
@@ -44,16 +52,23 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 **CloudBreach Portal**
 
 * From the **CloudBreach Portal -> My Account -> Book an Exam** , provide the CloudBreach Student ID as well to Book the Exam.
+
 * Allows you to purchase **Lab Addons** and Exam **Re-Take** vouchers.
+
 * This is also the portal where we have to Submit the **flags**.
 
 **OAWSP Exam**
 
 * It's a **24 Hours** Practical Exam, You will be given a Cloud Environment Access.
+
 * You will get the details about the **Exam Objective** and How to **Access the Exam Cloud** Environment in the email.
+
 * The exam is based on the material taught during the Breaching AWS course.
+
 * Also it's not straight forward like the labs, so you need to Google Little Bit and do your own research sometime of time during the exam.
+
 * Upon solving the exam objective.you will have another 24 hours to **submit a brief report**.Send the report to **exam@cloudbreach.io**.
+
 * By passing the exam candidates are awarded the [OAWSP Digital Badge](https://eu.badgr.com/public/assertions/Grg2DMMmQIiP7Cnu9kJckg).
 
 <p align="center">
@@ -121,7 +136,9 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 **Final Thougths about OAWSP**
 
 * If you are looking for Intense 24 hours Exam Pattern with Real World Cloud Misconfiguration, you surely go ahead for **OAWSP**.
+
 * CloudBreach [Discord Server](https://discord.com/invite/NyP44PCFpD) is quite active, there they share about the New Cloud Misconfigurations, Trending Topics and New Tools in Cloud Security.
+
 * Support System in CloudBreach is pretty fast and quick.
 
 Thanks a lot for reading !!!.
@@ -129,4 +146,4 @@ Thanks a lot for reading !!!.
 ## Reference
 [How to get into cloud security - Breaching AWS](https://www.youtube.com/watch?v=upQCy5WmSyo)     
 [Breaching AWS - cloudbreach.io](https://cloudbreach.io/breachingaws/)
-[Intro To AWS Enumeration – Part 1](https://cloudbreach.io/blog/intro-to-aws-enumeration-part-1/)https://cloudbreach.io/blog/intro-to-aws-enumeration-part-1/
+[Intro To AWS Enumeration – Part 1](https://cloudbreach.io/blog/intro-to-aws-enumeration-part-1/)
