@@ -141,6 +141,10 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 
 * Support System in CloudBreach is pretty fast and quick.
 
+* The Difficulty level of the Exam is **Intermediate**, if you don't prepare well for the exam it will be hard to clear.
+
+* I personally find it **Worth the Money** compared to other AWS Cloud Certifications in the Current Market.
+
 Thanks a lot for reading !!!.
 
 ## Reference
