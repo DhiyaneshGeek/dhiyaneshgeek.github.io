@@ -34,7 +34,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * The Breaching AWS labs simulate a fictional corporation “**TwoCapital**” hosting its infrastructure on the AWS environment.
 * Based on past cloud breaches the challenges have a variety degree of difficulty and solving them will lead to the total compromise of the target cloud environment.
 * The aim is to breach “**TwoCapital**” company and move laterally, exploit weak AWS configurations/policies and find a way to compromise the super secure Amazon Relational Database Service (RDS).
-* The Lab also contails all the Necessary Tools that are required to solve the Labs under `/Desktop/Tools/` Folder
+* The Lab also contains all the Necessary Tools that are required to solve the Labs under `/Desktop/Tools/` Folder
 * There are around 27 Flags in the course, on completion you will receive the **Certificate Of Completion Breaching AWS**.
 
 <p align="center">
@@ -60,6 +60,9 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
   <img src="/images/oawsp/oawsp.png" width="650">
 </p>
 
+**My Experience**
+
+* Enrolled for the Exam 
 ## Reference
 [How to get into cloud security - Breaching AWS](https://www.youtube.com/watch?v=upQCy5WmSyo)     
 [Breaching AWS - cloudbreach.io](https://cloudbreach.io/breachingaws/)
