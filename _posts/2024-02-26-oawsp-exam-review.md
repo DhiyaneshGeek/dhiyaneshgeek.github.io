@@ -135,7 +135,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 
 **Final Thougths about OAWSP**
 
-* If you are looking for Intense 24 hours Exam Pattern with Real World Cloud Misconfiguration, you surely go ahead for **OAWSP**.
+* If you are looking for Intense 24 hours Exam Pattern with Real World Cloud Misconfiguration, you surely go ahead for **[OAWSP](https://cloudbreach.io/breachingaws/)**.
 
 * CloudBreach [Discord Server](https://discord.com/invite/NyP44PCFpD) is quite active, there they share about the New Cloud Misconfigurations, Trending Topics and New Tools in Cloud Security.
 
@@ -145,5 +145,5 @@ Thanks a lot for reading !!!.
 
 ## Reference
 [How to get into cloud security - Breaching AWS](https://www.youtube.com/watch?v=upQCy5WmSyo)     
-[Breaching AWS - cloudbreach.io](https://cloudbreach.io/breachingaws/)
+[Breaching AWS - cloudbreach.io](https://cloudbreach.io/breachingaws/)   
 [Intro To AWS Enumeration – Part 1](https://cloudbreach.io/blog/intro-to-aws-enumeration-part-1/)
