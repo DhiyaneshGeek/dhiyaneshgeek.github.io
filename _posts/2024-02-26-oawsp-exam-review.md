@@ -34,7 +34,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * The Breaching AWS labs simulate a fictional corporation “**TwoCapital**” hosting its infrastructure on the AWS environment.
 * Based on past cloud breaches the challenges have a variety degree of difficulty and solving them will lead to the total compromise of the target cloud environment.
 * The aim is to breach “**TwoCapital**” company and move laterally, exploit weak AWS configurations/policies and find a way to compromise the super secure Amazon Relational Database Service (RDS).
-* The Lab also contains all the Necessary Tools that are required to solve the Labs under `/Desktop/Tools/` Folder
+* The Lab also contains all the Necessary Tools that are required to solve the Labs under **/Desktop/Tools/** Folder
 * There are around 27 Flags in the course, on completion you will receive the **Certificate Of Completion Breaching AWS**.
 
 <p align="center">
@@ -43,7 +43,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 
 **CloudBreach Portal**
 
-* From the `CloudBreach Portal -> My Account -> Book an Exam` , provide the CloudBreach Student ID as well to Book the Exam.
+* From the **CloudBreach Portal -> My Account -> Book an Exam** , provide the CloudBreach Student ID as well to Book the Exam.
 * Allows you to purchase **Lab Addons** and Exam **Re-Take** vouchers.
 * This is also the portal where we have to Submit the **flags**.
 
@@ -53,7 +53,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * You will get the details about the **Exam Objective** and How to **Access the Exam Cloud** Environment in the email.
 * The exam is based on the material taught during the Breaching AWS course.
 * Also it's not straight forward like the labs, so you need to Google Little Bit and do your own research sometime of time during the exam.
-* Upon solving the exam objective.you will have another 24 hours to **submit a brief report**.Send the report to `exam@cloudbreach.io`
+* Upon solving the exam objective.you will have another 24 hours to **submit a brief report**.Send the report to **exam@cloudbreach.io**.
 * By passing the exam candidates are awarded the [OAWSP Digital Badge](https://eu.badgr.com/public/assertions/Grg2DMMmQIiP7Cnu9kJckg).
 
 <p align="center">
@@ -62,29 +62,29 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 
 **My Experience**
 
-* Enrolled for the Breaching AWS Course on `Jan 12th, 2024`, received a form where we need to Provide the **Start Date of the Lab**.
+* Enrolled for the Breaching AWS Course on **Jan 12th, 2024**, received a form where we need to Provide the **Start Date of the Lab**.
 
-* On `Jan 14th 2024` early morning, i received my lab access, it also contained the CloudBreach Lab Rule Do's & Don'ts.
+* On **Jan 14th 2024** early morning, i received my lab access, it also contained the CloudBreach Lab Rule Do's & Don'ts.
 
-* I Started the Lab around `Jan 15th 2024` and was able to complete the labs within Few Days, since i had worked on solving AWS Cloudgoat before.
+* I Started the Lab around **Jan 15th 2024** and was able to complete the labs within Few Days, since i had worked on solving AWS Cloudgoat before.
 
-* CloudBreach portal contains `Set of Quiz`, upon solving the lab you will be able to answer the quiz questions (these quiz are considered to be flags).
+* CloudBreach portal contains **Set of Quiz**, upon solving the lab you will be able to answer the quiz questions (these quiz are considered to be flags).
 
 * The Course Content PDF contains all the necessary information required to Solve the Labs, Starting from **Unauthenticated AWS Enumeration** to **Compromise the Infrastructure** using the misconfigurations.
 
-* I was very confident by solving the labs and Scheduled the exam on `Feb 23rd 2024` around `7.15 am`.
+* I was very confident by solving the labs and Scheduled the exam on **Feb 23rd 2024** around **7.15 am**.
 
-* Received the email instructions with `Exam Objective` and access to Exam Environment. The Exam Objective was just Few Lines, i was like okay Let's Do this !
+* Received the email instructions with **Exam Objective** and access to Exam Environment. The Exam Objective was just Few Lines, i was like okay Let's Do this !
 
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGk0dnd4aTNrbDEyaHlrcHNzYmQ1b3RlbGpscWtmY2k1dTE5cm12OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CjmvTCZf2U3p09Cn0h/giphy.gif" height="200" width="250">
 </p>
 
-* The `Inital Foothold` just took couple of mins to get some information from Unauth AWS Enumeration, After that i did a small stupid mistake took `3 hours` to move laterally in the infrastructure.
+* The **Inital Foothold** just took couple of mins to get some information from Unauth AWS Enumeration, After that i did a small stupid mistake took **3 hours** to move laterally in the infrastructure.
 
-* After gaining `root` privilege in a system i was happy thought the exam is over. checked with the CloudBreach Team confirmed that i was still at the `Starting Stage` of the exam.
+* After gaining **root** privilege in a system i was happy thought the exam is over. checked with the CloudBreach Team confirmed that i was still at the **Starting Stage** of the exam.
 
-* Further enumeration led me into a Rabbithole and stuck there for sometime
+* Further enumeration led me into a Rabbithole and stuck there for sometime.
 
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanNlNXdjcjdvOWhycW93cnJlZjZjZzlldHA4eW5zMjJtcWZqMTZnciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IglsQO6j6cq6hjO/giphy.gif" height="200" width="250">
@@ -92,13 +92,13 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 
 * Took some break and came back, started to check all my commands and notes from scratch. Found that i missed something which was easier.
 
-* Able to Enumerate further and solve the Exam Objective and Complete the exam around `Feb 24th 2 am`,
+* Able to Enumerate further and solve the Exam Objective and Complete the exam around **Feb 24th 2 am**,
 
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlzbzh2NDcxcXY4Z2FoNmVnb20weW5hcXVlODdnZHhuazhycDFiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1jY5blLIXjbtmVbVmd/giphy.gif" height="200" width="250">
 </p>
 
-* I started to prepare the exam report around `2.30 am` and completed around `6.30 am` (30 Pages) Exam report includingly all the detailed steps how i was able to compromise and complete the exam objective.
+* I started to prepare the exam report around **2.30 am** and completed around **6.30 am ** (30 Pages) Exam report includingly all the detailed steps how i was able to compromise and complete the exam objective.
 
 * Took a Nap for a while and reviewed the report in the evening.
 
@@ -106,9 +106,9 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRiZDhkZXd6MW90bWoxMnF2cDVrODl4MHd0Nmp4dXczdmkzZ2p4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/guSksKy3RfqQPqJZ7H/giphy.gif" height="200" width="250">
 </p>
 
-* Sent the Exam report on `Feb 24, 5:30 PM`, CloudBreach Team is Very Fast they reviewd my report and sent me the results within 15 mins.
+* Sent the Exam report on **Feb 24, 5:30 PM**, CloudBreach Team is Very Fast they reviewd my report and sent me the results within 15 mins.
 
-* I got my Exam Result at `Feb 24, 5:45 PM` that I have successfully Passed **Offensive AWS Security Professional (OAWSP)** Successfully.
+* I got my Exam Result at **Feb 24, 5:45 PM** that I have successfully Passed **Offensive AWS Security Professional (OAWSP)** Successfully.
 
 <p align="center">
   <img src="/images/oawsp/passed.png" width="650">
@@ -119,6 +119,12 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 </p>
 
 Thanks a lot for reading !!!.
+
+**Final Thougths about OAWSP**
+
+* If you are looking for Intense 24 hours Exam Pattern with Real World Cloud Misconfiguration, you surely go ahead for **OAWSP**.
+* CloudBreach [Discord Server](https://discord.com/invite/NyP44PCFpD) is quite active, there they share about the New Cloud Misconfigurations, Trending Topics and New Tools in Cloud Security.
+* Support System in CloudBreach is pretty fast and quick.
 
 ## Reference
 [How to get into cloud security - Breaching AWS](https://www.youtube.com/watch?v=upQCy5WmSyo)     
