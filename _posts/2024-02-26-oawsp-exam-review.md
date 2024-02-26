@@ -74,10 +74,10 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 
 * I was very confident by solving the labs and Scheduled the exam on **Feb 23rd 2024** around **7.15 am**.
 
-* Received the email instructions with **Exam Objective** and access to Exam Environment. The Exam Objective was just Few Lines, i was like okay Let's Do this !
+* Received the email instructions with **Exam Objective** and access to Exam Environment. The Exam Objective was just Few Lines, i was like Let's Do this!
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGk0dnd4aTNrbDEyaHlrcHNzYmQ1b3RlbGpscWtmY2k1dTE5cm12OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CjmvTCZf2U3p09Cn0h/giphy.gif" height="200" width="250">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGk0dnd4aTNrbDEyaHlrcHNzYmQ1b3RlbGpscWtmY2k1dTE5cm12OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CjmvTCZf2U3p09Cn0h/giphy.gif">
 </p>
 
 * The **Inital Foothold** just took couple of mins to get some information from Unauth AWS Enumeration, After that i did a small stupid mistake took **3 hours** to move laterally in the infrastructure.
@@ -87,7 +87,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * Further enumeration led me into a Rabbithole and stuck there for sometime.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanNlNXdjcjdvOWhycW93cnJlZjZjZzlldHA4eW5zMjJtcWZqMTZnciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IglsQO6j6cq6hjO/giphy.gif" height="200" width="250">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanNlNXdjcjdvOWhycW93cnJlZjZjZzlldHA4eW5zMjJtcWZqMTZnciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9IglsQO6j6cq6hjO/giphy.gif">
 </p>
 
 * Took some break and came back, started to check all my commands and notes from scratch. Found that i missed something which was easier.
@@ -95,15 +95,15 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * Able to Enumerate further and solve the Exam Objective and Complete the exam around **Feb 24th 2 am**,
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlzbzh2NDcxcXY4Z2FoNmVnb20weW5hcXVlODdnZHhuazhycDFiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1jY5blLIXjbtmVbVmd/giphy.gif" height="200" width="250">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlzbzh2NDcxcXY4Z2FoNmVnb20weW5hcXVlODdnZHhuazhycDFiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1jY5blLIXjbtmVbVmd/giphy.gif">
 </p>
 
-* I started to prepare the exam report around **2.30 am** and completed around **6.30 am ** (30 Pages) Exam report includingly all the detailed steps how i was able to compromise and complete the exam objective.
+* I started to prepare the exam report around **2.30 am** and completed around **6.30 am** (30 Pages) Exam report includingly all the detailed steps how i was able to compromise and complete the exam objective.
 
 * Took a Nap for a while and reviewed the report in the evening.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRiZDhkZXd6MW90bWoxMnF2cDVrODl4MHd0Nmp4dXczdmkzZ2p4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/guSksKy3RfqQPqJZ7H/giphy.gif" height="200" width="250">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRiZDhkZXd6MW90bWoxMnF2cDVrODl4MHd0Nmp4dXczdmkzZ2p4eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/guSksKy3RfqQPqJZ7H/giphy.gif">
 </p>
 
 * Sent the Exam report on **Feb 24, 5:30 PM**, CloudBreach Team is Very Fast they reviewd my report and sent me the results within 15 mins.
@@ -111,7 +111,7 @@ I’m back with a blog post, sharing my experience about [CloudBreach.io](https:
 * I got my Exam Result at **Feb 24, 5:45 PM** that I have successfully Passed **Offensive AWS Security Professional (OAWSP)** Successfully.
 
 <p align="center">
-  <img src="/images/oawsp/passed.png" width="650">
+  <img src="/images/oawsp/passed.png">
 </p>
 
 <p align="center">
